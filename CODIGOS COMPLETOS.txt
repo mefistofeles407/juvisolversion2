@@ -1,0 +1,5378 @@
+Contenido
+GUIA DEL APLICATIVO	4
+INICIO:	4
+sección portada	4
+REGISTRO:	4
+sección “registro”	4
+LOGIN:	5
+sección “login”	5
+RECUPERACION	5
+CUENTA:	6
+sección “mi perfil”	6
+sección “afiliación”	6
+sección “inversión”	7
+sección “activación”	7
+sección “actualizar”	7
+sección “preguntas”	7
+sección “conócenos”	8
+CEO	8
+Sección “ceo”	8
+sección “comisión”	9
+sección “porcentaje”	9
+MANUAL DEL USUARIO	9
+Registro:	10
+Activación de Cuenta:	10
+SISTEMA DE AFILIACION	10
+Lógica de la afiliación	10
+Subir de Nivel:	11
+Recompensas:	11
+Ejemplo del sistema de afiliación:	12
+SISTEMA DE INVERCION	12
+1. Proceso de Inversión:	13
+Paso 1: Depósito del usuario:	13
+Paso 2: Verificación del depósito:	13
+Paso 3: Activación de la inversión:	13
+2. Lógica del sistema:	13
+Flujo de fondos:	13
+Tabla de "Pendientes":	14
+Tabla de planes de inversión:	14
+3. Ejemplo:	14
+4. Consideraciones adicionales:	14
+Seguridad:	14
+Interfaz de usuario:	14
+TIPOS DE PLANES DE INVERCION	15
+PLAN SEMANAL:	15
+PLAN DE 3 MESES:	15
+PLAN DE 6 MESES:	15
+PLAN DE 1 AÑO:	15
+TABLA DE INVERCIONES DEL USUARIO	15
+BASE DE DATOS (phpMyAdmin)	16
+CODIGOS DE LOS ARCHIVOS DE LA PAGINA WEB	18
+Archivo “registro.html”	18
+Archivo “registro.css”	21
+Archivo “registro.js”	25
+Archivo “registro.php”	30
+Archivo “login.html”	35
+Archivo “login.css”	36
+Archivo “login.js”	40
+Archivo “login.php”	42
+Archivo “mi_cuenta.html”	45
+Archivo “mi_cuenta.css”	48
+Archivo “mi_cuenta.js”	53
+Archivo “mi_cuenta.php”	54
+Archivo “recupera.html”	61
+Archivo “recupera.css”	63
+Archivo “recupera.js”	69
+Archivo “recupera.php”	71
+Archivo “actualizar.html”	75
+Archivo “actualizar.css”	77
+Archivo “actualizar.js”	83
+Archivo “actualizar.php”	88
+Archivo “preguntas.html”	93
+Archivo “preguntas.css”	98
+Archivo “preguntas.js”	102
+Archivo “activacion.html”	103
+Archivo “activacion.css”	105
+
+Tarea académica 
+ 
+
+
+GUIA DEL APLICATIVO
+
+INICIO:
+
+todo inicia con la portada que dará la bienvenida a todos los usuarios cuando ingresen a la página. 
+sección portada
+
+sección está conformada por por:
+archivo “portada.html”
+archivo “portada.css”
+archivo “portada.js”
+ en la portada tendrá 2 botones, uno será para que el usuario ingrese a su cuenta personal o se registre y se cree una cuenta personal en JUVISOL.
+
+REGISTRO:
+En caso de que el usuario no tenga cuenta el usuario podrá crearse una cuenta personal en esta sección de la página. 
+sección “registro”
+esta sección de la página está conformada por estos archivos:
+archivo “registro.html”
+archivo “registro.css”
+archivo “registro.js”
+archivo “registro.php”
+El registro será gratuito y el usuario podrá crearse las cuentas que quiera el programa tendrá que asegurarse que los nickname no se repitan ya que el nickname es un dato único para cada cuenta en JUVISOL y el usuario NO PODRA CAMBIARLO, pero el resto de datos si los podrá cambiar en otras secciones. La base de datos almacenara los datos de los usuarios que se registren y obviamente los usuarios al registrarse podrán acceder a sus cuentas e ingresar a ellas aun si no están con el estado “activado”.
+Además el usuario por defecto estará con el estado “INACTIVO” y su nivel será “0” 
+
+LOGIN:
+El usuario en esta sección podrá ingresar a su cuenta personal ingresando su nickname y contraseña. 
+sección “login”
+esta sección de la página está conformada por estos archivos.
+archivo “login.html”
+archivo “login.css”
+archivo “login.js”
+archivo “login.php”
+En caso de que el usuario olvide su contraseña tendrá la opción para recuperar su contraseña dándole el clic al botón “¿Olvidaste tu contraseña?” también esta el botón “Regístrate” en caso que el usuario por error allá ingresado a esa sección sin tener una cuenta registra en JUVISOL.
+
+RECUPERACION
+seccion de "recuperacion" esta sección esta conformado por los archivos:
+archivo "recupera.html"
+archivo "recupera.css"
+archivo "recupera.js"
+archivo "recupera.php"
+BASE DE DATOS (phpMyAdmin)
+
+esta sección se encarga de que en el supuesto caso que el usuarios olvide su contraseña o lo pierda lo pueda recuperar ya que el sistema tiene los datos de los usuarios guardados obio que antes debe comprobar la autenticidad del usuario
+
+
+
+
+
+
+
+
+
+
+CUENTA:
+En esta sección y una vez que el usuario se haya logeado podrá ver todas las secciones que ofrece JUVISOL en su barra de navegación como:
+“mi perfil”
+“afiliación”
+“inversión”
+“activación”
+“actualizar”
+“preguntas”
+“conócenos”
+
+Cada sección ofrece un propósito diferente al usuario y aquí explico el propósito de cada sección
+
+sección “mi perfil” 
+La sección “mi perfil” está conformada por estos archivos.
+Archivo “mi_cuenta.html”
+Archivo “mi_cuenta.css”
+Archivo “mi_cuenta.js”
+Archivo “mi_cuenta.php”
+BASE DE DATOS (phpMyAdmin)
+en esta sección el usuario podrá ver todos sus datos personales y el estado se su cuenta.
+
+sección “afiliación”
+La sección “afiliación” está conformada por estos archivos.
+Archivo “red.html”
+Archivo “red.css”
+Archivo “red.js”
+Archivo “red.php”
+BASE DE DATOS (phpMyAdmin)
+en esta sección el usuario podrá ver su enlace de referido y su red de afiliados y la red de afiliados de sus afiliados así mismo como los enlaces de referido de sus afiliados.
+
+sección “inversión”
+La sección “inversión” está conformada por estos archivos.
+Archivo “invertir.html”
+Archivo “invertir.css”
+Archivo “invertir.js”
+Archivo “invertir.php”
+BASE DE DATOS (phpMyAdmin)
+en esta sección el usuario podrá invertir sus activos monedas PEN (soles peruanos) a cambio de intereses dependiendo del plan que escoja.
+
+
+sección “activación”
+La sección “activación” está conformada por estos archivos.
+Archivo “activacion.html”
+Archivo “activacion.css”
+Archivo “activacion.js”
+Archivo “activacion.php”
+BASE DE DATOS (phpMyAdmin)
+en esta sección el usuario podrá activar su cuenta pagando los 25 soles peruanos que es el coste de la activación y tendrá que enviar la captura de su depósito para que el personal de JUVISOL lo verifique y una vez hecho eso lo active pasado 24 horas 
+
+sección “actualizar”
+La sección “actualizar” está conformada por estos archivos.
+Archivo “actualizar.html”
+Archivo “actualizar.html”
+Archivo “actualizar.html”
+Archivo “actualizar.html”
+BASE DE DATOS (phpMyAdmin)
+en esta sección el usuario podrá actualizar su cuenta cambiando alguno de sus datos o todos sus datos menos el nickname porque es un dato único para cada cuenta dentro de JUVISOL.
+
+sección “preguntas”
+La sección “preguntas” está conformada por estos archivos.
+Archivo “preguntas.html”  
+Archivo “preguntas.css”  
+Archivo “preguntas.js”  
+en esta sección el usuario podrá acceder a las preguntas frecuentes para los usuarios que desconozcan aspectos del funcionamiento de JUVISOL.
+
+sección “conócenos”
+La sección “conócenos” está conformada por estos archivos.
+Archivo “conocenos.html”
+Archivo “conocenos.css”
+Archivo “conocenos.js”
+en esta sección el usuario podrá conocer un poco acerca de JUVISOL quienes somos y que ofrecemos.
+
+
+CEO
+
+sección “mi perfiladmin” 
+Está conformado por estos archivos:
+Archivo "mi_cuentaadmin.html”
+Archivo "mi_cuentaadmin.css"
+Archivo "mi_cuentaadmin.js"
+Archivo "mi_cuentaadmin.php"
+BASE DE DATOS (phpMyAdmin)
+Esta sección del administrador se encargará de administrar La sección “mi perfil” de todos los usuarios
+
+sección “afiliaciónadmin”
+La sección “afiliación” está conformada por estos archivos.
+Archivo “redadmin.html”
+Archivo “redadmin.css”
+Archivo “redadmin.js”
+Archivo “redadmin.php”
+BASE DE DATOS (phpMyAdmin)
+en esta el administrador podrá administra La sección “afiliación” de todos los usuarios
+
+
+
+
+sección “inversiónadmin”
+La sección “mi red” está conformada por estos archivos.
+Archivo “invertiradmin.html”
+Archivo “invertiradmin.css”
+Archivo “invertiradmin.js”
+Archivo “invertiradmin.php”
+BASE DE DATOS (phpMyAdmin)
+en esta el administrador podrá administra La sección “inversión”
+de todos los usuarios 
+
+
+
+
+
+
+MANUAL DEL USUARIO
+
+
+
+Registro:
+o	El usuario ingresa a la página web de JUVISOL y hace clic en el botón "Registrar".
+o	El usuario completa el formulario de registro con sus datos personales y realiza un pago de 25 soles peruanos.
+o	El usuario recibe un enlace de referido para afiliar a otras personas.
+o	La cuenta del usuario se crea en estado "inactivo".
+Activación de Cuenta:
+o	El usuario ingresa a la sección "Mi Cuenta" de su perfil.
+o	El usuario hace clic en el botón "Activar Cuenta".
+o	El usuario ingresa su nombre, número de cuenta y una captura de pantalla del comprobante de depósito.
+o	El equipo de JUVISOL verifica el depósito y activa la cuenta del usuario en un plazo de 24 horas.
+o	Una vez que la cuenta está activa, el usuario se encuentra en el Nivel 1.
+
+
+SISTEMA DE AFILIACION
+Lógica de la afiliación
+o	El usuario puede comenzar a afiliar a otras personas usando su enlace de referido.
+o	El usuario comparte su enlace de referido en su página web, en sus redes sociales, o en cualquier otro lugar donde pueda llegar a potenciales afiliados.
+o	Todos los usuarios comparten una única red piramidal.
+o	Tú, como creador, tienes las 3 primeras posiciones en la red.
+o	Cuando un usuario se registra usando el enlace de referido de otro usuario, el sistema lo ubica en la red del usuario que lo refirió, buscando el nodo más cercano y equilibrado en la red, pero siempre hacia abajo en la estructura piramidal.
+o	El sistema busca el nodo más cercano y equilibrado en la red del usuario para ubicar al nuevo usuario, tratando de mantener la red lo más homogénea y ordenada posible.
+o	Cada usuario es dueño de su propia red, aunque todos compartimos la red piramidal general. Esto significa que cada usuario recibe recompensas de las personas que están debajo de él en la red, incluso si esas personas fueron afiliadas por otros usuarios.
+Subir de Nivel:
+o	Para subir de nivel, un usuario debe alcanzar un número específico de afiliados en su red, incluyendo a sus afiliados directos e indirectos.
+o	Para subir del Nivel 1 al Nivel 2, un usuario debe afiliar a 6 personas (2 directos y 4 indirectos).
+o	Para subir del Nivel 2 al Nivel 3, los 6 usuarios de su red (2 directos y 4 indirectos) deben subir al Nivel 2.
+o	Para subir del Nivel 3 al Nivel 4, los 6 usuarios de su red (2 directos y 4 indirectos) deben subir al Nivel 3.
+o	Y así sucesivamente: A medida que la red del usuario se expande, todos los usuarios deben ir subiendo de nivel para que el usuario principal también suba de nivel.
+Recompensas:
+o	Las recompensas solo se obtienen cuando el usuario completa un nivel.
+o	Cada nivel tiene una recompensa específica en soles peruanos.
+o	La recompensa se calcula en función del nivel que alcances en el sistema, pero solo hasta el Nivel 9. Si un usuario alcanza el Nivel 10, ya no recibirá recompensas por los niveles 11, 12, etc.
+Recompensas:  
+nivel 2 = 25 soles 
+nivel 3 = 50 soles  
+nivel 4 = 100 soles  
+nivel 5 = 200 soles  
+nivel 6 = 400 soles  
+nivel 7 = 800 soles  
+nivel 8 = 1600 soles  
+nivel 9 = 3200 soles  
+
+Ejemplo del sistema de afiliación:
+Si Pepito tiene 2 afiliados directos y 4 afiliados indirectos, y Juanito se registra usando el enlace de referido de Pepito, Juanito no será automáticamente un afiliado directo de Pepito. El sistema buscará un espacio libre en la red de Pepito, ya sea en la parte inferior de la red de sus afiliados directos o en la parte inferior de la red de sus afiliados indirectos. El sistema ubicará a Juanito en el espacio más cercano y equilibrado, pero siempre hacia abajo en la red, para mantener la red lo más homogénea posible.
+En otras palabras, la red de JUVISOL es una estructura piramidal única que todos compartimos, pero cada usuario es dueño de su propia red y recibe recompensas de las personas que están debajo de él en su red.
+  
+cuando el usuario le dé clic a cualquiera que esté en la red piramidal se le podrá mostrar su red y el link de referido de ese usuario red piramidal red piramidal del usuario donde en la punta estará el usuario , su nickname y su nivel también podrá ver a sus directos , su nickname y su nivel y también vera a sus indirectos igual nickname y nivel además. 
+ cuando le del clic a cualquiera de ellos podrá ver su pirámide de ellos y estando dentro de la pirámide de otro (en este contexto pirámide o red es lo mismo) podrá seguir dándole clic a cualquiera y ver así su red en otras palabras todos podrán ver la red de otros dándoles clic y además su enlace de referido porque en la sección se mostrara el nickname el enlace de referido y su red o pirámide como quieran llamarle pero solo podrán ver esa sección y no podrán ver los datos del usuario porque aunque es un trabajo en equipo debo darles cierta protección y privacidad de sus datos  
+ 
+enlace de referido en cuanto al enlace el programa solo debe aceptar 2 referidos directos y solo 2 y si un tercero se agrega este no ira como directo sino como un indirecto debajo de cualquiera de sus 2 directos aleatoriamente beneficiando solo solo al dueño del enlace sino a uno de sus directos y aumentando el tamaño de su red 
+
+
+
+SISTEMA DE INVERCION
+
+1. Proceso de Inversión:
+
+
+Paso 1: Depósito del usuario:
+o	El usuario realiza un depósito a la cuenta bancaria (BCP) de JUVISOL. El monto del depósito puede ser cualquier cantidad que el usuario desee.
+o	El usuario envía una captura de pantalla del comprobante de depósito en la página web de JUVISOL.
+o	El usuario selecciona el plan de inversión que desea.
+Paso 2: Verificación del depósito:
+o	El personal de JUVISOL verifica la captura de pantalla del depósito con la cuenta bancaria de la página web.
+o	Si la verificación es exitosa, el depósito se coloca en la tabla de "Pendientes".
+o	Este proceso se completa en un plazo de 24 horas desde que el usuario envía la captura de pantalla.
+Paso 3: Activación de la inversión:
+o	El depósito del usuario permanece en la tabla de "Pendientes" hasta el primer domingo después de su depósito.
+o	El domingo, el depósito se transfiere a la tabla del plan de inversión seleccionado por el usuario.
+o	Si el usuario seleccionó el plan semanal, comenzará a recibir sus ganancias semanales a partir del segundo domingo después de su depósito.
+
+2. Lógica del sistema:
+
+
+Flujo de fondos:
+o	De lunes a sábado, el dinero de las inversiones entra a JUVISOL.
+o	Los domingos, el dinero se distribuye como pago a los usuarios.
+o	Las inversiones realizadas los domingos se registran en el sistema el lunes siguiente.
+Tabla de "Pendientes":
+o	Esta tabla almacena los depósitos de los usuarios que aún no han sido activados.
+o	Los depósitos se mantienen en esta tabla hasta el primer domingo después de su recepción.
+Tabla de planes de inversión:
+o	Cada plan de inversión tiene su propia tabla.
+o	Los depósitos se transfieren a la tabla del plan seleccionado el primer domingo después de su recepción.
+
+3. Ejemplo:
+
+
+•	Un usuario realiza un depósito de 100 soles el martes.
+•	El personal de JUVISOL verifica el depósito y lo coloca en la tabla de "Pendientes" el miércoles.
+•	El domingo siguiente, el depósito se transfiere a la tabla del plan de inversión seleccionado por el usuario.
+•	Si el usuario seleccionó el plan semanal, comenzará a recibir sus ganancias semanales a partir del segundo domingo después de su depósito.
+
+4. Consideraciones adicionales:
+
+
+Seguridad:
+o	Implementa medidas de seguridad para proteger la información de los usuarios y los fondos de las inversiones.
+o	Utiliza HTTPS para proteger la comunicación entre el servidor y el cliente.
+o	Asegúrate de que el sistema sea resistente a ataques de seguridad.
+Interfaz de usuario:
+o	Crea una interfaz de usuario intuitiva y fácil de usar para que los usuarios puedan realizar sus inversiones sin problemas.
+o	Muestra información clara sobre los planes de inversión, los plazos de pago y las ganancias esperadas.
+
+
+TIPOS DE PLANES DE INVERCION
+PLAN SEMANAL:
+retiene tu capital permanentemente y obtienes un 1.2% de tu capital en ganancias semanalmente. además, cuenta con 1 nivel de referido del 5%, ósea que si un afiado invierte en este plan tus ganas un 5% de su inversión como comisión 
+PLAN DE 3 MESES:
+retiene tu capital permanentemente y obtienes un 10% de tu capital en ganancias semanalmente. además, cuenta con 1 nivel de referido del 5%, ósea que si un afiado invierte en este plan tus ganas un 2% de su inversión como comisión 
+PLAN DE 6 MESES:
+retiene tu capital por 6 meses y obtienes un 30% de tu capital en ganancias además cuenta con 1 nivel de referido del 10%, ósea que si un afiado invierte en este plan tus ganas un 5% de su inversión como comisión
+PLAN DE 1 AÑO:
+retiene tu capital por 1 año y obtienes un 70% de tu capital en ganancias además cuenta con 1 nivel de referido del 15%, ósea que si un afiado invierte en este plan tus ganas un 5% de su inversión como comisión
+
+TABLA DE INVERCIONES DEL USUARIO
+
+
+
+INVERSIONES A PLAZO FIJO
+TIPO DE PLAN	INICIO	TIEMPO	RETORNO
+(tipo de plan)	(montón
+inicial)	Fecha de inicio de la inversión
+Y
+Fecha del fin de la inversión 	(Capital +
+Ganancia)
+
+ 
+ 
+ 
+ 
+ 
+ 
+BASE DE DATOS (phpMyAdmin)
+ 
+CREATE TABLE usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(255) NOT NULL,
+  apellido VARCHAR(255) NOT NULL,
+  correo VARCHAR(255) NOT NULL,
+  cuenta_soles VARCHAR(255) NOT NULL,
+  telefono VARCHAR(255) NOT NULL,
+  enlace_referido VARCHAR(255) UNIQUE NOT NULL,  -- Agrega UNIQUE
+  nivel ENUM('0', '1') NOT NULL DEFAULT '0',  -- Cambia a ENUM
+  recompensa INT NOT NULL DEFAULT 0,
+  fecha_registro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  estado ENUM('activo', 'inactivo') NOT NULL DEFAULT 'inactivo',
+  nickname VARCHAR(255) NOT NULL,
+  contraseña VARCHAR(255) NOT NULL,  -- Considera usar un hash de contraseña
+  pregunta_secreta VARCHAR(255) NOT NULL 
+);
+
+
+CREATE TABLE afiliaciones (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  usuario_id INT NOT NULL,
+  afiliado_id INT NOT NULL,
+  fecha_afiliacion DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  nivel INT NOT NULL, 
+  FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
+  FOREIGN KEY (afiliado_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE niveles (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(255) NOT NULL,
+  recompensa INT NOT NULL
+);
+
+CREATE TABLE deposit_captures_activacion (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNIQUE NOT NULL,  -- Agrega UNIQUE
+  file_name VARCHAR(255) NOT NULL,
+  file_path VARCHAR(255) NOT NULL,
+  upload_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE deposit_captures_inversion (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  inversion_id INT NOT NULL,
+  file_name VARCHAR(255) NOT NULL,
+  file_path VARCHAR(255) NOT NULL,
+  upload_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (inversion_id) REFERENCES inversiones(id)
+);
+
+CREATE TABLE bitacora (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  usuario_id INT NOT NULL,
+  accion VARCHAR(255) NOT NULL,
+  fecha_hora DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE inversiones (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  usuario_id INT NOT NULL,
+  plan VARCHAR(255) NOT NULL,
+  monto DECIMAL(10,2) NOT NULL,
+  fecha_inicio DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  fecha_fin DATETIME,
+  estado ENUM('pendiente', 'confirmado', 'activo') NOT NULL DEFAULT 'pendiente',
+  FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+ CODIGOS DE LOS ARCHIVOS DE LA PAGINA WEB
+ 
+ 
+Archivo “registro.html” 
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <title>JUVISOL - Registro</title>
+</head>
+<body>
+    <header>
+        <h1>JUVISOL - Registro</h1>
+        <h2>Regístrate y comienza a ganar ya!</h2>
+    </header>
+
+    <main>
+        <form method="post" id="registroForm">
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tus nombres" pattern="[a-zA-Z\s]+" required>
+            <span id="errorNombres"></span><br>
+
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingresa tus apellidos" pattern="[a-zA-Z\s]+" required>
+            <span id="errorApellidos"></span><br>
+
+            <label for="cuentaSoles">Número de cuenta en soles:</label>
+            <input type="text" id="cuentaSoles" name="cuentaSoles" placeholder="Ingresa tu número de cuenta en soles" required>
+            <span id="errorCuentaSoles"></span><br>
+
+            <label for="correo">Correo electrónico (Gmail):</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico (Gmail)" required>
+            <span id="errorCorreo"></span><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+            <span id="errorTelefono"></span><br>
+
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" name="nickname" placeholder="Ingresa tu Nickname" pattern="[a-zA-Z\s]+" required>
+            <span id="errorNickname"></span><br>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required minlength="8">
+            <span id="errorContraseña"></span><br>
+
+            <label for="repiteContraseña">Repite la contraseña:</label>
+            <input type="password" id="repiteContraseña" name="repiteContraseña" placeholder="Repite tu contraseña" required>
+            <span id="errorRepiteContraseña"></span><br>
+
+            <label for="preguntaSecreta">Pregunta secreta:</label>
+            <input type="text" id="preguntaSecreta" name="preguntaSecreta" placeholder="Ingresa tu pregunta secreta" pattern="[a-zA-Z\s]+" required>
+            <span id="errorPreguntaSecreta"></span><br>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </main>
+
+    <script src="registro.js"></script>
+</body>
+</html>
+
+ 
+Archivo “registro.css” 
+/* Estilos generales para el cuerpo */
+body {
+    background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */ 
+    background-size: cover; /* Cubre todo el fondo */ 
+    background-position: center; /* Centra la imagen */ 
+    font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+    background-color: #121212; /* Negro oscuro */
+    color: #0f0f0f; /* Blanco */ 
+    margin: 0; 
+    padding: 0;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    text-align: center; /* Centra el texto */
+    padding: 50px 0; /* Agrega espacio arriba y abajo */
+  }
+  
+  /* Estilos para el título principal */
+  h1 {
+    font-size: 5em; /* Ajusta el tamaño del título */ 
+    font-weight: bold; 
+    margin-bottom: 20px;
+    color: #0d0d0e; /* Blanco */
+  }
+  
+  /* Estilos para el subtítulo */
+  h2 {
+    font-size: 2em; /* Ajusta el tamaño del título */
+    margin-bottom: 40px;
+    color: #0d0d0e; /* Blanco */
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    text-align: center; /* Centra el texto */ 
+    padding: 30px; /* Agrega espacio alrededor */
+  }
+  
+  /* Estilos para el formulario */
+  form {
+    display: flex; /* Flexbox para un diseño flexible */ 
+    flex-direction: column; /* Orienta los elementos verticalmente */ 
+    align-items: center; /* Alinea los elementos al centro */ 
+    gap: 20px; /* Espacio entre los elementos */
+  }
+  
+  /* Estilos para las etiquetas */
+  label {
+    font-size: 1.5em; /* Ajusta el tamaño de fuente */ 
+    font-weight: bold; /* Agrega negrita */
+  }
+  
+  /* Estilos para los campos de entrada */
+  input {
+    width: 50%; /* Ajusta el ancho de las respuestas */ 
+    padding: 15px; /* Aumenta el espacio de las respuestas */ 
+    border: 1px solid #fff; 
+    border-radius: 5px; 
+    font-size: 1.2em;
+    text-align: center; /* Centra el mensaje */
+  }
+  
+  /* Estilos para el botón */
+  button {
+    background-color: #007bff; /* Azul claro Litecoin */ 
+    color: #fff;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 25px; /* Bordes curvos */ 
+    font-size: 1.5em; /* Ajusta el tamaño del título */ 
+    cursor: pointer;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    display: flex;
+    justify-content: space-around; /* Distribuye los botones */
+    padding: 30px;
+  }
+  
+  /* Estilos para el botón "Atrás" */
+  .atras {
+    margin-right: 20px; /* Espacio entre botones */
+  }
+  
+  /* Estilos para el botón "Siguiente" */
+  .siguiente {
+    margin-left: 20px; /* Espacio entre botones */
+  }
+  
+  /* Estilos para los mensajes de error */
+  span {
+    color: red; /* Color rojo para los mensajes de error */ 
+    font-size: 0.8em; /* Ajusta el tamaño de fuente */ 
+    margin-bottom: 10px;
+    display: none; /* Oculta el mensaje de error por defecto */
+  }
+
+ 
+ 
+Archivo “registro.js” 
+// Selecciona el formulario
+const registroForm = document.getElementById('registroForm');
+
+// Agrega un evento al formulario cuando se envía
+registroForm.addEventListener('submit', (event) => {
+  // Evita que el formulario se envíe normalmente
+  event.preventDefault();
+
+  // Obtener datos del formulario
+  const nombre = document.getElementById('nombre').value;
+  const apellido = document.getElementById('apellido').value;
+  const correo = document.getElementById('correo').value;
+  const cuentaSoles = document.getElementById('cuentaSoles').value;
+  const telefono = document.getElementById('telefono').value;
+  const nickname = document.getElementById('nickname').value;
+  const contraseña = document.getElementById('contraseña').value;
+  const repiteContraseña = document.getElementById('repiteContraseña').value;
+  const preguntaSecreta = document.getElementById('preguntaSecreta').value;
+
+  // Validar datos del formulario
+  let errores = [];
+
+  // Validar nombre
+  if (!/[a-zA-Z\s]+$/.test(nombre)) {
+    errores.push("El nombre solo debe contener letras y espacios.");
+    document.getElementById('errorNombres').textContent = "El nombre solo debe contener letras y espacios.";
+    document.getElementById('errorNombres').style.display = 'block';
+  } else {
+    document.getElementById('errorNombres').textContent = "";
+    document.getElementById('errorNombres').style.display = 'none';
+  }
+
+  // Validar apellido
+  if (!/[a-zA-Z\s]+$/.test(apellido)) {
+    errores.push("El apellido solo debe contener letras y espacios.");
+    document.getElementById('errorApellidos').textContent = "El apellido solo debe contener letras y espacios.";
+    document.getElementById('errorApellidos').style.display = 'block';
+  } else {
+    document.getElementById('errorApellidos').textContent = "";
+    document.getElementById('errorApellidos').style.display = 'none';
+  }
+
+  // Validar correo electrónico
+  const correoRegex = /^[^\s@]+@[^\s@]+\.gmail\.com$/; // Permite solo correos electrónicos de Gmail
+  if (!correoRegex.test(correo)) {
+    errores.push("Ingresa un correo electrónico válido de Gmail.");
+    document.getElementById('errorCorreo').textContent = "Ingresa un correo electrónico válido de Gmail.";
+    document.getElementById('errorCorreo').style.display = 'block';
+  } else {
+    document.getElementById('errorCorreo').textContent = "";
+    document.getElementById('errorCorreo').style.display = 'none';
+  }
+
+  // Validar teléfono
+  if (!/^[0-9]+$/.test(telefono)) {
+    errores.push("El teléfono solo debe contener números.");
+    document.getElementById('errorTelefono').textContent = "El teléfono solo debe contener números.";
+    document.getElementById('errorTelefono').style.display = 'block';
+  } else {
+    document.getElementById('errorTelefono').textContent = "";
+    document.getElementById('errorTelefono').style.display = 'none';
+  }
+
+  // Validar nickname
+  if (!/[a-zA-Z\s]+$/.test(nickname)) {
+    errores.push("El nickname solo debe contener letras y espacios.");
+    document.getElementById('errorNickname').textContent = "El nickname solo debe contener letras y espacios.";
+    document.getElementById('errorNickname').style.display = 'block';
+  } else {
+    document.getElementById('errorNickname').textContent = "";
+    document.getElementById('errorNickname').style.display = 'none';
+  }
+
+  // Validar contraseña
+  if (!/[a-zA-Z0-9!@#$%^&*()_+=-\\[\]{};':"\\|,.\<\>\\/?]/.test(contraseña)) {
+    errores.push("La contraseña debe contener al menos un carácter especial.");
+    document.getElementById('errorContraseña').textContent = "La contraseña debe contener al menos un carácter especial.";
+    document.getElementById('errorContraseña').style.display = 'block';
+  } else if (contraseña.length < 8) {
+    errores.push("La contraseña debe tener al menos 8 caracteres.");
+    document.getElementById('errorContraseña').textContent = "La contraseña debe tener al menos 8 caracteres.";
+    document.getElementById('errorContraseña').style.display = 'block';
+  } else {
+    document.getElementById('errorContraseña').textContent = "";
+    document.getElementById('errorContraseña').style.display = 'none';
+  }
+
+  // Validar repetición de contraseña
+  if (contraseña !== repiteContraseña) {
+    errores.push("Las contraseñas no coinciden.");
+    document.getElementById('errorRepiteContraseña').textContent = "Las contraseñas no coinciden.";
+    document.getElementById('errorRepiteContraseña').style.display = 'block';
+  } else {
+    document.getElementById('errorRepiteContraseña').textContent = "";
+    document.getElementById('errorRepiteContraseña').style.display = 'none';
+  }
+
+  // Validar pregunta secreta
+  if (!/[a-zA-Z\s]+$/.test(preguntaSecreta)) {
+    errores.push("La pregunta secreta solo debe contener letras y espacios.");
+    document.getElementById('errorPreguntaSecreta').textContent = "La pregunta secreta solo debe contener letras y espacios.";
+    document.getElementById('errorPreguntaSecreta').style.display = 'block';
+  } else {
+    document.getElementById('errorPreguntaSecreta').textContent = "";
+    document.getElementById('errorPreguntaSecreta').style.display = 'none';
+  }
+
+  // Si no hay errores, enviar los datos al servidor
+  if (errores.length === 0) {
+    // Realizar la solicitud AJAX para registrar el usuario
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "registro.php", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-formurlencoded");
+    xhr.onload = function() {
+      if (this.status === 200) {
+        // Mostrar mensaje de éxito
+        alert("¡Usuario registrado correctamente!");
+        // Redirigir a la página de "mi cuenta"
+        window.location.href = "mi_cuenta.html";
+      } else {
+        // Mostrar mensaje de error
+        alert("Error al registrar el usuario.");
+      }
+    };
+    xhr.send("nombre=" + nombre + "&apellido=" + apellido + "&correo=" + correo + "&cuentaSoles=" + cuentaSoles + "&telefono=" + telefono + "&nickname=" + nickname + "&contraseña=" + contraseña + "&preguntaSecreta=" + preguntaSecreta);
+  } else {
+    // Mostrar mensajes de error
+    // ... (código para mostrar los mensajes de error) ...
+  }
+});
+ 
+Archivo “registro.php” 
+ 
+<?php
+// Datos de conexión a la base de datos
+$servername = "127.0.0.1:3306";
+$username = "u340969567_artefactosonli";
+$password = "Shionersz123!";
+$dbname = "u340969567_artefactosonli";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexión
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// Procesar formulario de registro
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  // Obtener datos del formulario
+  $nombre = $_POST["nombre"];
+  $apellido = $_POST["apellido"];
+  $correo = $_POST["correo"];
+  $cuentaSoles = $_POST["cuentaSoles"];
+  $telefono = $_POST["telefono"];
+  $nickname = $_POST["nickname"];
+  $contraseña = $_POST["contraseña"];
+  $preguntaSecreta = $_POST["preguntaSecreta"];
+
+  // Validar datos del formulario
+  $errores = [];
+
+  // Validar nombre
+  if (!preg_match("/^[a-zA-Z\s]+$/", $nombre)) {
+    $errores[] = "El nombre solo debe contener letras y espacios.";
+  }
+
+  // Validar apellido
+  if (!preg_match("/^[a-zA-Z\s]+$/", $apellido)) {
+    $errores[] = "El apellido solo debe contener letras y espacios.";
+  }
+
+  // Validar correo electrónico
+  if (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
+    $errores[] = "Ingresa un correo electrónico válido.";
+  }
+
+  // Validar teléfono
+  if (!preg_match("/^[0-9]+$/", $telefono)) {
+    $errores[] = "El teléfono solo debe contener números.";
+  }
+
+  // Validar nickname
+  if (!preg_match("/^[a-zA-Z\s]+$/", $nickname)) {
+    $errores[] = "El nickname solo debe contener letras y espacios.";
+  } else {
+    // Verificar si ya existe un nickname
+    $sqlCheckNickname = "SELECT * FROM usuarios WHERE nickname = ?";
+    $stmt = $conn->prepare($sqlCheckNickname);
+    $stmt->bind_param("s", $nickname);
+    $stmt->execute();
+    $resultCheckNickname = $stmt->get_result();
+    $stmt->close();
+
+    if ($resultCheckNickname->num_rows > 0) {
+      $errores[] = "Este nickname ya está en uso. Por favor, elige otro.";
+    }
+  }
+
+  // Validar contraseña
+  if (!preg_match("/[a-zA-Z0-9!@#$%^&*()_+=-\[\]{};':\"\\|,.\<>\/?]/", $contraseña)) {
+    $errores[] = "La contraseña debe contener al menos un carácter especial.";
+  } else if (strlen($contraseña) < 8) {
+    $errores[] = "La contraseña debe tener al menos 8 caracteres.";
+  }
+
+  // Validar repetición de contraseña
+  if ($_POST["repiteContraseña"] !== $contraseña) {
+    $errores[] = "Las contraseñas no coinciden.";
+  }
+
+  // Validar pregunta secreta
+  if (!preg_match("/^[a-zA-Z\s]+$/", $preguntaSecreta)) {
+    $errores[] = "La pregunta secreta solo debe contener letras y espacios.";
+  }
+
+  // Si no hay errores, insertar datos en la base de datos
+  if (empty($errores)) {
+    // Encriptar la contraseña antes de guardarla en la base de datos
+    $contraseñaEncriptada = password_hash($contraseña, PASSWORD_DEFAULT);
+
+    // Encriptar la pregunta secreta
+    $preguntaSecretaEncriptada = hash('sha256', $preguntaSecreta); 
+
+    // Insertar el usuario en la base de datos
+    $sql = "INSERT INTO usuarios (nombre, apellido, correo, cuenta_soles, telefono, nickname, contraseña, pregunta_secreta, estado, nivel) 
+             VALUES ('$nombre', '$apellido', '$correo', '$cuentaSoles', '$telefono', '$nickname', '$contraseñaEncriptada', '$preguntaSecretaEncriptada', 'inactivo', 0)";
+
+    if ($conn->query($sql) === TRUE) {
+      // Mostrar mensaje de éxito
+      echo "<script>
+              alert('¡Usuario registrado correctamente!');
+              window.location.href = 'mi_cuenta.html';
+            </script>";
+    } else {
+      // Mostrar mensaje de error
+      echo "<script>
+              alert('Error al registrar el usuario.');
+            </script>";
+    }
+  } else {
+    // Mostrar mensajes de error
+    echo "<script>
+            alert('" . implode("\n", $errores) . "');
+          </script>";
+  }
+}
+
+$conn->close();
+?>
+Archivo “login.html” 
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <title>JUVISOL - LOGIN</title>
+</head>
+<body>
+  <main>
+    <div class="login-container">
+      <h2>Iniciar sesión</h2>
+      <form method="post">
+        <label for="usuario">Nombre de usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+        <br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required>
+        <br>
+        <button type="submit">Iniciar sesión</button>
+      </form>
+      <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+      <p><a href="recupera.html">¿Olvidaste tu contraseña?</a></p>
+      <!-- Agrega este enlace para redirigir a la sección de recuperación -->
+      <div id="mensajeError" style="color: red; display: none;"></div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="login.js"></script>
+</body>
+</html>
+
+Archivo “login.css” 
+/* Estilos generales para el cuerpo */
+body {
+  background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-size: cover; /* Cubre todo el fondo */
+  background-position: center; /* Centra la imagen */
+  font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+  background-color: #121212; /* Negro oscuro */
+  color: #0f0f0f; /* Blanco */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+}
+
+header {
+  text-align: center; /* Centra el texto */
+  padding: 50px 0; /* Agrega espacio arriba y abajo */
+}
+
+h1 {
+  font-size: 5em; /* Ajusta el tamaño del título */
+  font-weight: bold; /* Agrega negrita */
+  margin-bottom: 20px;
+  color: #0d0d0e; /* Blanco */
+}
+
+h2 {
+  font-size: 2em; /* Ajusta el tamaño del título */
+  margin-bottom: 40px;
+  color: #0d0d0e; /* Blanco */
+}
+
+main {
+  text-align: center; /* Centra el texto */
+  padding: 30px; /* Agrega espacio alrededor */
+}
+
+footer {
+  display: flex; /* Flexbox para un diseño flexible */
+  justify-content: space-around; /* Distribuye los botones */
+  padding: 30px; /* Agrega espacio alrededor */
+}
+
+/* Estilos para el contenedor de inicio de sesión */
+.login-container {
+  background-color: #fff; /* Fondo blanco */
+  padding: 30px; /* Espacio alrededor del contenedor */
+  border-radius: 10px; /* Redondea las esquinas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+  width: 350px; /* Ancho del contenedor */
+  margin: 100px auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.login-container form {
+  display: flex; /* Flexbox para un diseño flexible */
+  flex-direction: column; /* Orienta los elementos verticalmente */
+  gap: 15px; /* Espacio entre los elementos */
+}
+
+/* Estilos para las etiquetas del formulario */
+.login-container label {
+  font-size: 1.2em; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Agrega negrita */
+}
+
+/* Estilos para los campos de entrada del formulario */
+.login-container input {
+  padding: 10px; /* Espacio interno */
+  border: 1px solid #ccc; /* Agrega un borde gris */
+  border-radius: 5px; /* Redondea las esquinas */
+  font-size: 1em; /* Ajusta el tamaño de la fuente */
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-container button {
+  background-color: #007bff; /* Azul claro Litecoin */
+  color: #fff; /* Texto blanco */
+  padding: 15px 30px; /* Agrega espacio interno */
+  border: none; /* Elimina el borde */
+  border-radius: 5px; /* Redondea las esquinas */
+  font-size: 1.1em; /* Ajusta el tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Estilos para el botón al pasar el mouse */
+.login-container button:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Estilos para el enlace de registro */
+.login-container p a {
+  color: #007bff; /* Azul claro Litecoin */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold; /* Agrega negrita */
+}
+
+.login-container p a:hover {
+  text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+}
+
+/* Estilos para el mensaje de error */
+#mensajeError {
+  color: red; /* Color rojo para el mensaje de error */
+  font-size: 1em; /* Ajusta el tamaño de la fuente */
+  margin-bottom: 10px;
+  display: none; /* Oculta el mensaje de error por defecto */
+  font-weight: bold; /* Agrega negrita al mensaje de error */
+}
+
+ 
+Archivo “login.js” 
+// Selecciona el formulario de inicio de sesión
+const formularioLogeo = document.querySelector('form');
+
+// Selecciona el elemento div para mostrar el mensaje de error
+const mensajeError = document.getElementById('mensajeError');
+
+// Agrega un evento al formulario cuando se envía
+formularioLogeo.addEventListener('submit', (event) => {
+  event.preventDefault(); // Evita que el formulario se envíe normalmente
+
+  // Obtener datos del formulario
+  const nickname = document.getElementById('nickname').value;
+  const contraseña = document.getElementById('contraseña').value;
+
+  // Validar datos del formulario
+  // ... (código para validar los datos) ...
+
+  // Realizar la solicitud AJAX para verificar las credenciales
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "login.php", true);
+  xhr.setRequestHeader("Content-type", "application/x-www-formurlencoded");
+  xhr.onload = function() {
+    if (this.status === 200) {
+      // Mostrar mensaje de éxito
+      window.location.href = "mi_cuenta.html";
+    } else {
+      // Mostrar mensaje de error
+      mensajeError.style.display = 'inline';
+      mensajeError.textContent = "Usuario o contraseña incorrectos.";
+    }
+  };
+  xhr.send("nickname=" + nickname + "&contraseña=" + contraseña);
+});
+
+// Agrega este evento al enlace para redirigir a la sección de recuperación
+const linkRecupera = document.querySelector('a[href="recupera.html"]');
+linkRecupera.addEventListener('click', (event) => {
+  event.preventDefault(); // Evita que el enlace se siga normalmente
+  window.location.href = "recupera.html"; // Redirige a la sección de recuperación
+});
+
+Archivo “login.php” 
+<?php
+// Datos de conexión a la base de datos
+$servername = "127.0.0.1:3306";
+$username = "u340969567_artefactosonli";
+$password = "Shionersz123!";
+$dbname = "u340969567_artefactosonli";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexión
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// Procesar formulario de login
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  // Obtener datos del formulario
+  $nickname = $_POST["nickname"];
+  $contraseña = $_POST["contraseña"];
+
+  // Validar datos del formulario
+  if (empty($nickname) || empty($contraseña)) {
+    echo "<script>document.getElementById('mensajeError').style.display = 'block'; document.getElementById('mensajeError').textContent = 'Por favor, ingresa tu nickname y contraseña.';</script>";
+    exit;
+  }
+
+  // Verificar si el nickname tiene un formato válido
+  if (!preg_match("/^[a-zA-Z\s]+$/", $nickname)) {
+    echo "<script>document.getElementById('mensajeError').style.display = 'block'; document.getElementById('mensajeError').textContent = 'El nickname debe contener solo letras y espacios.';</script>";
+    exit;
+  }
+
+  // Buscar al usuario en la base de datos (con sentencias preparadas)
+  $sql = "SELECT * FROM usuarios WHERE nickname = ?";
+  $stmt = $conn->prepare($sql);
+  $stmt->bind_param("s", $nickname);
+  $stmt->execute();
+  $result = $stmt->get_result();
+  $stmt->close();
+
+  // Verificar si el usuario existe
+  if ($result->num_rows > 0) {
+    // Obtener los datos del usuario
+    $row = $result->fetch_assoc();
+
+    // Comparar la contraseña ingresada con la contraseña almacenada
+    if (password_verify($contraseña, $row["contraseña"])) {
+      // Autenticación exitosa
+      // Iniciar sesión
+      session_start();
+      $_SESSION["usuario_id"] = $row["id"];
+
+      // Redirigir a la sección "mi cuenta"
+      header("Location: mi_cuenta.html");
+      exit;
+    } else {
+      // Contraseña incorrecta
+      echo "<script>document.getElementById('mensajeError').style.display = 'block'; document.getElementById('mensajeError').textContent = 'Contraseña incorrecta.';</script>";
+    }
+  } else {
+    // Usuario no encontrado
+    echo "<script>document.getElementById('mensajeError').style.display = 'block'; document.getElementById('mensajeError').textContent = 'Usuario no encontrado.';</script>";
+  }
+}
+
+$conn->close();
+?> 
+ 
+ 
+ 
+ 
+ 
+Archivo “mi_cuenta.html” 
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUVISOL - CUENTA</title>
+    <link rel="stylesheet" href="mi_cuenta.css">
+    <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+            <li><a href="mi_cuenta.html">Mi perfil</a></li>
+            <li id="afiliacionLink" class="nav-link"><a href="red.html">afiliación</a></li>
+            <li id="inversionLink" class="nav-link"><a href="invertir.html">inversión</a></li>
+            <li><a href="activacion.html">activacion</a></li>
+            <li><a href="actualizar.html">actualizar</a></li>
+            <li><a href="preguntas.html">Preguntas</a></li>
+            <li><a href="conocenos.html">Conócenos</a></li>
+            <li><a href="logout.php">Cerrar sesión</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <h2 style="text-align: center; font-size: 5em; font-weight: bold; margin-bottom: 50px;">CUENTA</h2>
+        <table class="reporte-table" style="margin-top: 50px;">
+            <thead>
+                <tr>
+                    <th>DATOS</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NOMBRE (codigo)</td>
+                    <td><?php echo $nombre . " " . $apellido; ?></td>
+                </tr>
+                <tr>
+                    <td>ESTADO</td>
+                    <td><?php echo $estado; ?></td>
+                    <td><span id="estadoUsuario" style="display:none;"><?php echo $estado; ?></span></td> 
+                </tr>
+                <tr>
+                    <td>CUENTA CORRIENTE EN SOLES (BCP)</td>
+                    <td><?php echo $cuentaSoles; ?></td>
+                </tr>
+                <tr>
+                    <td>CORREO ELECTRONICO (GMAIL)</td>
+                    <td><?php echo $correo; ?></td>
+                </tr>
+                <tr>
+                    <td>TELEFONO</td>
+                    <td><?php echo $telefono; ?></td>
+                </tr>
+                <tr>
+                    <td>NICKNAME</td>
+                    <td><?php echo $nickname; ?></td>
+                </tr>
+                <tr>
+                    <td>NIVEL</td>
+                    <td><?php echo $nivel; ?></td>
+                </tr>
+                <tr>
+                    <td>RECOMPENSA</td>
+                    <td><?php echo $recompensa; ?></td>
+                </tr>
+                <tr>
+                    <td>CONTRASEÑA</td>
+                    <td><span id="contraseñaOculta">********</span></td>
+                    <td><span id="contraseñaReal" style="display:none;"><?php echo $contraseña; ?></span></td> 
+                </tr>
+                <tr>
+                    <td>PREGUNTA SECRETA</td>
+                    <td><span id="preguntaSecretaOculta">********</span></td>
+                    <td><span id="preguntaSecretaReal" style="display:none;"><?php echo $preguntaSecreta; ?></span></td> 
+                </tr>
+                <tr>
+                    <td>ENLACE DE REFERIDO</td>
+                    <td><span id="enlaceReferido"><?php echo $enlaceReferido; ?></span></td> 
+                </tr>
+            </tbody>
+        </table>
+        <?php if ($estado == 'inactivo') { ?>
+        <form method="post" enctype="multipart/form-data">
+            <input type="hidden" name="nombreUsuario" value="<?php echo $nombre; ?>">
+            <input type="hidden" name="numeroCuenta" value="<?php echo $cuentaSoles; ?>">
+            <label for="deposito">Captura de depósito:</label>
+            <input type="file" id="deposito" name="deposito" multiple>
+            <button type="submit">Enviar captura</button>
+        </form>
+        <?php } ?>
+    </main>
+    <footer></footer>
+    <script src="mi_cuenta.js"></script>
+</body>
+</html>
+
+ 
+ 
+
+
+
+ 
+ 
+Archivo “mi_cuenta.css” 
+
+/* Estilos generales para el cuerpo */
+body {
+    background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+    background-color: #121212; /* Negro oscuro */
+    color: #0f0f0f; /* Blanco */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    text-align: center; /* Centra el texto */
+    padding: 50px 0; /* Agrega espacio arriba y abajo */
+  }
+  
+  /* Estilos para el título principal */
+  h1 {
+    font-size: 5em; /* Ajusta el tamaño del título */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 20px;
+    color: #0d0d0e; /* Blanco */
+  }
+  
+  /* Estilos para el subtítulo */
+  h2 {
+    font-size: 2em; /* Ajusta el tamaño del título */
+    margin-bottom: 40px;
+    color: #0d0d0e; /* Blanco */
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    text-align: center; /* Centra el texto */
+    padding: 30px; /* Agrega espacio alrededor */
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    display: flex; /* Flexbox para un diseño flexible */
+    justify-content: space-around; /* Distribuye los botones */
+    padding: 30px; /* Agrega espacio alrededor */
+  }
+  
+  /* Estilos para el contenedor de inicio de sesión */
+  .login-container {
+    background-color: #fff; /* Fondo blanco */
+    padding: 30px; /* Espacio alrededor del contenedor */
+    border-radius: 10px; /* Redondea las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    width: 350px; /* Ancho del contenedor */
+    margin: 100px auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  /* Estilos para el formulario de inicio de sesión */
+  .login-container form {
+    display: flex; /* Flexbox para un diseño flexible */
+    flex-direction: column; /* Orienta los elementos verticalmente */
+    gap: 15px; /* Espacio entre los elementos */
+  }
+  
+  /* Estilos para las etiquetas del formulario */
+  .login-container label {
+    font-size: 1.2em; /* Ajusta el tamaño de la fuente */
+    font-weight: bold; /* Agrega negrita */
+    color: #141414; /* Color del texto negro */
+  }
+  
+  /* Estilos para los campos de entrada del formulario */
+  .login-container input {
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ccc; /* Agrega un borde gris */
+    border-radius: 5px; /* Redondea las esquinas */
+    font-size: 1em; /* Ajusta el tamaño de la fuente */
+    text-align: center; /* Centra el texto dentro del campo */
+  }
+  
+  /* Estilos para el botón de inicio de sesión */
+  .login-container button {
+    background-color: #007bff; /* Azul claro Litecoin */
+    color: #fff; /* Texto blanco */
+    padding: 15px 30px; /* Agrega espacio interno */
+    border: none; /* Elimina el borde */
+    border-radius: 25px; /* Redondea las esquinas */
+    font-size: 1.1em; /* Ajusta el tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    font-weight: bold; /* Negrita para el texto del botón */
+  }
+  
+  /* Estilos para el botón al pasar el mouse */
+  .login-container button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+  }
+  
+  /* Estilos para el enlace de registro */
+  .login-container p a {
+    color: #007bff; /* Azul claro Litecoin */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Agrega negrita */
+  }
+  
+  .login-container p a:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+  }
+  
+  /* Estilos para el mensaje de error */
+  #mensajeError {
+    color: red; /* Color rojo para el mensaje de error */
+    font-size: 1em; /* Ajusta el tamaño de la fuente */
+    margin-bottom: 10px;
+    display: none; /* Oculta el mensaje de error por defecto */
+    font-weight: bold; /* Agrega negrita al mensaje de error */
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
+      background-color: #007bff; /* Azul claro Litecoin */
+      padding: 15px 0; /* Espacio arriba y abajo */
+      text-align: center; /* Centra el contenido de la barra */
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      position: fixed; /* Fijar la barra de menú */
+      top: 0; /* Posicionar en la parte superior */
+      left: 0; /* Posicionar a la izquierda */
+      width: 100%; /* Ancho completo */
+      z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+  }
+  
+  nav ul {
+      list-style: none; /* Elimina los puntos de la lista */
+      margin: 0; /* Elimina el margen */
+      padding: 0; /* Elimina el relleno */
+  }
+  
+  nav li {
+      display: inline-block; /* Ordena los elementos en línea */
+      margin: 0 15px; /* Espacio entre elementos */
+  }
+  
+  nav a {
+      color: #fff; /* Color blanco para el texto */
+      text-decoration: none; /* Elimina el subrayado */
+      font-size: 1.2em; /* Tamaño de la fuente */
+      padding: 10px 20px; /* Espacio de relleno */
+      border-radius: 25px; /* Bordes redondeados */
+      transition: background-color 0.3s; /* Transición suave para el cambio de color */
+      font-weight: bold; /* Negrita para el texto del enlace */
+      font-style: italic; /* Cursiva para el texto del enlace */
+  }
+  
+  nav a:hover {
+      background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+  }
+
+
+ 
+ 
+ 
+Archivo “mi_cuenta.js” 
+
+// Mostrar la contraseña al hacer clic
+const contraseñaOculta = document.getElementById('contraseñaOculta');
+const contraseñaReal = document.getElementById('contraseñaReal').textContent; // Obtener la contraseña real del PHP
+
+contraseñaOculta.onclick = function() {
+  // Cambia el texto del elemento a la contraseña real
+  contraseñaOculta.textContent = contraseñaReal;
+};
+
+// Mostrar la pregunta secreta al hacer clic
+const preguntaSecretaOculta = document.getElementById('preguntaSecretaOculta');
+const preguntaSecretaReal = document.getElementById('preguntaSecretaReal').textContent; // Obtener la pregunta secreta real del PHP
+
+preguntaSecretaOculta.onclick = function() {
+  // Cambia el texto del elemento a la pregunta secreta real
+  preguntaSecretaOculta.textContent = preguntaSecretaReal;
+};
+
+// Ocultar/Mostrar enlaces de afiliación e inversión
+const afiliacionLink = document.getElementById('afiliacionLink');
+const inversionLink = document.getElementById('inversionLink');
+
+const estadoUsuario = document.getElementById('estadoUsuario').textContent; // Obtener el estado del usuario desde el atributo data-estado
+
+if (estadoUsuario === 'inactivo') {
+  afiliacionLink.style.display = 'none';
+  inversionLink.style.display = 'none';
+} else {
+  afiliacionLink.style.display = 'block';
+  inversionLink.style.display = 'block';
+}
+
+
+
+Archivo “mi_cuenta.php” 
+ 
+<?php 
+// Datos de conexión a la base de datos 
+$servername = "127.0.0.1:3306"; 
+$username = "u340969567_artefactosonli"; 
+$password = "Shionersz123!";  
+$dbname = "u340969567_artefactosonli"; 
+
+// Crear conexión 
+$conn = new mysqli($servername, $username, $password, $dbname); 
+
+// Verificar conexión 
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error); 
+} 
+
+// Obtener datos del usuario de la base de datos 
+$usuarioId = $_SESSION['usuario_id']; 
+
+// Consulta SQL para obtener los datos del usuario (con sentencias preparadas)
+$sql = "SELECT nombre, apellido, correo, cuenta_soles, telefono, nickname, nivel, recompensa, estado, contraseña, pregunta_secreta, enlace_referido FROM usuarios WHERE id = ?";
+
+// Preparar la consulta
+$stmt = $conn->prepare($sql);
+
+// Unir el parámetro a la consulta
+$stmt->bind_param("i", $usuarioId);
+
+// Ejecutar la consulta preparada
+$stmt->execute();
+
+// Obtener los resultados
+$result = $stmt->get_result();
+
+// Verificar si se encontraron datos
+if ($result->num_rows > 0) {
+    // Obtener los datos del usuario
+    $row = $result->fetch_assoc();
+
+    // Asignar los datos a las variables
+    $nombre = $row['nombre'];
+    $apellido = $row['apellido'];
+    $correo = $row['correo'];
+    $cuentaSoles = $row['cuenta_soles'];
+    $telefono = $row['telefono'];
+    $nickname = $row['nickname'];
+    $nivel = $row['nivel'];
+    $recompensa = $row['recompensa'];
+    $estado = $row['estado'];
+    $contraseña = $row['contraseña'];
+    $preguntaSecreta = $row['pregunta_secreta'];
+    $enlaceReferido = $row['enlace_referido']; // Obtener el enlace de referido
+
+    // Desconexión de la base de datos
+    $conn->close();
+
+    // Mostrar la información de la cuenta
+    ?>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JUVISOL - CUENTA</title>
+        <link rel="stylesheet" href="mi_cuenta.css">
+    </head>
+    <body>
+        <nav id="nav">
+            <ul>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li><a href="mi_cuenta.html">Cuenta</a></li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+                <li><a href="red.html">Red de Afiliados</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2 style="text-align: center; font-size: 5em; font-weight: bold; margin-bottom: 50px;">CUENTA</h2>
+            <table class="reporte-table" style="margin-top: 50px;">
+                <thead>
+                    <tr>
+                        <th>DATOS</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NOMBRE (codigo)</td>
+                        <td><?php echo $nombre . " " . $apellido; ?></td>
+                    </tr>
+                    <tr>
+                        <td>ESTADO</td>
+                        <td><?php echo $estado; ?></td>
+                        <td><span id="estadoUsuario" style="display:none;"><?php echo $estado; ?></span></td> 
+                    </tr>
+                    <tr>
+                        <td>CUENTA CORRIENTE EN SOLES (BCP)</td>
+                        <td><?php echo $cuentaSoles; ?></td>
+                    </tr>
+                    <tr>
+                        <td>CORREO ELECTRONICO (GMAIL)</td>
+                        <td><?php echo $correo; ?></td>
+                    </tr>
+                    <tr>
+                        <td>TELEFONO</td>
+                        <td><?php echo $telefono; ?></td>
+                    </tr>
+                    <tr>
+                        <td>NICKNAME</td>
+                        <td><?php echo $nickname; ?></td>
+                    </tr>
+                    <tr>
+                        <td>NIVEL</td>
+                        <td><?php echo $nivel; ?></td>
+                    </tr>
+                    <tr>
+                        <td>RECOMPENSA</td>
+                        <td><?php echo $recompensa; ?></td>
+                    </tr>
+                    <tr>
+                        <td>CONTRASEÑA</td>
+                        <td><span id="contraseñaOculta">********</span></td>
+                        <td><span id="contraseñaReal" style="display:none;"><?php echo $contraseña; ?></span></td> 
+                    </tr>
+                    <tr>
+                        <td>PREGUNTA SECRETA</td>
+                        <td><span id="preguntaSecretaOculta">********</span></td>
+                        <td><span id="preguntaSecretaReal" style="display:none;"><?php echo $preguntaSecreta; ?></span></td> 
+                    </tr>
+                    <tr>
+                        <td>ENLACE DE REFERIDO</td>
+                        <td><span id="enlaceReferido"><?php echo $enlaceReferido; ?></span></td> 
+                    </tr>
+                </tbody>
+            </table>
+            <?php if ($estado == 'inactivo') { ?>
+            <form method="post" enctype="multipart/form-data">
+                <input type="hidden" name="nombreUsuario" value="<?php echo $nombre; ?>">
+                <input type="hidden" name="numeroCuenta" value="<?php echo $cuentaSoles; ?>">
+                <label for="deposito">Captura de depósito:</label>
+                <input type="file" id="deposito" name="deposito" multiple>
+                <button type="submit">Enviar captura</button>
+            </form>
+            <?php } ?>
+        </main>
+        <footer></footer>
+        <script src="mi_cuenta.js"></script>
+    </body>
+    </html>
+    <?php
+} else {
+    echo "No se encontró ningún usuario con ese ID.";
+}
+
+$conn->close();
+?>
+
+ 
+Archivo “recupera.html” 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="recupera.css">
+  <title>JUVISOL - Recuperar Contraseña</title>
+</head>
+<body>
+  <header>
+    <h1>JUVISOL - Recuperar Contraseña</h1>
+    <!-- Título principal de la sección -->
+    <h2>Ingresa los datos para recuperar tu contraseña.</h2>
+    <!-- Subtítulo explicativo -->
+  </header>
+  <main>
+    <!-- Contenedor principal del contenido -->
+    <form method="post" id="recuperaForm">
+      <!-- Formulario para recuperar la contraseña -->
+      <label for="correo">Correo electrónico:</label>
+      <!-- Etiqueta para el campo de correo electrónico -->
+      <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+      <!-- Campo de entrada para el correo electrónico -->
+      <span id="errorCorreo"></span> <br>
+      <!-- Mensaje de error para el correo electrónico -->
+      <label for="telefono">Teléfono:</label>
+      <!-- Etiqueta para el campo de teléfono -->
+      <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+      <!-- Campo de entrada para el teléfono -->
+      <span id="errorTelefono"></span> <br>
+      <!-- Mensaje de error para el teléfono -->
+      <label for="preguntaSecreta">Pregunta secreta:</label>
+      <!-- Etiqueta para el campo de pregunta secreta -->
+      <input type="text" id="preguntaSecreta" name="preguntaSecreta" placeholder="Ingresa tu pregunta secreta" required>
+      <!-- Campo de entrada para la pregunta secreta -->
+      <span id="errorPreguntaSecreta"></span> <br>
+      <!-- Mensaje de error para la pregunta secreta -->
+      <button type="submit">Recuperar Contraseña</button>
+      <!-- Botón para enviar el formulario -->
+    </form>
+    <!-- Fin del formulario -->
+    <p>¿Ya recuerdas tu contraseña? <a href="login.html">Inicia sesión</a></p>
+    <!-- Enlace para volver al inicio de sesión -->
+  </main>
+  <!-- Fin del contenedor principal -->
+  <script src="recupera.js"></script>
+  <!-- Incluye el archivo JavaScript -->
+</body>
+</html>
+
+ 
+ 
+Archivo “recupera.css” 
+/* Estilos generales para el cuerpo */
+body {
+    /* Estilos generales para el cuerpo */
+    background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+    /* Define la imagen de fondo */
+    background-repeat: no-repeat; /* No repite la imagen */
+    /* Evita que la imagen se repita */
+    background-size: cover; /* Cubre todo el fondo */
+    /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    /* Centra la imagen de fondo */
+    font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+    /* Define la fuente del texto */
+    background-color: #121212; /* Negro oscuro */
+    /* Define el color de fondo */
+    color: #0f0f0f; /* Blanco */
+    /* Define el color del texto */
+    margin: 0; /* Elimina el margen predeterminado */
+    /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado */
+    /* Elimina el relleno predeterminado del cuerpo */
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    /* Estilos para el encabezado */
+    text-align: center; /* Centra el texto */
+    /* Centra el texto del encabezado */
+    padding: 50px 0; /* Agrega espacio arriba y abajo */
+    /* Agrega espacio arriba y abajo del encabezado */
+  }
+  
+  /* Estilos para el título principal */
+  h1 {
+    /* Estilos para el título principal */
+    font-size: 5em; /* Ajusta el tamaño del título */
+    /* Ajusta el tamaño del título */
+    font-weight: bold; /* Agrega negrita */
+    /* Agrega negrita al título */
+    margin-bottom: 20px;
+    /* Agrega margen inferior al título */
+    color: #0d0d0e; /* Blanco */
+    /* Define el color del título */
+  }
+  
+  /* Estilos para el subtítulo */
+  h2 {
+    /* Estilos para el subtítulo */
+    font-size: 2em; /* Ajusta el tamaño del título */
+    /* Ajusta el tamaño del subtítulo */
+    margin-bottom: 40px;
+    /* Agrega margen inferior al subtítulo */
+    color: #0d0d0e; /* Blanco */
+    /* Define el color del subtítulo */
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    /* Estilos para el contenido principal */
+    text-align: center; /* Centra el texto */
+    /* Centra el texto del contenido principal */
+    padding: 30px; /* Agrega espacio alrededor */
+    /* Agrega espacio alrededor del contenido principal */
+  }
+  
+  /* Estilos para el formulario */
+  form {
+    /* Estilos para el formulario */
+    display: flex; /* Flexbox para un diseño flexible */
+    /* Usa Flexbox para un diseño flexible */
+    flex-direction: column; /* Orienta los elementos verticalmente */
+    /* Orienta los elementos del formulario verticalmente */
+    align-items: center; /* Alinea los elementos al centro */
+    /* Alinea los elementos del formulario al centro */
+    gap: 20px; /* Espacio entre los elementos */
+    /* Agrega espacio entre los elementos del formulario */
+  }
+  
+  /* Estilos para las etiquetas */
+  label {
+    /* Estilos para las etiquetas */
+    font-size: 1.5em; /* Ajusta el tamaño de fuente */
+    /* Ajusta el tamaño de fuente de las etiquetas */
+    font-weight: bold; /* Agrega negrita */
+    /* Agrega negrita a las etiquetas */
+  }
+  
+  /* Estilos para los campos de entrada */
+  input {
+    /* Estilos para los campos de entrada */
+    width: 50%; /* Ajusta el ancho de las respuestas */
+    /* Ajusta el ancho de los campos de entrada */
+    padding: 15px; /* Aumenta el espacio de las respuestas */
+    /* Aumenta el espacio de las respuestas */
+    border: 1px solid #fff;
+    /* Agrega un borde blanco */
+    border-radius: 5px;
+    /* Redondea las esquinas */
+    font-size: 1.2em;
+    /* Ajusta el tamaño de fuente */
+    text-align: center; /* Centra el mensaje */
+    /* Centra el texto del mensaje */
+  }
+  
+  /* Estilos para el botón */
+  button {
+    /* Estilos para el botón */
+    background-color: #007bff; /* Azul claro Litecoin */
+    /* Define el color de fondo del botón */
+    color: #fff;
+    /* Define el color del texto del botón */
+    padding: 15px 30px;
+    /* Agrega espacio interno al botón */
+    border: none;
+    /* Elimina el borde del botón */
+    border-radius: 25px; /* Bordes curvos */
+    /* Redondea las esquinas del botón */
+    font-size: 1.5em; /* Ajusta el tamaño del título */
+    /* Ajusta el tamaño de fuente del texto del botón */
+    cursor: pointer;
+    /* Cambia el cursor a una mano al pasar el mouse */
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    /* Estilos para el pie de página */
+    display: flex;
+    /* Usa Flexbox para un diseño flexible */
+    justify-content: space-around; /* Distribuye los botones */
+    /* Distribuye los botones del pie de página */
+    padding: 30px;
+    /* Agrega espacio alrededor del pie de página */
+  }
+  
+  /* Estilos para el botón "Atrás" */
+  .atras {
+    /* Estilos para el botón "Atrás" */
+    margin-right: 20px; /* Espacio entre botones */
+    /* Agrega espacio a la derecha del botón */
+  }
+  
+  /* Estilos para el botón "Siguiente" */
+  .siguiente {
+    /* Estilos para el botón "Siguiente" */
+    margin-left: 20px; /* Espacio entre botones */
+    /* Agrega espacio a la izquierda del botón */
+  }
+  
+  /* Estilos para los mensajes de error */
+  span {
+    /* Estilos para los mensajes de error */
+    color: red; /* Color rojo para los mensajes de error */
+    /* Define el color del texto del mensaje de error */
+    font-size: 0.8em; /* Ajusta el tamaño de fuente */
+    /* Ajusta el tamaño de fuente del mensaje de error */
+    margin-bottom: 10px;
+    /* Agrega margen inferior al mensaje de error */
+    display: none; /* Oculta el mensaje de error por defecto */
+    /* Oculta el mensaje de error por defecto */
+  }
+
+ 
+ 
+Archivo “recupera.js” 
+// Selecciona el formulario
+const recuperaForm = document.getElementById('recuperaForm');
+
+// Agrega un evento al formulario cuando se envía
+recuperaForm.addEventListener('submit', (event) => {
+  // Evita que el formulario se envíe normalmente
+  event.preventDefault();
+
+  // Obtener datos del formulario
+  const correo = document.getElementById('correo').value;
+  const telefono = document.getElementById('telefono').value;
+  const preguntaSecreta = document.getElementById('preguntaSecreta').value;
+
+  // Validar datos del formulario
+  let errores = [];
+
+  // Validar correo electrónico
+  const correoRegex = /^[^\s@]+@[^\s@]+\.gmail\.com$/; // Permite solo correos electrónicos de Gmail
+  if (!correoRegex.test(correo)) {
+    errores.push("Ingresa un correo electrónico válido de Gmail.");
+    document.getElementById('errorCorreo').style.display = 'inline';
+  } else {
+    document.getElementById('errorCorreo').style.display = 'none';
+  }
+
+  // Validar teléfono
+  if (!/^[0-9]+$/.test(telefono)) {
+    errores.push("El teléfono solo debe contener números.");
+    document.getElementById('errorTelefono').style.display = 'inline';
+  } else {
+    document.getElementById('errorTelefono').style.display = 'none';
+  }
+
+  // Validar pregunta secreta
+  if (!/[a-zA-Z\s]+$/.test(preguntaSecreta)) {
+    errores.push("La pregunta secreta solo debe contener letras y espacios.");
+    document.getElementById('errorPreguntaSecreta').style.display = 'inline';
+  } else {
+    document.getElementById('errorPreguntaSecreta').style.display = 'none';
+  }
+
+  // Si no hay errores, enviar los datos al servidor
+  if (errores.length === 0) {
+    // Realizar la solicitud AJAX para recuperar la contraseña
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "recupera.php", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-formurlencoded");
+    xhr.onload = function() {
+      if (this.status === 200) {
+        // Mostrar mensaje de éxito
+        alert("¡Se ha enviado un correo electrónico con las instrucciones para recuperar tu contraseña!");
+      } else {
+        // Mostrar mensaje de error
+        alert("Error al recuperar la contraseña.");
+      }
+    };
+    xhr.send("correo=" + correo + "&telefono=" + telefono + "&preguntaSecreta=" + preguntaSecreta);
+  } else {
+    // Mostrar mensajes de error
+    alert(errores.join("\n"));
+  }
+});
+
+ 
+ 
+Archivo “recupera.php” 
+<?php
+// Datos de conexión a la base de datos
+$servername = "127.0.0.1:3306";
+$username = "u340969567_artefactosonli";
+$password = "Shionersz123!";
+$dbname = "u340969567_artefactosonli";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexión
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// Procesar formulario de recuperación de contraseña
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  // Obtener datos del formulario
+  $correo = $_POST["correo"];
+  $telefono = $_POST["telefono"];
+  $preguntaSecreta = $_POST["preguntaSecreta"];
+
+
+
+  ç
+  // Validar datos del formulario
+  $errores = [];
+
+  // Validar correo electrónico
+  if (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
+    $errores[] = "Ingresa un correo electrónico válido.";
+  }
+
+  // Validar teléfono
+  if (!preg_match("/^[0-9]+$/", $telefono)) {
+    $errores[] = "El teléfono solo debe contener números.";
+  }
+
+  // Validar pregunta secreta
+  if (!preg_match("/^[a-zA-Z\s]+$/", $preguntaSecreta)) {
+    $errores[] = "La pregunta secreta solo debe contener letras y espacios.";
+  }
+
+  // Si no hay errores, buscar al usuario en la base de datos
+  if (empty($errores)) {
+    $sql = "SELECT * FROM usuarios WHERE correo = ? AND telefono = ? AND pregunta_secreta = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sss", $correo, $telefono, $preguntaSecreta);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $stmt->close();
+
+    if ($result->num_rows > 0) {
+      $row = $result->fetch_assoc();
+
+      // Obtener la contraseña del usuario
+      $contraseña = $row["contraseña"];
+
+      // Enviar correo electrónico con la contraseña
+      $asunto = "Recuperación de contraseña - JUVISOL";
+      $mensaje = "Tu contraseña es: $contraseña";
+      $headers = "From: noreply@juvisol.com"; // Reemplaza con tu correo electrónico
+
+      // Usar la función mail() para enviar el correo electrónico
+      if (mail($correo, $asunto, $mensaje, $headers)) {
+        echo "<script>
+                alert('¡Se ha enviado un correo electrónico con tu contraseña!');
+                window.location.href = 'login.html';
+              </script>";
+      } else {
+        echo "<script>
+                alert('Error al enviar el correo electrónico.');
+              </script>";
+      }
+    } else {
+      echo "<script>
+              alert('Los datos ingresados no coinciden con ningún usuario.');
+            </script>";
+    }
+  } else {
+    echo "<script>
+            alert('" . implode("\n", $errores) . "');
+          </script>";
+  }
+}
+
+$conn->close();
+?>
+
+
+
+
+
+Archivo “actualizar.html”
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUVISOL - Actualizar Datos</title>
+    <link rel="stylesheet" href="actualizar.css">
+    <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+          <li><a href="mi_cuenta.html">Mi pergil</a></li>
+          <li><a href="red.html">Mi red</a></li>
+          <li><a href="activacion.html">activacion</a></li>
+          <li><a href="actualizar.html">actualizar</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="conocenos.html">Conócenos</a></li>
+          <li><a href="logout.php">Cerrar sesión</a></li> </ul>
+    </nav>
+    <main>
+        <h2 style="text-align: center; font-size: 5em; font-weight: bold; margin-bottom: 50px;">ACTUALIZAR DATOS</h2>
+        <form method="post">
+            <input type="hidden" name="usuarioId" value="<?php echo $usuarioId; ?>">
+
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="nombre" value="ingresa tu nuevo nombre">
+            <span id="errorNombre" style="color: red; display: none;"></span> <br>
+
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" value="ingresa tu nuevo apellido">
+            <span id="errorApellido" style="color: red; display: none;"></span> <br>
+
+            <label for="correo">Correo electrónico (Gmail):</label>
+            <input type="email" id="correo" name="correo" value="ingresa tu nuevo correo">
+            <span id="errorCorreo" style="color: red; display: none;"></span> <br>
+
+            <label for="cuentaSoles">Número de cuenta en soles:</label>
+            <input type="text" id="cuentaSoles" name="cuentaSoles" value="ingresa tu nueva cuenta en soles">
+            <span id="errorCuentaSoles" style="color: red; display: none;"></span> <br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" value="ingresa tu nuevo telefono">
+            <span id="errorTelefono" style="color: red; display: none;"></span> <br>
+
+            <label for="contraseñaActual">Contraseña actual:</label>
+            <input type="password" id="contraseñaActual" name="contraseñaActual" placeholder="Ingresa tu contraseña actual">
+            <span id="errorContraseñaActual" style="color: red; display: none;"></span> <br>
+
+            <label for="nuevaContraseña">Nueva contraseña:</label>
+            <input type="password" id="nuevaContraseña" name="nuevaContraseña" placeholder="Ingresa tu nueva contraseña">
+            <span id="errorNuevaContraseña" style="color: red; display: none;"></span> <br>
+
+            <label for="confirmarContraseña">Confirmar contraseña:</label>
+            <input type="password" id="confirmarContraseña" name="confirmarContraseña" placeholder="Confirma tu nueva contraseña">
+            <span id="errorConfirmarContraseña" style="color: red; display: none;"></span> <br>
+
+            <label for="preguntaSecreta">Pregunta secreta:</label>
+            <input type="text" id="preguntaSecreta" name="preguntaSecreta" value="ingresa tu nueva pregunta secreta">
+            <span id="errorPreguntaSecreta" style="color: red; display: none;"></span> <br>
+
+            <button type="submit">Guardar</button>
+        </form>
+    </main>
+    <footer></footer>
+    <script src="actualizar.js"></script>
+</body>
+</html>
+
+
+Archivo “actualizar.css”
+
+/* Estilos generales para el cuerpo */
+body {
+    background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen de fondo */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+    background-color: #121212; /* Negro oscuro */
+    color: #0f0f0f; /* Blanco */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    text-align: center; /* Centra el texto */
+    padding: 50px 0; /* Agrega espacio arriba y abajo */
+  }
+  
+  /* Estilos para el título principal */
+  h1 {
+    font-size: 5em; /* Ajusta el tamaño del título */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0d0d0e; /* Blanco */
+  }
+  
+  /* Estilos para el subtítulo */
+  h2 {
+    font-size: 2em; /* Ajusta el tamaño del título */
+    margin-bottom: 40px;
+    color: #0d0d0e; /* Blanco */
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    text-align: center; /* Centra el texto */
+    padding: 30px; /* Agrega espacio alrededor */
+  }
+  
+  /* Estilos para el formulario */
+  form {
+    display: flex; /* Flexbox para un diseño flexible */
+    flex-direction: column; /* Orienta los elementos verticalmente */
+    align-items: center; /* Alinea los elementos al centro */
+    gap: 20px; /* Espacio entre los elementos */
+  }
+  
+  /* Estilos para las etiquetas */
+  label {
+    font-size: 1.5em; /* Ajusta el tamaño de fuente */
+    font-weight: bold; /* Agrega negrita */
+  }
+  
+  /* Estilos para los campos de entrada */
+  input {
+    width: 50%; /* Ajusta el ancho de las respuestas */
+    padding: 15px; /* Aumenta el espacio de las respuestas */
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center; /* Centra el mensaje */
+  }
+  
+  /* Estilos para el botón */
+  button {
+    background-color: #007bff; /* Azul claro Litecoin */
+    color: #fff; /* Texto blanco */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px; /* Bordes curvos */
+    font-size: 1.5em; /* Ajusta el tamaño del título */
+    cursor: pointer;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    display: flex;
+    justify-content: space-around; /* Distribuye los botones */
+    padding: 30px;
+  }
+  
+  /* Estilos para el botón "Atrás" */
+  .atras {
+    margin-right: 20px; /* Espacio entre botones */
+  }
+  
+  /* Estilos para el botón "Siguiente" */
+  .siguiente {
+    margin-left: 20px; /* Espacio entre botones */
+  }
+  
+  /* Estilos para los mensajes de error */
+  span {
+    color: red; /* Color rojo para los mensajes de error */
+    font-size: 0.8em; /* Ajusta el tamaño de fuente */
+    margin-bottom: 10px; /* Agrega espacio abajo */
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
+    background-color: #007bff; /* Azul claro Litecoin */
+    padding: 15px 0; /* Espacio arriba y abajo */
+    text-align: center; /* Centra el contenido de la barra */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: fixed; /* Fijar la barra de menú */
+    top: 0; /* Posicionar en la parte superior */
+    left: 0; /* Posicionar a la izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+  }
+  
+  nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+  }
+  
+  nav li {
+    display: inline-block; /* Ordena los elementos en línea */
+    margin: 0 15px; /* Espacio entre elementos */
+  }
+  
+  nav a {
+    color: #fff; /* Color blanco para el texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espacio de relleno */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    font-weight: bold; /* Negrita para el texto del enlace */
+    font-style: italic; /* Cursiva para el texto del enlace */
+  }
+  
+  nav a:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+  }
+
+
+
+
+Archivo “actualizar.js”
+// Selecciona el formulario
+const actualizarForm = document.getElementById('actualizarForm');
+
+// Agrega un evento al formulario cuando se envía
+actualizarForm.addEventListener('submit', (event) => {
+  // Evita que el formulario se envíe normalmente
+  event.preventDefault();
+
+  // Obtener datos del formulario
+  const usuariold = document.querySelector('input[name="usuariold"]').value;
+  const nombre = document.getElementById('nombre').value;
+  const apellido = document.getElementById('apellido').value;
+  const correo = document.getElementById('correo').value;
+  const cuentaSoles = document.getElementById('cuentaSoles').value;
+  const telefono = document.getElementById('telefono').value;
+  const contraseñaActual = document.getElementById('contraseñaActual').value;
+  const nuevaContraseña = document.getElementById('nuevaContraseña').value;
+  const confirmarContraseña = document.getElementById('confirmarContraseña').value;
+  const preguntaSecreta = document.getElementById('preguntaSecreta').value;
+
+  // Validar datos del formulario
+  let errores = [];
+
+  // Validar nombre
+  if (!/[a-zA-Z\s]+$/.test(nombre)) {
+    errores.push("El nombre solo debe contener letras y espacios.");
+    document.getElementById('errorNombre').style.display = 'inline';
+  } else {
+    document.getElementById('errorNombre').style.display = 'none';
+  }
+
+  // Validar apellido
+  if (!/[a-zA-Z\s]+$/.test(apellido)) {
+    errores.push("El apellido solo debe contener letras y espacios.");
+    document.getElementById('errorApellido').style.display = 'inline';
+  } else {
+    document.getElementById('errorApellido').style.display = 'none';
+  }
+
+  // Validar correo electrónico
+  const correoRegex = /^[^\s@]+@[^\s@]+\.gmail\.com$/; // Permite solo correos electrónicos de Gmail
+  if (!correoRegex.test(correo)) {
+    errores.push("Ingresa un correo electrónico válido de Gmail.");
+    document.getElementById('errorCorreo').style.display = 'inline';
+  } else {
+    document.getElementById('errorCorreo').style.display = 'none';
+  }
+
+  // Validar teléfono
+  if (!/^[0-9]+$/.test(telefono)) {
+    errores.push("El teléfono solo debe contener números.");
+    document.getElementById('errorTelefono').style.display = 'inline';
+  } else {
+    document.getElementById('errorTelefono').style.display = 'none';
+  }
+
+  // Validar contraseña actual
+  if (!/[a-zA-Z0-9!@#$%^&*()_+=-\[\]{};':"\\|,.\<>\/?]/.test(contraseñaActual)) {
+    errores.push("La contraseña actual debe contener al menos un carácter especial.");
+    document.getElementById('errorContraseñaActual').style.display = 'inline';
+  } else if (contraseñaActual.length < 8) {
+    errores.push("La contraseña actual debe tener al menos 8 caracteres.");
+    document.getElementById('errorContraseñaActual').style.display = 'inline';
+  } else {
+    document.getElementById('errorContraseñaActual').style.display = 'none';
+  }
+
+  // Validar nueva contraseña
+  if (!/[a-zA-Z0-9!@#$%^&*()_+=-\[\]{};':"\\|,.\<>\/?]/.test(nuevaContraseña)) {
+    errores.push("La nueva contraseña debe contener al menos un carácter especial.");
+    document.getElementById('errorNuevaContraseña').style.display = 'inline';
+  } else if (nuevaContraseña.length < 8) {
+    errores.push("La nueva contraseña debe tener al menos 8 caracteres.");
+    document.getElementById('errorNuevaContraseña').style.display = 'inline';
+  } else {
+    document.getElementById('errorNuevaContraseña').style.display = 'none';
+  }
+
+  // Validar confirmación de contraseña
+  if (nuevaContraseña !== confirmarContraseña) {
+    errores.push("Las contraseñas no coinciden.");
+    document.getElementById('errorConfirmarContraseña').style.display = 'inline';
+    document.getElementById('errorConfirmarContraseña').textContent = "Las contraseñas no coinciden.";
+  } else {
+    document.getElementById('errorConfirmarContraseña').style.display = 'none';
+  }
+
+  // Validar pregunta secreta
+  if (!/[a-zA-Z\s]+$/.test(preguntaSecreta)) {
+    errores.push("La pregunta secreta solo debe contener letras y espacios.");
+    document.getElementById('errorPreguntaSecreta').style.display = 'inline';
+  } else {
+    document.getElementById('errorPreguntaSecreta').style.display = 'none';
+  }
+
+  // Si no hay errores, enviar los datos al servidor
+  if (errores.length === 0) {
+    // Realizar la solicitud AJAX para actualizar los datos
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "actualizar.php", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-formurlencoded");
+    xhr.onload = function() {
+      if (this.status === 200) {
+        // Mostrar mensaje de éxito
+        alert("Datos actualizados correctamente.");
+        // Redirigir a la página de "mi cuenta"
+        window.location.href = "mi_cuenta.html";
+      } else {
+        // Mostrar mensaje de error
+        alert("Error al actualizar los datos.");
+      }
+    };
+    xhr.send("usuariold=" + usuariold + "&nombre=" + nombre + "&apellido=" + apellido +
+    "&correo=" + correo + "&cuentaSoles=" + cuentaSoles + "&telefono=" + telefono +
+    "&contraseñaActual=" + contraseñaActual + "&nuevaContraseña=" + nuevaContraseña +
+    "&preguntaSecreta=" + preguntaSecreta);
+  } else {
+    // Mostrar mensajes de error
+    alert(errores.join("\n"));
+  }
+});
+
+// Selecciona todos los enlaces de la barra de navegación
+const navLinks = document.querySelectorAll('#nav a');
+
+// Agrega un evento de clic a cada enlace de la barra de navegación
+navLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    // Evita la acción predeterminada del enlace
+    event.preventDefault();
+
+    // Obtén la URL del enlace
+    const url = link.getAttribute('href');
+
+    // Redirige a la URL del enlace
+    window.location.href = url;
+  });
+});
+
+
+
+Archivo “actualizar.php”
+<?php
+// Datos de conexión a la base de datos
+$servername = "127.0.0.1:3306";
+$username = "u340969567_artefactosonli";
+$password = "Shionersz123!";
+$dbname = "u340969567_artefactosonli";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexión
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// Procesar formulario de actualización de datos
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  // Obtener datos del formulario
+  $usuariold = $_POST["usuariold"];
+  $nombre = $_POST["nombre"];
+  $apellido = $_POST["apellido"];
+  $correo = $_POST["correo"];
+  $cuentaSoles = $_POST["cuentaSoles"];
+  $telefono = $_POST["telefono"];
+  $contraseñaActual = $_POST["contraseñaActual"];
+  $nuevaContraseña = $_POST["nuevaContraseña"];
+  $preguntaSecreta = $_POST["preguntaSecreta"];
+
+  // Validar datos del formulario
+  $errores = [];
+
+  // Validar nombre
+  if (!empty($nombre) && !preg_match("/^[a-zA-Z\s]+$/", $nombre)) {
+    $errores[] = "El nombre solo debe contener letras y espacios.";
+  }
+
+  // Validar apellido
+  if (!empty($apellido) && !preg_match("/^[a-zA-Z\s]+$/", $apellido)) {
+    $errores[] = "El apellido solo debe contener letras y espacios.";
+  }
+
+  // Validar correo electrónico
+  if (!empty($correo) && !filter_var($correo, FILTER_VALIDATE_EMAIL)) {
+    $errores[] = "Ingresa un correo electrónico válido.";
+  }
+
+  // Validar teléfono
+  if (!empty($telefono) && !preg_match("/^[0-9]+$/", $telefono)) {
+    $errores[] = "El teléfono solo debe contener números.";
+  }
+
+  // Validar contraseña actual
+  if (!empty($contraseñaActual) && !empty($nuevaContraseña)) {
+    $sqlSelect = "SELECT * FROM usuarios WHERE id = $usuariold";
+    $resultSelect = $conn->query($sqlSelect);
+
+    if ($resultSelect->num_rows > 0) {
+      $rowSelect = $resultSelect->fetch_assoc();
+      $contraseñaGuardada = $rowSelect['contraseña'];
+
+      if (!password_verify($contraseñaActual, $contraseñaGuardada)) {
+        echo "Contraseña actual incorrecta.";
+        exit;
+      }
+    } else {
+      echo "Usuario no encontrado.";
+      exit;
+    }
+  }
+
+  // Validar pregunta secreta
+  if (!empty($preguntaSecreta) && !preg_match("/^[a-zA-Z\s]+$/", $preguntaSecreta)) {
+    $errores[] = "La pregunta secreta solo debe contener letras y espacios.";
+  }
+
+  // Si no hay errores, actualizar los datos del usuario en la base de datos
+  if (empty($errores)) {
+    $sql = "UPDATE usuarios SET";
+
+    if (!empty($nombre)) {
+      $sql .= " nombre = '$nombre',";
+    }
+
+    if (!empty($apellido)) {
+      $sql .= " apellido = '$apellido',";
+    }
+
+    if (!empty($correo)) {
+      $sql .= " correo = '$correo',";
+    }
+
+    if (!empty($cuentaSoles)) {
+      $sql .= " cuenta_soles = '$cuentaSoles',";
+    }
+
+    if (!empty($telefono)) {
+      $sql .= " telefono = '$telefono',";
+    }
+
+    if (!empty($nuevaContraseña)) {
+      $nuevaContraseñaEncriptada = password_hash($nuevaContraseña, PASSWORD_DEFAULT);
+      $sql .= " contraseña = '$nuevaContraseñaEncriptada',";
+    }
+
+    if (!empty($preguntaSecreta)) {
+      $sql .= " pregunta_secreta = '$preguntaSecreta',";
+    }
+
+    // Eliminar la última coma y espacio de la consulta SQL
+    $sql = trim($sql, ", ");
+
+    // Agregar la condición WHERE a la consulta SQL
+    $sql .= " WHERE id = $usuariold";
+
+    // Ejecutar la consulta SQL
+    if ($conn->query($sql) === TRUE) {
+      // Redirigir a la página de "mi cuenta"
+      header("Location: mi_cuenta.html");
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+  } else {
+    echo "<script>
+            alert('" . implode("\n", $errores) . "');
+          </script>";
+  }
+}
+
+$conn->close();
+?>
+
+
+Archivo “preguntas.html”
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JUVISOL - Preguntas Frecuentes</title>
+  <link rel="stylesheet" href="preguntas.css">
+  <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+  <nav id="nav">
+    <ul>
+      <li><a href="mi_cuenta.html">Mi pergil</a></li>
+      <li><a href="red.html">Mi red</a></li>
+      <li><a href="activacion.html">activacion</a></li>
+      <li><a href="actualizar.html">actualizar</a></li>
+      <li><a href="preguntas.html">Preguntas</a></li>
+      <li><a href="conocenos.html">Conócenos</a></li>
+      <li><a href="logout.php">Cerrar sesión</a></li> </ul>
+  </nav>
+
+  <header>
+    <h1><strong>Preguntas Frecuentes</strong></h1>
+    <h2>Encuentra las respuestas que necesitas</h2>
+  </header>
+
+  <main>
+    <div class="preguntas-container">
+      <div class="pregunta">
+        <h3>¿que es JUVISOL y como funciona?</h3>
+        <p>JUVISOL es una plataforma online que te permite ganar dinero a través de un sistema de afiliación multinivel. Funciona a través de una red de afiliados, donde cada usuario puede ganar recompensas por reclutar nuevos miembros a su red.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3> ¿Qué beneficios ofrece JUVISOL a sus usuarios?</h3>
+        <p>JUVISOL te ofrece la oportunidad de ganar dinero a través de un sistema de afiliación multinivel, donde puedes obtener recompensas por construir tu red de afiliados y subir de nivel. Además, te proporciona una plataforma online para conectar con otros usuarios y construir tu propio negocio.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿Cómo activo mi cuenta en JUVISOL?</h3>
+        <p>Para activar tu cuenta, debes ingresar a la sección "Mi Cuenta" de tu perfil y hacer clic en el botón "Activar Cuenta". Luego, debes ingresar tu nombre, número de cuenta y una captura de pantalla del comprobante de depósito. El equipo de JUVISOL verificará tu depósito y activará tu cuenta en un plazo de 24 horas.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿Qué sucede cuando mi cuenta está activa?</h3>
+        <p>Una vez que tu cuenta está activa, te encuentras en el Nivel 1 y puedes comenzar a construir tu red de afiliados.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿Cómo puedo comenzar a afiliar a otras personas en JUVISOL?</h3>
+        <p>Puedes comenzar a afiliar a otras personas usando tu enlace de referido. Este enlace se encuentra en la sección "Mi Cuenta" de tu perfil. Compártelo en tu página web, en tus redes sociales, o en cualquier otro lugar donde puedas llegar a potenciales afiliados.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿Cómo se organiza la red de afiliados en JUVISOL?</h3>
+        <p>Todos los usuarios compartimos una única red piramidal. La red se estructura como una pirámide, con el creador en la cima y los demás usuarios ubicados en niveles inferiores. Cada usuario tiene 2 afiliados directos y 4 afiliados indirectos. La red puede extenderse infinitamente, ya que los afiliados indirectos también pueden seguir afiliando a nuevas personas.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿Qué significa que cada usuario es dueño de su propia red?</h3>
+        <p>Aunque todos compartimos una única red piramidal, cada usuario es dueño de su propia red. Esto significa que cada usuario recibe recompensas de las personas que están debajo de él en su red, incluso si esas personas fueron afiliadas por otros usuarios.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿Cómo se ubican los nuevos usuarios en la red?</h3>
+        <p>Cuando un usuario se registra usando el enlace de referido de otro usuario, el sistema lo ubica en la red del usuario que lo refirió, buscando el espacio más cercano y equilibrado en la red, pero siempre hacia abajo en la estructura piramidal. El sistema busca el espacio más cercano y equilibrado para mantener la red lo más homogénea y ordenada posible.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿Cómo puedo subir de nivel en JUVISOL?</h3>
+        <p>Para subir de nivel, un usuario debe alcanzar un número específico de afiliados en su red, incluyendo a sus afiliados directos e indirectos.
+          Nivel 2: Debes afiliar a 6 personas (2 directos y 4 indirectos).
+          Nivel 3: Los 6 usuarios de tu red deben subir al Nivel 2.
+          Nivel 4: Los 6 usuarios de tu red deben subir al Nivel 3.
+          Y así sucesivamente: A medida que la red del usuario se expande, todos los usuarios deben ir subiendo de nivel para que el usuario principal también suba de nivel.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿Qué recompensas se obtienen al subir de nivel en JUVISOL?</h3>
+        <p>Las recompensas solo se obtienen cuando el usuario completa un nivel. Cada nivel tiene una recompensa específica en soles peruanos.
+          Nivel 2: 25 soles
+          Nivel 3: 50 soles
+          Nivel 4: 100 soles
+          Nivel 5: 200 soles
+          Nivel 6: 400 soles
+          Nivel 7: 800 soles
+          Nivel 8: 1600 soles
+          Nivel 9: 3200 soles</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿Hasta qué nivel se pueden obtener recompensas?</h3>
+        <p>Las recompensas se calculan en función del nivel que alcances en el sistema, pero solo hasta el Nivel 9. Si un usuario alcanza el Nivel 10, ya no recibirá recompensas por los niveles 11, 12, etc.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿Cómo puedo ver mi red de afiliados?</h3>
+        <p>Puedes ver tu red de afiliados en la sección "Red de Afiliados" de tu perfil. Esta sección mostrará a tus afiliados directos e indirectos.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿Qué pasa si un usuario ya tiene 2 afiliados directos?</h3>
+        <p>Si un usuario ya tiene 2 afiliados directos, el sistema ubicará al nuevo usuario en la red de sus afiliados indirectos, buscando el espacio más cercano y equilibrado, siempre hacia abajo en la estructura piramidal.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3>¿La red de JUVISOL tiene un límite en cuanto a la cantidad de usuarios que puede tener?</h3>
+        <p>No, la red de JUVISOL puede crecer infinitamente. Cada usuario puede seguir afiliando a nuevas personas, lo que significa que la red puede expandirse sin límites. </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+</html>
+
+
+
+
+
+Archivo “preguntas.css”
+/* Estilos generales para el cuerpo */
+body {
+    background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+    background-color: #121212; /* Negro oscuro */
+    color: #0f0f0f; /* Blanco */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+  }
+  
+  header {
+    text-align: center; /* Centra el texto */
+    padding: 50px 0; /* Agrega espacio arriba y abajo */
+  }
+  
+  h1 {
+    font-size: 5em; /* Ajusta el tamaño del título */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 20px; /* Agrega espacio abajo */
+    color: #0d0d0e; /* Blanco */
+  }
+  
+  h2 {
+    font-size: 2em; /* Ajusta el tamaño del título */
+    margin-bottom: 40px;
+    color: #0d0d0e; /* Blanco */
+  }
+  
+  main {
+    text-align: center; /* Centra el texto */
+    padding: 30px; /* Agrega espacio alrededor */
+  }
+  
+  footer {
+    display: flex; /* Flexbox para un diseño flexible */
+    justify-content: space-around; /* Distribuye los botones */
+    padding: 30px; /* Agrega espacio alrededor */
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
+    background-color: #007bff; /* Azul claro Litecoin */
+    padding: 15px 0; /* Espacio arriba y abajo */
+    text-align: center; /* Centra el contenido de la barra */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: fixed; /* Fijar la barra de menú */
+    top: 0; /* Posicionar en la parte superior */
+    left: 0; /* Posicionar a la izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+  }
+  
+  nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+  }
+  
+  nav li {
+    display: inline-block; /* Ordena los elementos en línea */
+    margin: 0 15px; /* Espacio entre elementos */
+  }
+  
+  nav a {
+    color: #fff; /* Color blanco para el texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espacio de relleno */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    font-weight: bold; /* Negrita para el texto del enlace */
+    font-style: italic; /* Cursiva para el texto del enlace */
+  }
+  
+  nav a:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+  }
+  
+  /* Estilos para el contenedor de preguntas */
+  .preguntas-container {
+    display: flex; /* Flexbox para un diseño flexible */
+    flex-direction: column; /* Orienta los elementos verticalmente */
+    align-items: center; /* Alinea los elementos al centro */
+    gap: 20px; /* Espacio entre los elementos */
+  }
+  
+  /* Estilos para cada pregunta */
+  .pregunta {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Redondea las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    width: 80%; /* Ancho del contenedor */
+  }
+  
+  /* Estilos para el título de la pregunta */
+  .pregunta h3 {
+    font-size: 1.8em; /* Ajusta el tamaño del título */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 10px; /* Agrega espacio abajo */
+    color: #007bff; /* Azul claro Litecoin */
+  }
+  
+  /* Estilos para el contenido de la pregunta */
+  .pregunta p {
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
+    color: #0c0c0c; /* Gris oscuro */
+  }
+
+
+Archivo “preguntas.js”
+// Selecciona la barra de navegación
+const nav = document.getElementById('nav');
+
+// Selecciona los enlaces de la barra de navegación
+const navLinks = nav.querySelectorAll('a');
+
+// Agrega un evento de clic a cada enlace de la barra de navegación
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Elimina la clase "active" de todos los enlaces
+    navLinks.forEach(l => l.classList.remove('active'));
+
+    // Agrega la clase "active" al enlace actual
+    link.classList.add('active');
+  });
+});
+
+
+Archivo “activacion.html”
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUVISOL - Activacion</title>
+<link rel="stylesheet" href="activacion.css">
+<link rel="stylesheet" href="logout.css">
+<script src="activacion.js"></script>
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+          <li><a href="mi_cuenta.html">Mi perfil</a></li>
+          <li id="afiliacionLink" class="nav-link"><a href="red.html">afiliación</a></li>
+          <li id="inversionLink" class="nav-link"><a href="invertir.html">inversión</a></li>
+          <li><a href="activacion.html">activacion</a></li>
+          <li><a href="actualizar.html">actualizar</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="conocenos.html">Conócenos</a></li>
+          <li><a href="logout.php">Cerrar sesión</a></li> </ul>
+    </nav>
+<header>
+<h1><strong>Activa tu cuenta</strong></h1>
+<h2>Número de cuenta de la empresa JUVISOL</h2>
+</header>
+<main>
+<div class="container">
+<h2 class="title">Envío de Captura de Depósito</h2>
+<form method="post" enctype="multipart/form-data">
+<input type="hidden" name="usuariold" value="<?php echo $usuariold; ?>">
+<div class="form-group">
+<label for="deposito">Captura de depósito:</label>
+<input type="file" id="deposito" name="deposito" multiple="true">
+</div>
+<button type="submit" class="btn btn-primary">Enviar captura</button>
+</form>
+<div id="mensajeNotificacion" class="alert alert-info" style="margin-top: 20px;"></div>
+<div class="table-responsive">
+<table id="tablaEstadoEnvio" class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Estado del envío</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="estadoEnvio">En espera</td>
+<td id="descripcionEnvio">Se ha recibido la captura del depósito. Se revisará en las próximas 24 horas.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+<footer></footer>
+</body>
+</html>
+
+
+
+
+Archivo “activacion.css”
+
+/* Estilos generales para la sección de activación */
+body {
+  /* Estilos para el cuerpo de la página */
+  background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-size: cover; /* Cubre todo el fondo */
+  background-position: center; /* Centra la imagen */
+  font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+  background-color: #121212; /* Negro oscuro */
+  color: #0f0f0f; /* Blanco */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+}
+
+header {
+  /* Estilos para el encabezado */
+  text-align: center; /* Centra el texto */
+  padding: 50px 0; /* Agrega espacio arriba y abajo */
+}
+
+h1 {
+  /* Estilos para el título principal */
+  font-size: 5em; /* Ajusta el tamaño del título */
+  font-weight: bold; /* Agrega negrita */
+  margin-bottom: 20px; /* Agrega espacio abajo */
+  color: #0d0d0e; /* Blanco */
+}
+
+h2 {
+  /* Estilos para el subtítulo */
+  font-size: 2em; /* Ajusta el tamaño del subtítulo */
+  margin-bottom: 40px; /* Agrega espacio abajo */
+  color: #0d0d0e; /* Blanco */
+}
+
+main {
+  /* Estilos para el contenido principal */
+  text-align: center; /* Centra el texto */
+  padding: 30px; /* Agrega espacio alrededor */
+}
+
+footer {
+  /* Estilos para el pie de página */
+  display: flex; /* Flexbox para un diseño flexible */
+  justify-content: space-around; /* Distribuye los elementos uniformemente */
+  padding: 30px; /* Agrega espacio alrededor */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #007bff; /* Azul claro Litecoin */
+  padding: 15px 0; /* Espacio arriba y abajo */
+  text-align: center; /* Centra el contenido de la barra */
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: fixed; /* Fijar la barra de menú */
+  top: 0; /* Posicionar en la parte superior */
+  left: 0; /* Posicionar a la izquierda */
+  width: 100%; /* Ancho completo */
+  z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+}
+
+nav ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0; /* Elimina el margen */
+  padding: 0; /* Elimina el relleno */
+}
+
+nav li {
+  display: inline-block; /* Ordena los elementos en línea */
+  margin: 0 15px; /* Espacio entre elementos */
+}
+
+nav a {
+  color: #fff; /* Color blanco para el texto */
+  text-decoration: none; /* Elimina el subrayado */
+  font-size: 1.2em; /* Tamaño de la fuente */
+  padding: 10px 20px; /* Espacio de relleno */
+  border-radius: 25px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color */
+  font-weight: bold; /* Negrita para el texto del enlace */
+  font-style: italic; /* Cursiva para el texto del enlace */
+}
+
+nav a:hover {
+  background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+}
+
+/* Estilos para el botón "Activar cuenta" */
+#activarCuenta {
+  background-color: #007bff; /* Azul claro Litecoin */
+  color: #fff; /* Texto blanco */
+  padding: 15px 30px; /* Agrega espacio interno */
+  border: none; /* Elimina el borde */
+  border-radius: 25px; /* Redondea las esquinas */
+  font-size: 1.5em; /* Ajusta el tamaño del título */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  font-weight: bold; /* Texto en negrita */
+  font-style: italic; /* Texto en cursiva */
+  display: block; /* Ocupa todo el ancho disponible */
+  margin: 50px auto; /* Centra el botón */
+}
+
+/* Estilos para la tabla */
+#tablaEstadoEnvio {
+  border-collapse: collapse;
+  width: 50%;
+  margin-top: 20px;
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+#tablaEstadoEnvio th, #tablaEstadoEnvio td {
+  padding: 10px;
+  border: 1px solid #fff; /* Agrega un borde blanco */
+  text-align: left;
+}
+
+#tablaEstadoEnvio th {
+  background-color: #007bff; /* Color de fondo gris oscuro */
+}
+
+/* Estilos para el formulario */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Azul claro Litecoin */
+  color: #fff;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.alert-info {
+  background-color: #d9edf7;
+  color: #31708f;
+  border: 1px solid #bce8f1;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f5f5f5;
+}
+
+/* Estilos para el botón de carga de archivos */
+.file-upload {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.file-upload-label {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-upload-message {
+  color: #666;
+}
+
+
+Archivo “activacion.js”
+
+// Selecciona el formulario de activación
+const formularioActivacion = document.querySelector('form');
+
+// Selecciona el elemento div para mostrar el mensaje de notificación
+const mensajeNotificacion = document.getElementById('mensajeNotificacion');
+
+// Agrega un evento al formulario cuando se envía
+formularioActivacion.addEventListener('submit', (event) => {
+  // Evita que el formulario se envíe normalmente
+  event.preventDefault();
+
+  // Obtén los archivos de la captura de depósito
+  const archivosDeposito = document.getElementById('deposito').files;
+
+  // Verifica si se ha seleccionado al menos un archivo
+  if (archivosDeposito.length > 0) {
+    // Itera sobre cada archivo seleccionado
+    for (let i = 0; i < archivosDeposito.length; i++) {
+      const archivoDeposito = archivosDeposito[i];
+
+      // Valida el tipo de archivo
+      if (archivoDeposito.type.startsWith('image/')) {
+        // Valida el tamaño del archivo (en KB)
+        if (archivoDeposito.size / 1024 <= 500) {
+          // Aquí puedes realizar la lógica para procesar la captura de depósito
+          // Por ejemplo:
+          // 1. Subir la captura a un servidor.
+          // 2. Mostrar un mensaje al usuario indicando que se ha recibido la captura.
+          // ... tu lógica para procesar la captura ...
+
+          // Después de procesar la captura, puedes enviar el código de activación al usuario
+          // ... tu lógica para generar y enviar el código
+
+          // Mostrar la notificación de aprobación
+          mensajeNotificacion.textContent = "Su envío ha sido aprobado.";
+          mensajeNotificacion.style.color = "green";
+
+          // Actualiza la tabla de estado del envío
+          document.getElementById('estadoEnvio').textContent = "Aprobado";
+          document.getElementById('descripcionEnvio').textContent = "Se ha verificado el depósito. Su cuenta ha sido activada.";
+        } else {
+          // Mostrar un mensaje de error al usuario si el archivo es demasiado grande
+          mensajeNotificacion.textContent = "El archivo es demasiado grande. Por favor, selecciona un archivo de menos de 500 КВ.";
+          mensajeNotificacion.style.color = "red";
+          break; // Detener la iteración si hay un error
+        }
+      } else {
+        // Mostrar un mensaje de error al usuario si el archivo no es una imagen
+        mensajeNotificacion.textContent = "Por favor, selecciona un archivo de imagen.";
+        mensajeNotificacion.style.color = "red";
+        break; // Detener la iteración si hay un error
+      }
+    }
+  } else {
+    // Mostrar un mensaje de error al usuario si no se ha seleccionado ningún archivo
+    mensajeNotificacion.textContent = "Por favor, selecciona la captura de tu depósito.";
+    mensajeNotificacion.style.color = "red";
+  }
+});
+
+
+
+Archivo “activacion.php”
+<?php
+// Datos de conexión a la base de datos
+$servername = "127.0.0.1:3306";
+$username = "u340969567_artefactosonli";
+$password = "Shionersz123!";
+$dbname = "u340969567_artefactosonli";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexión
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// Procesar formulario de activación de cuenta
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  // Obtener datos del formulario
+  $usuarioId = $_POST["usuariold"]; // Corregido: usuarioId en lugar de usuariold
+  $deposito = $_FILES["deposito"];
+
+  // Validar datos del formulario
+  $errores = [];
+
+  // Validar si se seleccionó al menos un archivo
+  if (empty($deposito['name'][0])) {
+    $errores[] = "Por favor, selecciona la captura de tu depósito.";
+  }
+
+  // Si no hay errores, procesar la captura del depósito
+  if (empty($errores)) {
+    // Crear la carpeta "uploads" si no existe
+    if (!is_dir('uploads')) {
+      mkdir('uploads', 0777, true);
+    }
+
+    // Itera sobre cada archivo seleccionado
+    for ($i = 0; $i < count($deposito['name']); $i++) {
+      // Verifica si el archivo es una imagen
+      if (strpos($deposito['type'][$i], 'image/') === 0) {
+        // Verifica el tamaño del archivo (en KB)
+        if ($deposito['size'][$i] / 1024 <= 500) {
+          // Guarda el archivo en el servidor
+          $nombreArchivo = uniqid() . '_' . basename($deposito['name'][$i]);
+          $rutaDestino = 'uploads/' . $nombreArchivo; // Define la ruta donde se guardarán los archivos
+          move_uploaded_file($deposito['tmp_name'][$i], $rutaDestino);
+
+          // Guarda la información del archivo en la base de datos
+          $sql = "INSERT INTO deposit_captures_activacion (user_id, file_name, file_path) VALUES (?, ?, ?)"; // Consulta preparada
+          $stmt = $conn->prepare($sql);
+          $stmt->bind_param("sss", $usuarioId, $nombreArchivo, $rutaDestino);
+          if ($stmt->execute()) {
+            // Mostrar la notificación de aprobación
+            echo "<script>
+            document.getElementById('mensajeNotificacion').textContent = 'Su envío ha sido recibido. Se revisará en las próximas 24 horas.';
+            document.getElementById('mensajeNotificacion').style.color = 'green';
+            document.getElementById('estadoEnvio').textContent = 'En espera';
+            document.getElementById('descripcionEnvio').textContent = 'Se ha recibido la captura del depósito. Se revisará en las próximas 24 horas.';
+            </script>";
+          } else {
+            echo "<script>
+            document.getElementById('mensajeNotificacion').textContent = 'Error al guardar la captura. Por favor, inténtalo de nuevo.';
+            document.getElementById('mensajeNotificacion').style.color = 'red';
+            </script>";
+          }
+          $stmt->close();
+        } else {
+          // Mostrar un mensaje de error al usuario si el archivo es demasiado grande
+          echo "<script>
+          document.getElementById('mensajeNotificacion').textContent = 'El archivo es demasiado grande. Por favor, selecciona un archivo de menos de 500 KB.';
+          document.getElementById('mensajeNotificacion').style.color = 'red';
+          </script>";
+          break; // Detener la iteración si hay un error
+        }
+      } else {
+        // Mostrar un mensaje de error al usuario si el archivo no es una imagen
+        echo "<script>
+        document.getElementById('mensajeNotificacion').textContent = 'Por favor, selecciona un archivo de imagen.';
+        document.getElementById('mensajeNotificacion').style.color = 'red';
+        </script>";
+        break; // Detener la iteración si hay un error
+      }
+    }
+  } else {
+    // Mostrar mensajes de error
+    echo "<script>
+            alert('" . implode("\n", $errores) . "');
+          </script>";
+  }
+}
+$conn->close();
+?>
+
+
+Archivo “portada.html”
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUVISOL - portada</title>
+    <link rel="stylesheet" href="portada.css">
+    
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido a "JUVISOL" !</h1>
+        <h2>Únete a nuestra comunidad y gana comisiones por afiliar</h2>
+        <div class="botones-container">
+            <button class="boton-registrar" id="registrar">Registrar</button>
+            <button class="boton-acceder" id="acceder">Acceder</button>
+            <script src="portada.js"></script>
+        </div>
+    </header>
+</body>
+</html>
+
+
+Archivo “portada.css”
+
+/* Estilos generales para el cuerpo */
+body {
+    /* Ruta de la imagen de fondo */
+    background-image: url("img/fondonubes.jpg");
+    /* No repite la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Cubre todo el fondo con la imagen */
+    background-size: cover;
+    /* Centra la imagen de fondo */
+    background-position: center;
+    /* Define la fuente del texto */
+    font-family: 'Bradley Hand ITC', cursive;
+    /* Define el color de fondo */
+    background-color: #121212; /* Negro oscuro */
+    /* Define el color del texto */
+    color: #181717; /* Blanco */
+    /* Elimina el margen predeterminado */
+    margin: 0;
+    /* Elimina el relleno predeterminado */
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    /* Centra el texto del encabezado */
+    text-align: center;
+    /* Agrega espacio arriba y abajo del encabezado */
+    padding: 50px 0;
+}
+
+/* Estilos para la imagen */
+header img {
+    /* Ajusta el ancho de la imagen al 100% del contenedor */
+    width: 100%;
+    /* Ajusta la altura de la imagen automáticamente */
+    height: auto;
+    /* Muestra la imagen como un bloque */
+    display: block;
+    /* Centra la imagen horizontalmente */
+    margin: 0 auto;
+    /* Posiciona la imagen de forma relativa */
+    position: relative;
+    /* Ajusta la posición vertical de la imagen */
+    bottom: 0;
+}
+
+/* Estilos para el título principal */
+h1 {
+    /* Define el tamaño del título */
+    font-size: 5em;
+    /* Aplica negrita al título */
+    font-weight: bold;
+    /* Agrega espacio debajo del título */
+    margin-bottom: 20px;
+}
+
+/* Estilos para el subtítulo */
+h2 {
+    /* Define el tamaño del subtítulo */
+    font-size: 1.5em;
+    /* Agrega espacio debajo del subtítulo */
+    margin-bottom: 40px;
+}
+
+/* Estilos para el contenedor de los botones */
+.botones-container {
+    /* Define el contenedor como un elemento flexible */
+    display: flex;
+    /* Centra los botones horizontalmente */
+    justify-content: center;
+    /* Agrega espacio arriba del contenedor de botones */
+    margin-top: 50px;
+}
+
+/* Estilos para los botones */
+button {
+    /* Define el color de fondo del botón */
+    background-color: #00ff4c; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff;
+    /* Agrega espacio interno al botón */
+    padding: 15px 30px;
+    /* Elimina el borde del botón */
+    border: none;
+    /* Redondea las esquinas del botón */
+    border-radius: 25px;
+    /* Define el tamaño del texto del botón */
+    font-size: 1.2em;
+    /* Cambia el cursor a un puntero al pasar el mouse */
+    cursor: pointer;
+    /* Agrega espacio entre los botones */
+    margin: 0 10px;
+}
+
+/* Estilos para el botón "Registrar" */
+.boton-registrar {
+    /* Define el color de fondo del botón */
+    background-color: #0059ff; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff;
+}
+
+/* Estilos para el botón "Acceder" */
+.boton-acceder {
+    /* Define el color de fondo del botón */
+    background-color: #0059ff; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff;
+}
+
+
+Archivo “portada.js”
+
+const registrarButton = document.getElementById('registrar');
+const accederButton = document.getElementById('acceder');
+
+registrarButton.addEventListener('click', () => {
+    window.location.href = 'registro.html';
+});
+
+accederButton.addEventListener('click', () => {
+    window.location.href = 'login.html';
+});
+
+
+
+Archivo “.hintrc”
+
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "button-type": "off",
+    "no-inline-styles": "off",
+    "meta-viewport": "off"
+  }
+}
+
+Archivo “conocenos.html”
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUVISOL - Conócenos</title>
+<link rel="stylesheet" href="conocenos.css">
+<link rel="stylesheet" href="logout.css">
+
+</head>
+<body>
+  <nav id="nav">
+    <ul>
+      <li><a href="mi_cuenta.html">Mi pergil</a></li>
+      <li><a href="red.html">Mi red</a></li>
+      <li><a href="activacion.html">activacion</a></li>
+      <li><a href="actualizar.html">actualizar</a></li>
+      <li><a href="preguntas.html">Preguntas</a></li>
+      <li><a href="conocenos.html">Conócenos</a></li>
+      <li><a href="logout.php">Cerrar sesión</a></li> </ul>
+  </nav>
+<header>
+<h1><strong>Conócenos</strong></h1>
+
+</header>
+<main>
+
+  
+
+<div class="preguntas-container">
+<div class="pregunta">
+<h3>¿Qué es JUVISOL?</h3>
+<p>JUVISOL es una plataforma online que te permite generar ingresos a través de un sistema de afiliación multinivel. La plataforma está diseñada para conectar a personas interesadas en el mundo de las criptomonedas, específicamente Litecoin, y brindarles la oportunidad de obtener ganancias por medio de la construcción de una red de afiliados.</p>
+</div>
+<div class="pregunta">
+<h3>¿Cómo funciona JUVISOL?</h3>
+
+<p>
+  <strong>1. Registro:</strong> Para empezar, los usuarios deben registrarse en la plataforma, completando un formulario con sus datos personales y realizando un pago inicial de 25 soles peruanos. Al finalizar el registro, el usuario recibe un enlace de referido único que puede compartir con otras personas para invitarlas a unirse a su red.
+</p>
+
+<p>
+  <strong>2. Activación de la cuenta:</strong>  Una vez registrado, la cuenta del usuario se encuentra en estado "inactivo". Para activarla, el usuario debe ingresar a la sección "Mi Cuenta", hacer clic en el botón "Activar Cuenta" y proporcionar su nombre, número de cuenta y una captura de pantalla del comprobante de depósito. El equipo de JUVISOL verifica el depósito y activa la cuenta en un plazo de 24 horas. 
+</p>
+
+<p>
+  <strong>3. Afiliación:</strong>  Con la cuenta activa, el usuario se encuentra en el Nivel 1 y puede comenzar a construir su red de afiliados. Para ello, debe compartir su enlace de referido único en su página web, redes sociales o cualquier otro medio donde pueda llegar a potenciales afiliados. 
+</p>
+
+<p>
+  <strong>4. Estructura de la red:</strong> JUVISOL utiliza una estructura piramidal única que todos los usuarios comparten. Cada usuario es dueño de su propia red, pero todos están conectados dentro de la red piramidal principal. Esto significa que cada usuario recibe recompensas por las personas que están debajo de él en su red, incluso si esas personas fueron afiliadas por otros usuarios. 
+</p>
+
+<p>
+  <strong>5. Subir de nivel:</strong> Para subir de nivel, un usuario debe alcanzar un número específico de afiliados en su red, incluyendo a sus afiliados directos e indirectos. Por ejemplo, para subir del Nivel 1 al Nivel 2, el usuario debe afiliar a 6 personas (2 directos y 4 indirectos). A medida que la red del usuario se expande, todos los usuarios deben ir subiendo de nivel para que el usuario principal también suba de nivel.
+</p>
+
+<p>
+  <strong>6. Recompensas:</strong> Las recompensas se obtienen cuando el usuario completa un nivel. Cada nivel tiene una recompensa específica en soles peruanos. La recompensa se calcula en función del nivel que alcances en el sistema, pero solo hasta el Nivel 9. Si un usuario alcanza el Nivel 10, ya no recibirá recompensas por los niveles 11, 12, etc.
+</p>
+
+<p>
+  <strong>¿Cómo funciona la red piramidal?</strong>
+</p>
+
+<p>
+  Cuando un usuario se registra usando el enlace de referido de otro usuario, el sistema lo ubica en la red del usuario que lo refirió, buscando el espacio más cercano y equilibrado en la red, pero siempre hacia abajo en la estructura piramidal. El sistema busca el espacio más cercano y equilibrado para mantener la red lo más homogénea y ordenada posible. 
+</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<p>
+Si Pepito tiene 2 afiliados directos y 4 afiliados indirectos, y Juanito se registra usando el enlace de referido de Pepito, Juanito no será automáticamente un afiliado directo de Pepito. El sistema buscará un espacio libre en la red de Pepito, ya sea en la parte inferior de la red de sus afiliados directos o en la parte inferior de la red de sus afiliados indirectos. El sistema ubicará a Juanito en el espacio más cercano y equilibrado, pero siempre hacia abajo en la red, para mantener la red lo más homogénea posible.
+</p>
+
+<p><strong>En resumen:</strong></p>
+
+<p>JUVISOL es una plataforma de afiliación multinivel que permite a los usuarios generar ingresos por medio de la construcción de una red de afiliados. La plataforma ofrece una estructura piramidal única que permite a los usuarios obtener recompensas por las personas que están debajo de ellos en su red. </p>
+
+<div class="mas informacion">
+<h3>¿quieres saber mas?</h3>
+<p>Sí deseas saber más te invito a que te unas a nuestra comunidad a través de este enlace</p> 
+<p>👇👇👇</p>
+<p>https://chat.whatsapp.com/EatYITqzVW65cklJM0kF9U </p>
+<p>WASAP: 976407540 </p>
+<p>MOISES CARDENAS PALOMINO “CEO DE JUVISOL”</p>
+</div>
+</div>
+</main>
+<footer>
+    
+</footer>
+<script src="conocenos.js"></script>
+</body>
+</html>
+
+
+Archivo “conocenos.css”
+/* Estilos generales para el cuerpo */
+body {
+    background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+    background-color: #121212; /* Negro oscuro */
+    color: #0f0f0f; /* Blanco */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    }
+    header {
+    text-align: center; /* Centra el texto */
+    padding: 50px 0; /* Agrega espacio arriba y abajo */
+    }
+    h1 {
+    font-size: 5em; /* Ajusta el tamaño del título */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 20px; /* Agrega espacio abajo */
+    color: #0d0d0e; /* Blanco */
+    }
+    h2 {
+    font-size: 2em; /* Ajusta el tamaño del título */
+    margin-bottom: 40px;
+    color: #0d0d0e; /* Blanco */
+    }
+    main {
+    text-align: center; /* Centra el texto */
+    padding: 30px; /* Agrega espacio alrededor */
+    }
+    footer {
+    display: flex; /* Flexbox para un diseño flexible */
+    justify-content: space-around; /* Distribuye los botones */
+    padding: 30px; /* Agrega espacio alrededor */
+    }
+    /* Estilos para la barra de navegación */
+    nav {
+    background-color: #007bff; /* Azul claro Litecoin */
+    padding: 15px 0; /* Espacio arriba y abajo */
+    text-align: center; /* Centra el contenido de la barra */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: fixed; /* Fijar la barra de menú */
+    top: 0; /* Posicionar en la parte superior */
+    left: 0; /* Posicionar a la izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+    }
+    nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    }
+    nav li {
+    display: inline-block; /* Ordena los elementos en línea */
+    margin: 0 15px; /* Espacio entre elementos */
+    }
+    nav a {
+    color: #fff; /* Color blanco para el texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espacio de relleno */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    font-weight: bold; /* Negrita para el texto del enlace */
+    font-style: italic; /* Cursiva para el texto del enlace */
+    }
+    nav a:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+    }
+    /* Estilos para el contenedor de preguntas */
+    .preguntas-container {
+    display: flex; /* Flexbox para un diseño flexible */
+    flex-direction: column; /* Orienta los elementos verticalmente */
+    align-items: center; /* Alinea los elementos al centro */
+    gap: 20px; /* Espacio entre los elementos */
+    }
+    /* Estilos para cada pregunta */
+    .pregunta {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Redondea las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    width: 80%; /* Ancho del contenedor */
+    }
+    /* Estilos para el título de la pregunta */
+    .pregunta h3 {
+    font-size: 1.8em; /* Ajusta el tamaño del título */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 10px; /* Agrega espacio abajo */
+    color: #007bff; /* Azul claro Litecoin */
+    }
+    /* Estilos para el contenido de la pregunta */
+    .pregunta p {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
+    color: #0c0c0c; /* Gris oscuro */
+    }
+    
+    /* Estilos para el contenedor "mas informacion" */
+    .mas-informacion {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Redondea las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    width: 80%; /* Ancho del contenedor */
+    text-align: center; /* Centra el texto */
+    }
+    
+    .mas-informacion p {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
+    color: #0c0c0c; /* Gris oscuro */
+    }
+
+    /* Estilos para el contenedor "mas informacion" */
+    .mas-informacion {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Redondea las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    width: 50%; /* Ancho del contenedor */
+    text-align: center; /* Centra el texto */
+    }
+    
+    .mas-informacion p {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
+    color: #0c0c0c; /* Gris oscuro */
+    }
+
+    /* Estilos para el contenedor "contacto" */
+    .contacto {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Redondea las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    width: 80%; /* Ancho del contenedor */
+    text-align: center; /* Centra el texto */
+    }
+    
+    .contacto p {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
+    color: #0c0c0c; /* Gris oscuro */
+    }
+
+
+Archivo “conocenos.js”
+// Selecciona la barra de navegación
+const nav = document.getElementById('nav');
+
+// Selecciona los enlaces de la barra de navegación
+const navLinks = nav.querySelectorAll('a');
+
+// Agrega un evento de clic a cada enlace de la barra de navegación
+navLinks.forEach(link => {
+link.addEventListener('click', () => {
+// Elimina la clase "active" de todos los enlaces
+navLinks.forEach(l => l.classList.remove('active'));
+
+// Agrega la clase "active" al enlace actual
+link.classList.add('active');
+});
+});
+
+
+Archivo “conocenos.php”
+<?php
+// Datos de conexión a la base de datos
+$servername = "127.0.0.1:3306";
+$username = "u340969567_artefactosonli";
+$password = "Shionersz123!";
+$dbname = "u340969567_artefactosonli";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexión
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+
+// Cerrar conexión
+$conn->close();
+?>
+
+
+
+
+ Archivo “red.html”
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="red.css">
+    <link rel="stylesheet" href="logout.css">
+    <title>JUVISOL - Red de Afiliados</title>
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+          <li><a href="mi_cuenta.html">Mi pergil</a></li>
+          <li><a href="red.html">Mi red</a></li>
+          <li><a href="activacion.html">activacion</a></li>
+          <li><a href="actualizar.html">actualizar</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="conocenos.html">Conócenos</a></li>
+          <li><a href="logout.php">Cerrar sesión</a></li> </ul>
+    </nav>
+    <h1>Red Piramidal de Afiliaciones</h1>
+    <h2>Bienvenidos a la red</h2>
+    <div class="info-general"> <!-- Nuevo div para centrar la información -->
+        <h3>Información General</h3>
+    </div>
+    <div class="container">
+        <div class="node pink" data-usuario-id="<?php echo $_SESSION['usuario_id']; ?>">
+            <?php echo $_SESSION['nickname']; ?>
+            <br>
+            Nivel <?php echo $_SESSION['nivel']; ?>
+        </div>
+        <div class="line2 vertical2"></div> <!-- Línea vertical del nodo 1 -->
+        <div class="line3 vertical3"></div> <!-- Línea vertical del nodo 1 -->
+        <div class="line horizontal"></div> <!-- Línea horizontal entre las líneas verticales -->
+        <div class="level">
+            <div class="node blue" data-usuario-id="2">
+                Nickname 2
+                <br>
+                Nivel 2
+            </div>
+            <div class="line connector left1"></div>
+            <div class="line connector left2"></div>
+            <div class="node blue" data-usuario-id="3">
+                Nickname 3
+                <br>
+                Nivel 2
+            </div>
+            <div class="line connector right1"></div>
+            <div class="line connector right2"></div>
+        </div>
+        <div class="level">
+            <div class="node orange" data-usuario-id="4">
+                Nickname 4
+                <br>
+                Nivel 3
+            </div>
+            <div class="node orange" data-usuario-id="5">
+                Nickname 5
+                <br>
+                Nivel 3
+            </div>
+            <div class="node orange" data-usuario-id="6">
+                Nickname 6
+                <br>
+                Nivel 3
+            </div>
+            <div class="node orange" data-usuario-id="7">
+                Nickname 7
+                <br>
+                Nivel 3
+            </div>
+        </div>
+    </div>
+    <script src="red.js"></script>
+</body>
+</html>
+
+
+
+
+
+Archivo “red.css”
+
+/* Estilos generales para el cuerpo del documento */
+body {
+  /* Estilos para el cuerpo de la página */
+  background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-size: cover; /* Cubre todo el fondo */
+  background-position: center; /* Centra la imagen */
+  font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+  background-color: #121212; /* Negro oscuro */
+  color: #0f0f0f; /* Blanco */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+}
+
+header {
+  /* Estilos para el encabezado */
+  text-align: center; /* Centra el texto */
+  padding: 50px 0; /* Agrega espacio arriba y abajo */
+}
+
+h1 {
+  /* Estilos para el título principal */
+  font-size: 5em; /* Ajusta el tamaño del título */
+  font-weight: bold; /* Agrega negrita */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 20px; /* Agrega espacio abajo */
+  color: #0d0d0e; /* Blanco */
+}
+
+h2 {
+  /* Estilos para el subtítulo */
+  font-size: 2em; /* Ajusta el tamaño del subtítulo */
+  margin-bottom: 40px; /* Agrega espacio abajo */
+  color: #0d0d0e; /* Blanco */
+  text-align: center; /* Centra el texto */
+}
+
+h3 {
+  text-align: center; /* Centra el texto del h3 */
+}
+
+p {
+  text-align: center; /* Centra el texto del párrafo */
+}
+
+main {
+  /* Estilos para el contenido principal */
+  text-align: center; /* Centra el texto */
+  padding: 30px; /* Agrega espacio alrededor */
+}
+
+footer {
+  /* Estilos para el pie de página */
+  display: flex; /* Flexbox para un diseño flexible */
+  justify-content: space-around; /* Distribuye los botones */
+  padding: 30px; /* Agrega espacio alrededor */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #007bff; /* Azul claro Litecoin */
+  padding: 15px 0; /* Espacio arriba y abajo */
+  text-align: center; /* Centra el contenido de la barra */
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: fixed; /* Fijar la barra de menú */
+  top: 0; /* Posicionar en la parte superior */
+  left: 0; /* Posicionar a la izquierda */
+  width: 100%; /* Ancho completo */
+  z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+}
+
+nav ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0; /* Elimina el margen */
+  padding: 0; /* Elimina el relleno */
+}
+
+nav li {
+  display: inline-block; /* Ordena los elementos en línea */
+  margin: 0 15px; /* Espacio entre elementos */
+}
+
+nav a {
+  color: #fff; /* Color blanco para el texto */
+  text-decoration: none; /* Elimina el subrayado */
+  font-size: 1.2em; /* Tamaño de la fuente */
+  padding: 10px 20px; /* Espacio de relleno */
+  border-radius: 25px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color */
+  font-weight: bold; /* Negrita para el texto del enlace */
+  font-style: italic; /* Cursiva para el texto del enlace */
+}
+
+nav a:hover {
+  background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+}
+
+/* Estilos para el contenedor principal de la pirámide */
+#red-usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+  height: 350px; /* Ajusta la altura del contenedor */
+}
+
+/* Estilos para los nodos (círculos) de la pirámide */
+.node {
+  width: 140px; /* Define el ancho de los nodos */
+  height: 140px; /* Define la altura de los nodos */
+  border-radius: 50%; /* Redondea los nodos para que sean círculos */
+  display: flex; /* Activa el flexbox para los nodos */
+  align-items: center; /* Alinea los elementos del nodo al centro verticalmente */
+  justify-content: center; /* Alinea los elementos del nodo al centro horizontalmente */
+  color: white; /* Define el color del texto dentro de los nodos como blanco */
+  font-weight: bold; /* Define el peso del texto dentro de los nodos como negrita */
+  margin: 10px; /* Agrega un margen de 10 píxeles alrededor de los nodos */
+  position: relative; /* Permite el posicionamiento absoluto de los elementos dentro de los nodos */
+  border: 4px solid white; /* Define un borde blanco de 4 píxeles alrededor de los nodos */
+  box-shadow: 0 0 10px rgba(18, 19, 19, 0.89); /* Agrega una sombra ligera a los nodos */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse */
+  transition: transform 0.3s; /* Transición suave para la transformación */
+  font-size: 1.4em; /* Ajusta el tamaño de la fuente del texto dentro del nodo */
+  text-align: center; /* Centra el texto dentro del nodo */
+  line-height: 1.2; /* Ajusta el interlineado del texto dentro del nodo */
+}
+
+/* Estilos especiales para el nodo principal */
+.node.pink {
+  width: 160px; /* Define el ancho del nodo principal */
+  height: 160px; /* Define la altura del nodo principal */
+}
+
+/* Ajusta la posición vertical de la esfera azul (nodo 2) */
+.node.blue {
+  top: 40px; /* Ajusta la posición vertical de la esfera azul (nodo 2) para bajarla un poco */
+}
+
+/* Ajusta la posición vertical de la esfera naranja (nodo 3) */
+.node.orange {
+  top: 70px; /* Ajusta la posición vertical de la esfera naranja (nodo 3) para bajarla un poco */
+}
+
+/* Estilos para el nodo de color rosa */
+.pink {
+  background-color: #d5006d; /* Define el color de fondo del nodo como rosa */
+}
+
+/* Estilos para el nodo de color azul */
+.blue {
+  background-color: #3b5998; /* Define el color de fondo del nodo como azul */
+}
+
+/* Estilos para el nodo de color naranja */
+.orange {
+  background-color: #ff5722; /* Define el color de fondo del nodo como naranja */
+}
+
+/* Estilos para la línea vertical 2 */
+.vertical2 {
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 60px; /* Define la altura de la línea */
+  left: 48%; /* Centra la línea horizontalmente */
+  transform: translateX(-50%) rotate(30deg); /* Centra la línea horizontalmente y le da un ángulo de 30 grados */
+  top: 80px; /* Define la posición vertical de la línea */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para la línea vertical 3 */
+.vertical3 {
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 60px; /* Define la altura de la línea */
+  right: 48%; /* Centra la línea horizontalmente desde el borde derecho */
+  transform: translateX(48%) rotate(-30deg); /* Centra la línea horizontalmente desde el borde derecho y le da un ángulo de -30 grados */
+  top: 80px; /* Define la posición vertical de la línea */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para las líneas de conexión entre los nodos */
+.connector {
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 80px; /* Define el ancho de la línea */
+  height: 4px; /* Define la altura de la línea */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para el contenedor de los niveles de la pirámide */
+.level {
+  display: flex; /* Activa el flexbox para el contenedor de niveles */
+  justify-content: center; /* Centra los nodos dentro del contenedor de niveles horizontalmente */
+  position: relative; /* Permite el posicionamiento absoluto de los elementos dentro del contenedor de niveles */
+}
+
+/* Estilos para la línea de conexión izquierda */
+.connector.left1 {
+  top: 170px; /* Define la posición vertical de la línea (arriba y abajo) */
+  left: -04px; /* Define la posición horizontal de la línea (isquierda derecha)*/
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 100px; /* Define la altura de la línea (mas largo o mas corto) */
+  transform: translateX(-50%) rotate(38deg); /* Centra la línea horizontalmente y le da un ángulo de 30 grados */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para la línea de conexión izquierda */
+.connector.left2 {
+  top: 200px; /* Define la posición vertical de la línea (arriba y abajo)*/
+  left: 90px; /* Define la posición horizontal de la línea (isquierda derecha)*/
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 45px; /* Define la altura de la línea (mas largo o mas corto)*/
+  transform: translateX(-150%) rotate(0deg); /* Centra la línea horizontalmente y le da un ángulo de 30 grados */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para la línea de conexión derecha */
+.connector.right1 {
+  top: 200px; /* Define la posición vertical de la línea (arriba y abajo) */
+  right: 75px; /* Define la posición horizontal de la línea (isquierda derecha) */
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 45px; /* Define la altura de la línea (mas largo o mas corto)*/
+  transform: translateX(-150%) rotate(0deg); /* Centra la línea horizontalmente y le da un ángulo de 30 grados */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para la línea de conexión derecha */
+.connector.right2 {
+  top: 165px; /* Define la posición vertical de la línea (arriba y abajo) */
+  right: -20px; /* Define la posición horizontal de la línea (isquierda derecha)*/
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 95px; /* Define la altura de la línea (mas largo o mas corto) */
+  transform: translateX(-100%) rotate(145deg); /* Centra la línea horizontalmente y le da un ángulo de 30 grados */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para el nodo al pasar el mouse */
+.node:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del nodo */
+}
+
+/* Estilos para la información del nodo */
+.node-info {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none; /* Oculta la información por defecto */
+  z-index: 10; /* Asegurar que la información esté por encima de otros elementos */
+}
+
+/* Estilos para el enlace de referido */
+.enlace-referido {
+  display: block;
+  margin-top: 10px;
+  color: #007bff; /* Azul claro Litecoin */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold; /* Agrega negrita */
+}
+
+/* Estilos para el enlace de referido al pasar el mouse */
+.enlace-referido:hover {
+  text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+}
+
+
+
+
+
+Archivo “red.js”
+
+// Selecciona el contenedor de la red del usuario
+const redUsuario = document.getElementById('red-usuario');
+
+// Función para cargar la red del usuario
+function cargarRedUsuario(usuarioId) {
+    // Realizar la solicitud AJAX para obtener la red del usuario
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "red.php", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-formurlencoded");
+    xhr.onload = function() {
+        if (this.status === 200) {
+            // Mostrar la red del usuario en el contenedor
+            const red = JSON.parse(this.responseText);
+
+            // Mostrar el enlace de referido del usuario
+            const enlaceReferido = document.createElement('div');
+            enlaceReferido.classList.add('enlace-referido');
+            enlaceReferido.textContent = red.usuario.enlace_referido;
+            redUsuario.appendChild(enlaceReferido);
+
+            // Mostrar el nodo del usuario actual
+            const nodoUsuario = document.createElement('div');
+            nodoUsuario.classList.add('node', 'pink');
+            nodoUsuario.dataset.usuarioId = usuarioId;
+            nodoUsuario.textContent = red.usuario.nickname + '\nNivel ' + red.usuario.nivel;
+            redUsuario.appendChild(nodoUsuario);
+
+            // Mostrar los nodos de los directos
+            if (red.directos.length > 0) {
+                const nivelDirectos = document.createElement('div');
+                nivelDirectos.classList.add('level');
+                redUsuario.appendChild(nivelDirectos);
+
+                red.directos.forEach(directo => {
+                    const nodoDirecto = document.createElement('div');
+                    nodoDirecto.classList.add('node', 'blue');
+                    nodoDirecto.dataset.usuarioId = directo.id;
+                    nodoDirecto.textContent = directo.nickname + '\nNivel ' + directo.nivel;
+                    nivelDirectos.appendChild(nodoDirecto);
+
+                    // Agregar el evento de clic para mostrar la red del directo
+                    nodoDirecto.addEventListener('click', () => {
+                        cargarRedUsuario(directo.id);
+                    });
+                });
+            }
+
+            // Mostrar los nodos de los indirectos
+            if (red.indirectos.length > 0) {
+                const nivelIndirectos = document.createElement('div');
+                nivelIndirectos.classList.add('level');
+                redUsuario.appendChild(nivelIndirectos);
+
+                red.indirectos.forEach(indirecto => {
+                    const nodoIndirecto = document.createElement('div');
+                    nodoIndirecto.classList.add('node', 'orange');
+                    nodoIndirecto.dataset.usuarioId = indirecto.id;
+                    nodoIndirecto.textContent = indirecto.nickname + '\nNivel ' + indirecto.nivel;
+                    nivelIndirectos.appendChild(nodoIndirecto);
+
+                    // Agregar el evento de clic para mostrar la red del indirecto
+                    nodoIndirecto.addEventListener('click', () => {
+                        cargarRedUsuario(indirecto.id);
+                    });
+                });
+            }
+
+            // Agregar las líneas de la pirámide
+            const line2 = document.createElement('div');
+            line2.classList.add('line2', 'vertical2');
+            redUsuario.appendChild(line2);
+
+            const line3 = document.createElement('div');
+            line3.classList.add('line3', 'vertical3');
+            redUsuario.appendChild(line3);
+
+            const lineHorizontal = document.createElement('div');
+            lineHorizontal.classList.add('line', 'horizontal');
+            redUsuario.appendChild(lineHorizontal);
+        } else {
+            // Mostrar mensaje de error
+            alert("Error al obtener la red del usuario.");
+        }
+    };
+    xhr.send("accion=obtenerRed&usuarioId=" + usuarioId);
+}
+
+// Cargar la red del usuario actual al cargar la página
+window.onload = () => {
+    const usuarioId = redUsuario.dataset.usuarioId;
+    cargarRedUsuario(usuarioId);
+};
+
+// Agregar eventos de clic a los enlaces de referido
+redUsuario.addEventListener('click', (event) => {
+    if (event.target.classList.contains('enlace-referido')) {
+        const usuarioId = event.target.dataset.usuarioId;
+        cargarRedUsuario(usuarioId);
+    }
+});
+
+
+
+Archivo “red.php”
+
+<?php
+// Datos de conexión a la base de datos
+$servername = "127.0.0.1:3306";
+$username = "u340969567_artefactosonli";
+$password = "Shionersz123!";
+$dbname = "u340969567_artefactosonli";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexión
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  $accion = $_POST["accion"];
+
+  switch ($accion) {
+    case "obtenerRed":
+      $usuarioId = $_POST["usuarioId"];
+
+      // Obtener la información del usuario actual
+      $sqlUsuario = "SELECT * FROM usuarios WHERE id = $usuarioId";
+      $resultUsuario = $conn->query($sqlUsuario);
+      $usuario = $resultUsuario->fetch_assoc();
+
+      // Obtener la información de los usuarios directos
+      $sqlDirectos = "SELECT * FROM usuarios WHERE enlace_referido = '$usuario[enlace_referido]' AND id != $usuarioId";
+      $resultDirectos = $conn->query($sqlDirectos);
+      $directos = array();
+      while ($row = $resultDirectos->fetch_assoc()) {
+        $directos[] = $row;
+      }
+
+      // Obtener la información de los usuarios indirectos
+      $sqlIndirectos = "SELECT * FROM usuarios WHERE enlace_referido IN (SELECT enlace_referido FROM usuarios WHERE enlace_referido = '$usuario[enlace_referido]' AND id != $usuarioId) AND id != $usuarioId";
+      $resultIndirectos = $conn->query($sqlIndirectos);
+      $indirectos = array();
+      while ($row = $resultIndirectos->fetch_assoc()) {
+        $indirectos[] = $row;
+      }
+
+      // Crear el array de la red
+      $red = array(
+        "usuario" => $usuario,
+        "directos" => $directos,
+        "indirectos" => $indirectos
+      );
+
+      echo json_encode($red);
+      break;
+
+    default:
+      echo "Acción inválida.";
+      break;
+  }
+}
+
+$conn->close();
+?>
+
+
+
+
+
+
+
+
+
+Archivo “logout.php”
+<?php
+session_start(); // Iniciar la sesión
+session_destroy(); // Destruir la sesión
+
+// Redirigir a la página de inicio o login
+header("Location: login.html");
+exit;
+?>
+
+
+
+
+Archivo “logout.css”
+
+
+
+/* Estilos para el botón "Cerrar sesión" */
+nav ul li a.logout {
+    background-color: red; /* Color de fondo rojo */
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px; /* Espacio interno */
+    border-radius: 25px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+  }
+  
+  nav ul li a.logout:hover {
+    background-color: darkred; /* Color rojo más oscuro al pasar el mouse */
+  }
+
+
+
+
+
+
+Archivo “invertir.html”
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inversión - JUVISOL</title>
+    <link rel="stylesheet" href="invertir.css">
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+          <li><a href="mi_cuenta.html">Mi pergil</a></li>
+          <li><a href="red.html">Mi red</a></li>
+          <li><a href="activacion.html">activacion</a></li>
+          <li><a href="actualizar.html">actualizar</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="conocenos.html">Conócenos</a></li>
+          <li><a href="logout.php">Cerrar sesión</a></li> </ul>
+    </nav>
+    <header>
+        <h1>Sistema de Inversión</h1>
+    </header>
+    <main>
+        <!-- Sección para mostrar las inversiones realizadas -->
+        <section class="seccion-inversiones-realizadas">
+            <h2>Tus Inversiones Realizadas</h2>
+            <table class="reporte-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Monto Inicial</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Fecha de Finalización</th>
+                        <th>Retorno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se mostrarán las inversiones del usuario -->
+                    <tr>
+                        <td>Plan Semanal</td>
+                        <td>S/ 100</td>
+                        <td>18/10/2024</td>
+                        <td>25/10/2024</td>
+                        <td>S/ 101.20</td>
+                    </tr>
+                    <tr>
+                        <td>Plan 3 Meses</td>
+                        <td>S/ 500</td>
+                        <td>18/10/2024</td>
+                        <td>18/01/2025</td>
+                        <td>S/ 650</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección para realizar una nueva inversión -->
+        <section class="seccion-nueva-inversion">
+            <h2>Realiza tu Inversión</h2>
+            <div class="planes">
+                <!-- Plan Semanal -->
+                <div class="plan" data-plan="semanal">
+                    <h3>Plan Semanal</h3>
+                    <p>Gana un 1.2% semanal de tu capital.</p>
+                    <p>Nivel de referido: 5%</p>
+                </div>
+                <!-- Plan 3 Meses -->
+                <div class="plan" data-plan="3meses">
+                    <h3>Plan 3 Meses</h3>
+                    <p>Gana un 10% mensual de tu capital.</p>
+                    <p>Nivel de referido: 2%</p>
+                </div>
+                <!-- Plan 6 Meses -->
+                <div class="plan" data-plan="6meses">
+                    <h3>Plan 6 Meses</h3>
+                    <p>Gana un 30% de tu capital en 6 meses.</p>
+                    <p>Nivel de referido: 5%</p>
+                </div>
+                <!-- Plan 1 Año -->
+                <div class="plan" data-plan="1año">
+                    <h3>Plan 1 Año</h3>
+                    <p>Gana un 70% de tu capital en 1 año.</p>
+                    <p>Nivel de referido: 5%</p>
+                </div>
+            </div>
+            <p><strong>Número de Cuenta BCP:</strong> 1234567890</p>
+            <p><strong>Titular:</strong> JUVISOL S.A.</p>
+            <p>Ingresa el monto a invertir:</p>
+            <input type="number" id="monto-inversion" placeholder="Monto">
+            <p>Sube la captura de tu depósito:</p>
+            <input type="file" id="captura-deposito">
+            <button id="btn-confirmar-inversion">Confirmar Inversión</button>
+        </section>
+    </main>
+    <footer>
+        <p>JUVISOL - Sistema de Inversión</p>
+    </footer>
+    <script src="invertir.js"></script>
+</body>
+</html>
+
+
+
+
+Archivo “invertir.css”
+
+/* Estilos generales para el cuerpo */
+body {
+    /* Ruta de la imagen */
+    background-image: url("img/fondonubes.jpg"); 
+    /* No repite la imagen */
+    background-repeat: no-repeat; 
+    /* Cubre todo el fondo */
+    background-size: cover; 
+    /* Centra la imagen */
+    background-position: center; 
+    /* Cambia la fuente */
+    font-family: 'Bradley Hand ITC', cursive; 
+    /* Negro oscuro */
+    background-color: #121212; 
+    /* Blanco */
+    color: #0f0f0f; 
+    /* Elimina el margen predeterminado */
+    margin: 0; 
+    /* Elimina el relleno predeterminado */
+    padding: 0; 
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #007bff; /* Azul claro Litecoin */
+    padding: 15px 0; /* Espacio arriba y abajo */
+    text-align: center; /* Centra el contenido de la barra */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: fixed; /* Fijar la barra de menú */
+    top: 0; /* Posicionar en la parte superior */
+    left: 0; /* Posicionar a la izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+    }
+    nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    }
+    nav li {
+    display: inline-block; /* Ordena los elementos en línea */
+    margin: 0 15px; /* Espacio entre elementos */
+    }
+    nav a {
+    color: #fff; /* Color blanco para el texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espacio de relleno */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    font-weight: bold; /* Negrita para el texto del enlace */
+    font-style: italic; /* Cursiva para el texto del enlace */
+    }
+    nav a:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+    }
+
+/* Estilos para el encabezado */
+header {
+    /* Centra el texto */
+    text-align: center; 
+    /* Agrega espacio arriba y abajo */
+    padding: 50px 0; 
+}
+
+/* Estilos para el título principal */
+h1 {
+    /* Ajusta el tamaño del título */
+    font-size: 5em; 
+    /* Agrega negrita */
+    font-weight: bold; 
+    /* Agrega margen inferior al título */
+    margin-bottom: 20px; 
+    /* Blanco */
+    color: #0d0d0e; 
+}
+
+/* Estilos para el subtítulo */
+h2 {
+    /* Ajusta el tamaño del título */
+    font-size: 2em; 
+    /* Agrega margen inferior al subtítulo */
+    margin-bottom: 40px; 
+    /* Blanco */
+    color: #0d0d0e; 
+}
+
+/* Estilos para el contenedor de los botones */
+.botones-container {
+    /* Define el contenedor como un elemento flexible */
+    display: flex; 
+    /* Centra los botones horizontalmente */
+    justify-content: center; 
+    /* Agrega espacio arriba del contenedor de botones */
+    margin-top: 50px; 
+}
+
+/* Estilos para los botones */
+button {
+    /* Define el color de fondo del botón */
+    background-color: #007bff; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff; 
+    /* Agrega espacio interno al botón */
+    padding: 15px 30px; 
+    /* Elimina el borde del botón */
+    border: none; 
+    /* Redondea las esquinas del botón */
+    border-radius: 25px; 
+    /* Define el tamaño del texto del botón */
+    font-size: 1.2em; 
+    /* Cambia el cursor a un puntero al pasar el mouse */
+    cursor: pointer; 
+    /* Agrega espacio entre los botones */
+    margin: 0 10px; 
+}
+
+/* Estilos para el botón "Registrar" */
+.boton-registrar {
+    /* Define el color de fondo del botón */
+    background-color: #0059ff; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff; 
+}
+
+/* Estilos para el botón "Acceder" */
+.boton-acceder {
+    /* Define el color de fondo del botón */
+    background-color: #0059ff; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff; 
+}
+
+.reporte-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #1b1b1b;
+    color: #0c0c0c;
+    font-size: 1.2em;
+}
+
+th {
+    background-color: #333;
+}
+
+.reporte-table td:first-child {
+    border-right: 3px solid #131212;
+    padding-right: 20px;
+    width: 30%;
+}
+
+.reporte-table td {
+    border-right: 1px solid #0f0f0f;
+}
+
+.reporte-table td:last-child {
+    border-right: none;
+}
+
+.seccion-nueva-inversion {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    text-align: center;
+    margin: 1em;
+}
+
+.planes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan {
+    width: 200px;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.plan:hover {
+    background-color: #eee;
+}
+
+input[type="number"], input[type="file"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+Archivo “invertir.js”
+
+// Selecciona el botón para confirmar la inversión
+const btnConfirmarInversion = document.getElementById('btn-confirmar-inversion');
+
+// Selecciona el campo para ingresar el monto de inversión
+const montoInversion = document.getElementById('monto-inversion');
+
+// Selecciona el campo para subir la captura del depósito
+const capturaDeposito = document.getElementById('captura-deposito');
+
+// Agrega un evento al botón para confirmar la inversión
+btnConfirmarInversion.addEventListener('click', () => {
+    // Obtener el plan seleccionado
+    const planSeleccionado = document.querySelector('.plan.active').dataset.plan;
+
+    // Obtener el monto de inversión
+    const monto = montoInversion.value;
+
+    // Obtener el archivo de la captura del depósito
+    const archivo = capturaDeposito.files[0];
+
+    // Validar los datos del formulario
+    if (!planSeleccionado || !monto || !archivo) {
+        // Mostrar un mensaje de error si falta información
+        alert('Por favor, completa todos los campos.');
+        return;
+    }
+
+    // Validar el tipo de archivo (debe ser una imagen)
+    if (!archivo.type.startsWith('image/')) {
+        alert('Por favor, selecciona una imagen.');
+        return;
+    }
+
+    // Validar el tamaño del archivo (en KB)
+    if (archivo.size / 1024 > 500) {
+        alert('El archivo es demasiado grande. Por favor, selecciona un archivo de menos de 500 KB.');
+        return;
+    }
+
+    // Si la información es válida, enviar la solicitud al servidor
+    const formData = new FormData();
+    formData.append('plan', planSeleccionado);
+    formData.append('monto', monto);
+    formData.append('captura', archivo);
+
+    fetch('/invertir.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            // Mostrar mensaje de confirmación
+            alert('¡Inversión confirmada!');
+
+            // Limpiar el formulario
+            montoInversion.value = '';
+            capturaDeposito.value = '';
+        } else {
+            // Mostrar mensaje de error
+            alert('Hubo un error al procesar la inversión.');
+        }
+    })
+    .catch(error => {
+        // Mostrar mensaje de error
+        console.error('Error:', error);
+        alert('Hubo un error al procesar la inversión.');
+    });
+});
+
+// Agrega un evento de clic a cada plan de inversión
+const planes = document.querySelectorAll('.plan');
+planes.forEach(plan => {
+    plan.addEventListener('click', () => {
+        // Elimina la clase "active" de todos los planes
+        planes.forEach(p => p.classList.remove('active'));
+
+        // Agrega la clase "active" al plan seleccionado
+        plan.classList.add('active');
+    });
+});
+
+
+
+Archivo “invertir.php”
+
+
+<?php
+
+// Datos de conexión a la base de datos
+$servername = "127.0.0.1:3306";
+$username = "u340969567_artefactosonli";
+$password = "Shionersz123!";
+$dbname = "u340969567_artefactosonli";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verifica la conexión
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+// Comprueba si se ha enviado la solicitud POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Obtener los datos del formulario
+  $plan = $_POST['plan'];
+  $monto = $_POST['monto'];
+  $captura = $_FILES['captura'];
+
+  // Validar los datos del formulario
+  if (empty($plan) || empty($monto) || empty($captura['name'])) {
+    echo json_encode(['error' => 'Por favor, completa todos los campos.']);
+    exit;
+  }
+
+  // Validar el tipo de archivo
+  if (!in_array($captura['type'], ['image/jpeg', 'image/png'])) {
+    echo json_encode(['error' => 'El archivo no es una imagen válida.']);
+    exit;
+  }
+
+  // Validar el tamaño del archivo
+  if ($captura['size'] > 500000) { // 500 KB
+    echo json_encode(['error' => 'El archivo es demasiado grande.']);
+    exit;
+  }
+
+  // Obtener el ID del usuario (asumiendo que está en sesión)
+  $usuario_id = $_SESSION['usuario_id']; // Reemplaza con tu lógica para obtener el ID del usuario
+
+  // Subir la captura del depósito
+  $carpeta_destino = 'uploads/'; // Define la carpeta donde se guardarán las capturas
+  $nombre_archivo = uniqid() . '_' . $captura['name']; // Genera un nombre único para el archivo
+  $ruta_archivo = $carpeta_destino . $nombre_archivo;
+
+  if (move_uploaded_file($captura['tmp_name'], $ruta_archivo)) {
+    // Guardar la información de la inversión en la base de datos
+    $sql = "INSERT INTO inversiones (usuario_id, plan, monto, estado) VALUES ('$usuario_id', '$plan', '$monto', 'pendiente')";
+
+    if ($conn->query($sql) === TRUE) {
+      // Obtener el ID de la inversión recién creada
+      $inversion_id = $conn->insert_id;
+
+      // Guardar la información de la captura del depósito
+      $sql = "INSERT INTO deposit_captures_inversion (inversion_id, file_name, file_path) VALUES ('$inversion_id', '$nombre_archivo', '$ruta_archivo')";
+
+      if ($conn->query($sql) === TRUE) {
+        echo json_encode(['success' => 'Inversión registrada correctamente.']);
+      } else {
+        echo json_encode(['error' => 'Error al guardar la captura del depósito.']);
+      }
+    } else {
+      echo json_encode(['error' => 'Error al guardar la inversión.']);
+    }
+  } else {
+    echo json_encode(['error' => 'Error al subir la captura del depósito.']);
+  }
+}
+
+$conn->close();
+
+?>
+
+
+
+Archivo "mi_cuentaadmin.html"
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUVISOL - Panel de Administración - Mi Perfil</title>
+    <link rel="stylesheet" href="mi_cuentaadmin.css">
+    <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+            <li><a href="ceo.html">CEO</a></li>
+            <li><a href="comision.html">Comisión</a></li>
+            <li><a href="porcentaje.html">Porcentaje</a></li>
+            <li><a href="logout.php" class="logout">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Panel de Administración - Mi Perfil</h2>
+        <section id="usuarios">
+            <h3>Lista de Usuarios</h3>
+            <table class="reporte-table" id="tablaUsuarios">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Código PHP para mostrar la información de los usuarios -->
+                </tbody>
+            </table>
+        </section>
+        <section id="usuario" style="display: none;">
+            <h3>Información del Usuario</h3>
+            <form id="formUsuario">
+                <input type="hidden" id="usuarioId" name="usuarioId">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" readonly>
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" readonly>
+                </div>
+                <div>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" readonly>
+                </div>
+                <div>
+                    <label for="cuentaSoles">Cuenta Soles:</label>
+                    <input type="text" id="cuentaSoles" name="cuentaSoles" readonly>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" readonly>
+                </div>
+                <div>
+                    <label for="nickname">Nickname:</label>
+                    <input type="text" id="nickname" name="nickname" readonly>
+                </div>
+                <div>
+                    <label for="nivel">Nivel:</label>
+                    <input type="text" id="nivel" name="nivel" readonly>
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" disabled>
+                        <option value="activo">Activo</option>
+                        <option value="inactivo">Inactivo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" readonly>
+                </div>
+                <div>
+                    <label for="preguntaSecreta">Pregunta Secreta:</label>
+                    <input type="text" id="preguntaSecreta" name="preguntaSecreta" readonly>
+                </div>
+                <button type="button" id="btnEditar" onclick="editarUsuario()">Editar</button>
+                <button type="button" id="btnGuardar" style="display: none;" onclick="guardarUsuario()">Guardar</button>
+                <button type="button" id="btnCancelar" style="display: none;" onclick="cancelarEdicion()">Cancelar</button>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="mi_cuentaadmin.js"></script>
+</body>
+</html>
+
+
+
+
+Archivo "mi_cuentaadmin.css"
+
+
+/* Estilos generales para el cuerpo */
+body {
+    font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+    background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    color: #141414; /* Blanco */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+  }
+  
+  header {
+    /* Estilos para el encabezado */
+    text-align: center; /* Centra el texto */
+    padding: 50px 0; /* Agrega espacio arriba y abajo */
+  }
+  
+  h1 {
+    /* Estilos para el título principal */
+    font-size: 5em; /* Ajusta el tamaño del título */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 20px; /* Agrega espacio abajo */
+    color: #0e0d0d; /* Blanco */
+    text-align: center; /* Centra el texto */
+  }
+  
+  h2 {
+    text-align: center; /* Centra el texto */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 50px;
+    font-size: 2em; /* Aumenta el tamaño de la fuente */
+  }
+  
+  main {
+    text-align: center; /* Centra el texto */
+    padding: 30px; /* Agrega espacio alrededor */
+  }
+  
+  footer {
+    display: flex; /* Flexbox para un diseño flexible */
+    justify-content: space-around; /* Distribuye los botones */
+    padding: 30px; /* Agrega espacio alrededor */
+  }
+  
+  /* Estilos para la tabla */
+  .reporte-table {
+    width: 80%;
+    margin: 20px auto; /* Espacio entre la tabla y el borde superior */
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 15px; /* Agrega espacio interno */
+    text-align: left; /* Alinea el texto a la izquierda */
+    border-bottom: 1px solid #1b1b1b; /* Agrega un borde blanco */
+    color: #0c0c0c; /* Texto blanco */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+  }
+  
+  th {
+    background-color: #333; /* Color de fondo gris oscuro */
+  }
+  
+  .reporte-table td:first-child {
+    border-right: 3px solid #131212; /* Línea más gruesa */
+    padding-right: 20px; /* Más espacio a la derecha */
+    width: 30%; /* Ajusta el ancho de la columna */
+  }
+  
+  /* Estilos para las líneas verticales en la tabla */
+  .reporte-table td {
+    border-right: 1px solid #0f0f0f; /* Línea vertical en cada celda */
+  }
+  
+  /* Estilo para la última celda de la tabla */
+  .reporte-table td:last-child {
+    border-right: none; /* Elimina la línea vertical de la última celda */
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
+    background-color: #007bff; /* Azul claro Litecoin */
+    padding: 15px 0; /* Espacio arriba y abajo */
+    text-align: center; /* Centra el contenido de la barra */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: fixed; /* Fijar la barra de menú */
+    top: 0; /* Posicionar en la parte superior */
+    left: 0; /* Posicionar a la izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+  }
+  
+  nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+  }
+  
+  nav li {
+    display: inline-block; /* Ordena los elementos en línea */
+    margin: 0 15px; /* Espacio entre elementos */
+  }
+  
+  nav a {
+    color: #fff; /* Color blanco para el texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espacio de relleno */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    font-weight: bold; /* Negrita para el texto del enlace */
+    font-style: italic; /* Cursiva para el texto del enlace */
+  }
+  
+  nav a:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+  }
+  
+  /* Estilos para el formulario */
+  #formUsuario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #formUsuario div {
+    margin-bottom: 10px;
+  }
+  
+  #formUsuario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #formUsuario input,
+  #formUsuario select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #formUsuario button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul claro Litecoin */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+
+
+
+Archivo "mi_cuentaadmin.js"
+
+// Selecciona la tabla de usuarios
+const tablaUsuarios = document.getElementById('tablaUsuarios');
+// Selecciona la sección del usuario
+const seccionUsuario = document.getElementById('usuario');
+// Selecciona el formulario del usuario
+const formUsuario = document.getElementById('formUsuario');
+// Selecciona el botón de editar
+const btnEditar = document.getElementById('btnEditar');
+// Selecciona el botón de guardar
+const btnGuardar = document.getElementById('btnGuardar');
+// Selecciona el botón de cancelar
+const btnCancelar = document.getElementById('btnCancelar');
+
+// Función para obtener la lista de usuarios
+function obtenerUsuarios() {
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "mi_cuentaadmin.php", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-formurlencoded");
+    xhr.onload = function() {
+        if (this.status === 200) {
+            const usuarios = JSON.parse(this.responseText);
+            mostrarUsuarios(usuarios);
+        } else {
+            alert("Error al obtener la lista de usuarios.");
+        }
+    };
+    xhr.send("accion=obtenerUsuarios");
+}
+
+// Función para mostrar la lista de usuarios en la tabla
+function mostrarUsuarios(usuarios) {
+    tablaUsuarios.innerHTML = ''; // Limpia la tabla
+    const thead = tablaUsuarios.createTHead();
+    const row = thead.insertRow();
+    const idCell = row.insertCell();
+    const nombreCell = row.insertCell();
+    const apellidoCell = row.insertCell();
+    const correoCell = row.insertCell();
+    const accionesCell = row.insertCell();
+    idCell.textContent = 'ID';
+    nombreCell.textContent = 'Nombre';
+    apellidoCell.textContent = 'Apellido';
+    correoCell.textContent = 'Correo';
+    accionesCell.textContent = 'Acciones';
+    usuarios.forEach(usuario => {
+        const fila = tablaUsuarios.insertRow();
+        const celdald = fila.insertCell();
+        const celdaNombre = fila.insertCell();
+        const celdaApellido = fila.insertCell();
+        const celdaCorreo = fila.insertCell();
+        const celdaAcciones = fila.insertCell();
+        celdald.textContent = usuario.id;
+        celdaNombre.textContent = usuario.nombre;
+        celdaApellido.textContent = usuario.apellido;
+        celdaCorreo.textContent = usuario.correo;
+        const enlaceDatos = document.createElement('a');
+        enlaceDatos.href = '#';
+        enlaceDatos.textContent = 'Ver datos';
+        enlaceDatos.dataset.usuarioId = usuario.id;
+        celdaAcciones.appendChild(enlaceDatos);
+    });
+    // Agrega un evento de clic a cada fila de la tabla
+    tablaUsuarios.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+            const usuarioId = event.target.dataset.usuarioId;
+            mostrarDatosUsuario(usuarioId);
+        }
+    });
+}
+
+// Función para obtener los datos de un usuario específico
+function mostrarDatosUsuario(usuarioId) {
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "mi_cuentaadmin.php", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-formurlencoded");
+    xhr.onload = function() {
+        if (this.status === 200) {
+            const usuario = JSON.parse(this.responseText);
+            cargarDatosUsuario(usuario);
+        } else {
+            alert("Error al obtener los datos del usuario.");
+        }
+    };
+    xhr.send(`accion=obtenerUsuario&usuarioId=${usuarioId}`);
+}
+
+// Función para cargar los datos del usuario en el formulario
+function cargarDatosUsuario(usuario) {
+    seccionUsuario.style.display = 'block'; // Mostrar la sección del usuario
+    seccionUsuarios.style.display = 'none'; // Ocultar la sección de la lista de usuarios
+    formUsuario.reset(); // Resetear el formulario
+    document.getElementById('usuarioId').value = usuario.id;
+    document.getElementById('nombre').value = usuario.nombre;
+    document.getElementById('apellido').value = usuario.apellido;
+    document.getElementById('correo').value = usuario.correo;
+    document.getElementById('cuentaSoles').value = usuario.cuenta_soles;
+    document.getElementById('telefono').value = usuario.telefono;
+    document.getElementById('nickname').value = usuario.nickname;
+    document.getElementById('nivel').value = usuario.nivel;
+    document.getElementById('estado').value = usuario.estado;
+    document.getElementById('contraseña').value = usuario.contraseña;
+    document.getElementById('preguntaSecreta').value = usuario.pregunta_secreta;
+}
+
+// Función para habilitar la edición del formulario
+function editarUsuario() {
+    document.getElementById('nombre').readOnly = false;
+    document.getElementById('apellido').readOnly = false;
+    document.getElementById('correo').readOnly = false;
+    document.getElementById('cuentaSoles').readOnly = false;
+    document.getElementById('telefono').readOnly = false;
+    document.getElementById('nickname').readOnly = false;
+    document.getElementById('nivel').readOnly = false;
+    document.getElementById('estado').disabled = false;
+    document.getElementById('contraseña').readOnly = false;
+    document.getElementById('preguntaSecreta').readOnly = false;
+    btnEditar.style.display = 'none';
+    btnGuardar.style.display = 'block';
+    btnCancelar.style.display = 'block';
+}
+
+// Función para guardar los cambios del usuario
+function guardarUsuario() {
+    const usuarioId = document.getElementById('usuarioId').value;
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+    const correo = document.getElementById('correo').value;
+    const cuentaSoles = document.getElementById('cuentaSoles').value;
+    const telefono = document.getElementById('telefono').value;
+    const nickname = document.getElementById('nickname').value;
+    const nivel = document.getElementById('nivel').value;
+    const estado = document.getElementById('estado').value;
+    const contraseña = document.getElementById('contraseña').value;
+    const preguntaSecreta = document.getElementById('preguntaSecreta').value;
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "mi_cuentaadmin.php", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-formurlencoded");
+    xhr.onload = function() {
+        if (this.status === 200) {
+            obtenerUsuarios(); // Actualizar la tabla de usuarios
+            seccionUsuario.style.display = 'none'; // Ocultar la sección del usuario
+            seccionUsuarios.style.display = 'block'; // Mostrar la sección de la lista de usuarios
+            alert("Datos del usuario actualizados correctamente.");
+        } else {
+            alert("Error al actualizar los datos del usuario.");
+        }
+    };
+    xhr.send(`accion=guardarUsuario&usuarioId=${usuarioId}&nombre=${nombre}&apellido=${apellido}&correo=${correo}&cuentaSoles=${cuentaSoles}&telefono=${telefono}&nickname=${nickname}&nivel=${nivel}&estado=${estado}&contraseña=${contraseña}&preguntaSecreta=${preguntaSecreta}`);
+}
+
+// Función para cancelar la edición
+function cancelarEdicion() {
+    document.getElementById('nombre').readOnly = true;
+    document.getElementById('apellido').readOnly = true;
+    document.getElementById('correo').readOnly = true;
+    document.getElementById('cuentaSoles').readOnly = true;
+    document.getElementById('telefono').readOnly = true;
+    document.getElementById('nickname').readOnly = true;
+    document.getElementById('nivel').readOnly = true;
+    document.getElementById('estado').disabled = true;
+    document.getElementById('contraseña').readOnly = true;
+    document.getElementById('preguntaSecreta').readOnly = true;
+    btnEditar.style.display = 'block';
+    btnGuardar.style.display = 'none';
+    btnCancelar.style.display = 'none';
+}
+
+// Cargar la lista de usuarios al cargar la página
+window.onload = () => {
+    obtenerUsuarios();
+};
+
+
+
+Archivo "mi_cuentaadmin.php"
+
+
+<?php
+// Datos de conexión a la base de datos
+$servername = "127.0.0.1:3306";
+$username = "u340969567_artefactosonli";
+$password = "Shionersz123!";
+$dbname = "u340969567_artefactosonli";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexión
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Procesar solicitudes AJAX
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    $accion = $_POST["accion"];
+
+    switch ($accion) {
+        case "obtenerUsuarios":
+            // Obtener la lista de usuarios
+            $sql = "SELECT * FROM usuarios";
+            $result = $conn->query($sql);
+            // Convertir los datos a formato JSON
+            $usuarios = array();
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    $usuarios[] = $row;
+                }
+            }
+            echo json_encode($usuarios);
+            break;
+
+        case "obtenerUsuario":
+            // Obtener los datos de un usuario específico
+            $usuarioId = $_POST["usuarioId"];
+            $sql = "SELECT * FROM usuarios WHERE id = $usuarioId";
+            $result = $conn->query($sql);
+            // Convertir los datos a formato JSON
+            $usuario = array();
+            if ($result->num_rows > 0) {
+                $usuario = $result->fetch_assoc();
+            }
+            echo json_encode($usuario);
+            break;
+
+        case "guardarUsuario":
+            // Obtener los datos del usuario
+            $usuarioId = $_POST["usuarioId"];
+            $nombre = $_POST["nombre"];
+            $apellido = $_POST["apellido"];
+            $correo = $_POST["correo"];
+            $cuentaSoles = $_POST["cuentaSoles"];
+            $telefono = $_POST["telefono"];
+            $nickname = $_POST["nickname"];
+            $nivel = $_POST["nivel"];
+            $estado = $_POST["estado"];
+            $contraseña = $_POST["contraseña"];
+            $preguntaSecreta = $_POST["preguntaSecreta"];
+
+            // Actualizar los datos del usuario en la base de datos
+            $sql = "UPDATE usuarios SET nombre = '$nombre', apellido = '$apellido', correo = '$correo', cuenta_soles = '$cuentaSoles', telefono = '$telefono', nickname = '$nickname', nivel = '$nivel', estado = '$estado', contraseña = '$contraseña', pregunta_secreta = '$preguntaSecreta' WHERE id = $usuarioId";
+
+            if ($conn->query($sql) === TRUE) {
+                echo "OK";
+            } else {
+                echo "Error al actualizar los datos del usuario.";
+            }
+            break;
+
+        default:
+            echo "Acción inválida.";
+            break;
+    }
+}
+
+$conn->close();
+?>
+
+
+
+
+
+
+
+
+
+
+
+Archivo “redadmin.html”
+
+
+
+
+Archivo “redadmin.css”
+
+
+
+
+
+Archivo “redadmin.js”
+
+
+
+
+
+
+Archivo “redadmin.php”
+
+
+
+
+
+
+
+
+
+
+
+Archivo “invertiradmin.html”
+
+
+
+
+
+
+
+Archivo “invertiradmin.css”
+
+
+
+
+
+
+
+
+Archivo “invertiradmin.js”
+
+
+
+
+
+
+
+
+Archivo “invertiradmin.php”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TIPO DE LETRAS PARA TITULOS = Snap ITC
+TIPO DE LETRA PARA EL TEXTO = Bradley Hand ITC
+
+
+
+
