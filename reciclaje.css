@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+    background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    color: #141414; /* Blanco */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center; /* Centra el texto */
+    padding: 50px 0; /* Agrega espacio arriba y abajo */
+}
+
+h1 {
+    font-size: 5em; /* Ajusta el tamaño del título */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0e0d0d; /* Blanco */
+}
+
+h2 {
+    text-align: center; /* Centra el texto */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 50px;
+    font-size: 2em; /* Aumenta el tamaño de la fuente */
+}
+
+main {
+    text-align: center; /* Centra el texto */
+    padding: 30px; /* Agrega espacio alrededor */
+}
+
+footer {
+    display: flex; /* Flexbox para un diseño flexible */
+    justify-content: space-around; /* Distribuye los botones */
+    padding: 30px; /* Agrega espacio alrededor */
+}
+
+/* Estilos para el botón "Activar cuenta" */
+#activarCuenta {
+    background-color: #007bff; /* Azul claro Litecoin */
+    color: #fff; /* Texto blanco */
+    padding: 15px 30px; /* Agrega espacio interno */
+    border: none; /* Elimina el borde */
+    border-radius: 25px; /* Redondea las esquinas */
+    font-size: 1.5em; /* Ajusta el tamaño del título */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    font-weight: bold; /* Texto en negrita */
+    font-style: italic; /* Texto en cursiva */
+    display: block; /* Ocupa todo el ancho disponible */
+    margin: 50px auto; /* Centra el botón */
+}

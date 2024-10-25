@@ -1,0 +1,109 @@
+/* Estilos generales para el cuerpo */
+body {
+    /* Ruta de la imagen de fondo */
+    background-image: url("img/fondonubes.jpg");
+    /* No repite la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Cubre todo el fondo con la imagen */
+    background-size: cover;
+    /* Centra la imagen de fondo */
+    background-position: center;
+    /* Define la fuente del texto */
+    font-family: 'Bradley Hand ITC', cursive;
+    /* Define el color de fondo */
+    background-color: #121212; /* Negro oscuro */
+    /* Define el color del texto */
+    color: #181717; /* Blanco */
+    /* Elimina el margen predeterminado */
+    margin: 0;
+    /* Elimina el relleno predeterminado */
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    /* Centra el texto del encabezado */
+    text-align: center;
+    /* Agrega espacio arriba y abajo del encabezado */
+    padding: 50px 0;
+}
+
+/* Estilos para la imagen */
+header img {
+    /* Ajusta el ancho de la imagen al 100% del contenedor */
+    width: 100%;
+    /* Ajusta la altura de la imagen automáticamente */
+    height: auto;
+    /* Muestra la imagen como un bloque */
+    display: block;
+    /* Centra la imagen horizontalmente */
+    margin: 0 auto;
+    /* Posiciona la imagen de forma relativa */
+    position: relative;
+    /* Ajusta la posición vertical de la imagen */
+    bottom: 0;
+}
+
+/* Estilos para el título principal */
+h1 {
+    /* Define el tamaño del título */
+    font-size: 5em;
+    /* Aplica negrita al título */
+    font-weight: bold;
+    /* Agrega espacio debajo del título */
+    margin-bottom: 20px;
+}
+
+/* Estilos para el subtítulo */
+h2 {
+    /* Define el tamaño del subtítulo */
+    font-size: 1.5em;
+    /* Agrega espacio debajo del subtítulo */
+    margin-bottom: 40px;
+}
+
+/* Estilos para el contenedor de los botones */
+.botones-container {
+    /* Define el contenedor como un elemento flexible */
+    display: flex;
+    /* Centra los botones horizontalmente */
+    justify-content: center;
+    /* Agrega espacio arriba del contenedor de botones */
+    margin-top: 50px;
+}
+
+/* Estilos para los botones */
+button {
+    /* Define el color de fondo del botón */
+    background-color: #00ff4c; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff;
+    /* Agrega espacio interno al botón */
+    padding: 15px 30px;
+    /* Elimina el borde del botón */
+    border: none;
+    /* Redondea las esquinas del botón */
+    border-radius: 25px;
+    /* Define el tamaño del texto del botón */
+    font-size: 1.2em;
+    /* Cambia el cursor a un puntero al pasar el mouse */
+    cursor: pointer;
+    /* Agrega espacio entre los botones */
+    margin: 0 10px;
+}
+
+/* Estilos para el botón "Registrar" */
+.boton-registrar {
+    /* Define el color de fondo del botón */
+    background-color: #0059ff; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff;
+}
+
+/* Estilos para el botón "Acceder" */
+.boton-acceder {
+    /* Define el color de fondo del botón */
+    background-color: #0059ff; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff;
+}

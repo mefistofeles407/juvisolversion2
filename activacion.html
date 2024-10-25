@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUVISOL - Activacion</title>
+<link rel="stylesheet" href="activacion.css">
+<link rel="stylesheet" href="logout.css">
+<script src="activacion.js"></script>
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+          <li><a href="mi_cuenta.html">Mi perfil</a></li>
+          <li id="afiliacionLink" class="nav-link"><a href="red.html">afiliación</a></li>
+          <li id="inversionLink" class="nav-link"><a href="invertir.html">inversión</a></li>
+          <li><a href="activacion.html">activacion</a></li>
+          <li><a href="actualizar.html">actualizar</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="conocenos.html">Conócenos</a></li>
+          <li><a href="logout.php">Cerrar sesión</a></li> </ul>
+    </nav>
+<header>
+<h1><strong>Activa tu cuenta</strong></h1>
+<h2>Número de cuenta de la empresa JUVISOL</h2>
+</header>
+<main>
+<div class="container">
+<h2 class="title">Envío de Captura de Depósito</h2>
+<form method="post" enctype="multipart/form-data">
+<input type="hidden" name="usuariold" value="<?php echo $usuariold; ?>">
+<div class="form-group">
+<label for="deposito">Captura de depósito:</label>
+<input type="file" id="deposito" name="deposito" multiple="true">
+</div>
+<button type="submit" class="btn btn-primary">Enviar captura</button>
+</form>
+<div id="mensajeNotificacion" class="alert alert-info" style="margin-top: 20px;"></div>
+<div class="table-responsive">
+<table id="tablaEstadoEnvio" class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Estado del envío</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="estadoEnvio">En espera</td>
+<td id="descripcionEnvio">Se ha recibido la captura del depósito. Se revisará en las próximas 24 horas.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+<footer></footer>
+</body>
+</html>

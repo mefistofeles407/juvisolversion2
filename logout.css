@@ -1,0 +1,14 @@
+/* Estilos para el botón "Cerrar sesión" */
+nav ul li a.logout {
+    background-color: red; /* Color de fondo rojo */
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px; /* Espacio interno */
+    border-radius: 25px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+  }
+  
+  nav ul li a.logout:hover {
+    background-color: darkred; /* Color rojo más oscuro al pasar el mouse */
+  }

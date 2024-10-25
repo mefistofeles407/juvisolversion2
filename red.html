@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="red.css">
+    <link rel="stylesheet" href="logout.css">
+    <title>JUVISOL - Red de Afiliados</title>
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+          <li><a href="mi_cuenta.html">Mi pergil</a></li>
+          <li><a href="red.html">Mi red</a></li>
+          <li><a href="activacion.html">activacion</a></li>
+          <li><a href="actualizar.html">actualizar</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="conocenos.html">Conócenos</a></li>
+          <li><a href="logout.php">Cerrar sesión</a></li> </ul>
+    </nav>
+    <h1>Red Piramidal de Afiliaciones</h1>
+    <h2>Bienvenidos a la red</h2>
+    <div class="info-general"> <!-- Nuevo div para centrar la información -->
+        <h3>Información General</h3>
+    </div>
+    <div class="container">
+        <div class="node pink" data-usuario-id="<?php echo $_SESSION['usuario_id']; ?>">
+            <?php echo $_SESSION['nickname']; ?>
+            <br>
+            Nivel <?php echo $_SESSION['nivel']; ?>
+        </div>
+        <div class="line2 vertical2"></div> <!-- Línea vertical del nodo 1 -->
+        <div class="line3 vertical3"></div> <!-- Línea vertical del nodo 1 -->
+        <div class="line horizontal"></div> <!-- Línea horizontal entre las líneas verticales -->
+        <div class="level">
+            <div class="node blue" data-usuario-id="2">
+                Nickname 2
+                <br>
+                Nivel 2
+            </div>
+            <div class="line connector left1"></div>
+            <div class="line connector left2"></div>
+            <div class="node blue" data-usuario-id="3">
+                Nickname 3
+                <br>
+                Nivel 2
+            </div>
+            <div class="line connector right1"></div>
+            <div class="line connector right2"></div>
+        </div>
+        <div class="level">
+            <div class="node orange" data-usuario-id="4">
+                Nickname 4
+                <br>
+                Nivel 3
+            </div>
+            <div class="node orange" data-usuario-id="5">
+                Nickname 5
+                <br>
+                Nivel 3
+            </div>
+            <div class="node orange" data-usuario-id="6">
+                Nickname 6
+                <br>
+                Nivel 3
+            </div>
+            <div class="node orange" data-usuario-id="7">
+                Nickname 7
+                <br>
+                Nivel 3
+            </div>
+        </div>
+    </div>
+    <script src="red.js"></script>
+</body>
+</html>

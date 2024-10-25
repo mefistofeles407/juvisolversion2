@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <title>JUVISOL - LOGIN</title>
+</head>
+<body>
+  <main>
+    <div class="login-container">
+      <h2>Iniciar sesión</h2>
+      <form method="post">
+        <label for="usuario">Nombre de usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+        <br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required>
+        <br>
+        <button type="submit">Iniciar sesión</button>
+      </form>
+      <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+      <p><a href="recupera.html">¿Olvidaste tu contraseña?</a></p>
+      <!-- Agrega este enlace para redirigir a la sección de recuperación -->
+      <div id="mensajeError" style="color: red; display: none;"></div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="login.js"></script>
+</body>
+</html>

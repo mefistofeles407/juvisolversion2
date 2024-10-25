@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUVISOL - Actualizar Datos</title>
+    <link rel="stylesheet" href="actualizar.css">
+    <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+          <li><a href="mi_cuenta.html">Mi pergil</a></li>
+          <li><a href="red.html">Mi red</a></li>
+          <li><a href="activacion.html">activacion</a></li>
+          <li><a href="actualizar.html">actualizar</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="conocenos.html">Conócenos</a></li>
+          <li><a href="logout.php">Cerrar sesión</a></li> </ul>
+    </nav>
+    <main>
+        <h2 style="text-align: center; font-size: 5em; font-weight: bold; margin-bottom: 50px;">ACTUALIZAR DATOS</h2>
+        <form method="post">
+            <input type="hidden" name="usuarioId" value="<?php echo $usuarioId; ?>">
+
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="nombre" value="ingresa tu nuevo nombre">
+            <span id="errorNombre" style="color: red; display: none;"></span> <br>
+
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" value="ingresa tu nuevo apellido">
+            <span id="errorApellido" style="color: red; display: none;"></span> <br>
+
+            <label for="correo">Correo electrónico (Gmail):</label>
+            <input type="email" id="correo" name="correo" value="ingresa tu nuevo correo">
+            <span id="errorCorreo" style="color: red; display: none;"></span> <br>
+
+            <label for="cuentaSoles">Número de cuenta en soles:</label>
+            <input type="text" id="cuentaSoles" name="cuentaSoles" value="ingresa tu nueva cuenta en soles">
+            <span id="errorCuentaSoles" style="color: red; display: none;"></span> <br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" value="ingresa tu nuevo telefono">
+            <span id="errorTelefono" style="color: red; display: none;"></span> <br>
+
+            <label for="contraseñaActual">Contraseña actual:</label>
+            <input type="password" id="contraseñaActual" name="contraseñaActual" placeholder="Ingresa tu contraseña actual">
+            <span id="errorContraseñaActual" style="color: red; display: none;"></span> <br>
+
+            <label for="nuevaContraseña">Nueva contraseña:</label>
+            <input type="password" id="nuevaContraseña" name="nuevaContraseña" placeholder="Ingresa tu nueva contraseña">
+            <span id="errorNuevaContraseña" style="color: red; display: none;"></span> <br>
+
+            <label for="confirmarContraseña">Confirmar contraseña:</label>
+            <input type="password" id="confirmarContraseña" name="confirmarContraseña" placeholder="Confirma tu nueva contraseña">
+            <span id="errorConfirmarContraseña" style="color: red; display: none;"></span> <br>
+
+            <label for="preguntaSecreta">Pregunta secreta:</label>
+            <input type="text" id="preguntaSecreta" name="preguntaSecreta" value="ingresa tu nueva pregunta secreta">
+            <span id="errorPreguntaSecreta" style="color: red; display: none;"></span> <br>
+
+            <button type="submit">Guardar</button>
+        </form>
+    </main>
+    <footer></footer>
+    <script src="actualizar.js"></script>
+</body>
+</html>

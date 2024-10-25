@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUVISOL - Panel de Administración - Mi Perfil</title>
+    <link rel="stylesheet" href="mi_cuentaadmin.css">
+    <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+            <li><a href="ceo.html">CEO</a></li>
+            <li><a href="comision.html">Comisión</a></li>
+            <li><a href="porcentaje.html">Porcentaje</a></li>
+            <li><a href="logout.php" class="logout">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Panel de Administración - Mi Perfil</h2>
+        <section id="usuarios">
+            <h3>Lista de Usuarios</h3>
+            <table class="reporte-table" id="tablaUsuarios">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Código PHP para mostrar la información de los usuarios -->
+                </tbody>
+            </table>
+        </section>
+        <section id="usuario" style="display: none;">
+            <h3>Información del Usuario</h3>
+            <form id="formUsuario">
+                <input type="hidden" id="usuarioId" name="usuarioId">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" readonly>
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" readonly>
+                </div>
+                <div>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" readonly>
+                </div>
+                <div>
+                    <label for="cuentaSoles">Cuenta Soles:</label>
+                    <input type="text" id="cuentaSoles" name="cuentaSoles" readonly>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" readonly>
+                </div>
+                <div>
+                    <label for="nickname">Nickname:</label>
+                    <input type="text" id="nickname" name="nickname" readonly>
+                </div>
+                <div>
+                    <label for="nivel">Nivel:</label>
+                    <input type="text" id="nivel" name="nivel" readonly>
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" disabled>
+                        <option value="activo">Activo</option>
+                        <option value="inactivo">Inactivo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" readonly>
+                </div>
+                <div>
+                    <label for="preguntaSecreta">Pregunta Secreta:</label>
+                    <input type="text" id="preguntaSecreta" name="preguntaSecreta" readonly>
+                </div>
+                <button type="button" id="btnEditar" onclick="editarUsuario()">Editar</button>
+                <button type="button" id="btnGuardar" style="display: none;" onclick="guardarUsuario()">Guardar</button>
+                <button type="button" id="btnCancelar" style="display: none;" onclick="cancelarEdicion()">Cancelar</button>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="mi_cuentaadmin.js"></script>
+</body>
+</html>

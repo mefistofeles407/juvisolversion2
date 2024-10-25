@@ -1,0 +1,140 @@
+/* Estilos generales para el cuerpo */
+body {
+    background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen de fondo */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+    background-color: #121212; /* Negro oscuro */
+    color: #0f0f0f; /* Blanco */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    text-align: center; /* Centra el texto */
+    padding: 50px 0; /* Agrega espacio arriba y abajo */
+  }
+  
+  /* Estilos para el título principal */
+  h1 {
+    font-size: 5em; /* Ajusta el tamaño del título */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0d0d0e; /* Blanco */
+  }
+  
+  /* Estilos para el subtítulo */
+  h2 {
+    font-size: 2em; /* Ajusta el tamaño del título */
+    margin-bottom: 40px;
+    color: #0d0d0e; /* Blanco */
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    text-align: center; /* Centra el texto */
+    padding: 30px; /* Agrega espacio alrededor */
+  }
+  
+  /* Estilos para el formulario */
+  form {
+    display: flex; /* Flexbox para un diseño flexible */
+    flex-direction: column; /* Orienta los elementos verticalmente */
+    align-items: center; /* Alinea los elementos al centro */
+    gap: 20px; /* Espacio entre los elementos */
+  }
+  
+  /* Estilos para las etiquetas */
+  label {
+    font-size: 1.5em; /* Ajusta el tamaño de fuente */
+    font-weight: bold; /* Agrega negrita */
+  }
+  
+  /* Estilos para los campos de entrada */
+  input {
+    width: 50%; /* Ajusta el ancho de las respuestas */
+    padding: 15px; /* Aumenta el espacio de las respuestas */
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center; /* Centra el mensaje */
+  }
+  
+  /* Estilos para el botón */
+  button {
+    background-color: #007bff; /* Azul claro Litecoin */
+    color: #fff; /* Texto blanco */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px; /* Bordes curvos */
+    font-size: 1.5em; /* Ajusta el tamaño del título */
+    cursor: pointer;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    display: flex;
+    justify-content: space-around; /* Distribuye los botones */
+    padding: 30px;
+  }
+  
+  /* Estilos para el botón "Atrás" */
+  .atras {
+    margin-right: 20px; /* Espacio entre botones */
+  }
+  
+  /* Estilos para el botón "Siguiente" */
+  .siguiente {
+    margin-left: 20px; /* Espacio entre botones */
+  }
+  
+  /* Estilos para los mensajes de error */
+  span {
+    color: red; /* Color rojo para los mensajes de error */
+    font-size: 0.8em; /* Ajusta el tamaño de fuente */
+    margin-bottom: 10px; /* Agrega espacio abajo */
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
+    background-color: #007bff; /* Azul claro Litecoin */
+    padding: 15px 0; /* Espacio arriba y abajo */
+    text-align: center; /* Centra el contenido de la barra */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: fixed; /* Fijar la barra de menú */
+    top: 0; /* Posicionar en la parte superior */
+    left: 0; /* Posicionar a la izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+  }
+  
+  nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+  }
+  
+  nav li {
+    display: inline-block; /* Ordena los elementos en línea */
+    margin: 0 15px; /* Espacio entre elementos */
+  }
+  
+  nav a {
+    color: #fff; /* Color blanco para el texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espacio de relleno */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    font-weight: bold; /* Negrita para el texto del enlace */
+    font-style: italic; /* Cursiva para el texto del enlace */
+  }
+  
+  nav a:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+  }

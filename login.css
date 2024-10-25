@@ -1,0 +1,109 @@
+/* Estilos generales para el cuerpo */
+body {
+  background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-size: cover; /* Cubre todo el fondo */
+  background-position: center; /* Centra la imagen */
+  font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+  background-color: #121212; /* Negro oscuro */
+  color: #0f0f0f; /* Blanco */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+}
+
+header {
+  text-align: center; /* Centra el texto */
+  padding: 50px 0; /* Agrega espacio arriba y abajo */
+}
+
+h1 {
+  font-size: 5em; /* Ajusta el tamaño del título */
+  font-weight: bold; /* Agrega negrita */
+  margin-bottom: 20px;
+  color: #0d0d0e; /* Blanco */
+}
+
+h2 {
+  font-size: 2em; /* Ajusta el tamaño del título */
+  margin-bottom: 40px;
+  color: #0d0d0e; /* Blanco */
+}
+
+main {
+  text-align: center; /* Centra el texto */
+  padding: 30px; /* Agrega espacio alrededor */
+}
+
+footer {
+  display: flex; /* Flexbox para un diseño flexible */
+  justify-content: space-around; /* Distribuye los botones */
+  padding: 30px; /* Agrega espacio alrededor */
+}
+
+/* Estilos para el contenedor de inicio de sesión */
+.login-container {
+  background-color: #fff; /* Fondo blanco */
+  padding: 30px; /* Espacio alrededor del contenedor */
+  border-radius: 10px; /* Redondea las esquinas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+  width: 350px; /* Ancho del contenedor */
+  margin: 100px auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.login-container form {
+  display: flex; /* Flexbox para un diseño flexible */
+  flex-direction: column; /* Orienta los elementos verticalmente */
+  gap: 15px; /* Espacio entre los elementos */
+}
+
+/* Estilos para las etiquetas del formulario */
+.login-container label {
+  font-size: 1.2em; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Agrega negrita */
+}
+
+/* Estilos para los campos de entrada del formulario */
+.login-container input {
+  padding: 10px; /* Espacio interno */
+  border: 1px solid #ccc; /* Agrega un borde gris */
+  border-radius: 5px; /* Redondea las esquinas */
+  font-size: 1em; /* Ajusta el tamaño de la fuente */
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-container button {
+  background-color: #007bff; /* Azul claro Litecoin */
+  color: #fff; /* Texto blanco */
+  padding: 15px 30px; /* Agrega espacio interno */
+  border: none; /* Elimina el borde */
+  border-radius: 5px; /* Redondea las esquinas */
+  font-size: 1.1em; /* Ajusta el tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Estilos para el botón al pasar el mouse */
+.login-container button:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Estilos para el enlace de registro */
+.login-container p a {
+  color: #007bff; /* Azul claro Litecoin */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold; /* Agrega negrita */
+}
+
+.login-container p a:hover {
+  text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+}
+
+/* Estilos para el mensaje de error */
+#mensajeError {
+  color: red; /* Color rojo para el mensaje de error */
+  font-size: 1em; /* Ajusta el tamaño de la fuente */
+  margin-bottom: 10px;
+  display: none; /* Oculta el mensaje de error por defecto */
+  font-weight: bold; /* Agrega negrita al mensaje de error */
+}

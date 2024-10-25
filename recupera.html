@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="recupera.css">
+  <title>JUVISOL - Recuperar Contraseña</title>
+</head>
+<body>
+  <header>
+    <h1>JUVISOL - Recuperar Contraseña</h1>
+    <!-- Título principal de la sección -->
+    <h2>Ingresa los datos para recuperar tu contraseña.</h2>
+    <!-- Subtítulo explicativo -->
+  </header>
+  <main>
+    <!-- Contenedor principal del contenido -->
+    <form method="post" id="recuperaForm">
+      <!-- Formulario para recuperar la contraseña -->
+      <label for="correo">Correo electrónico:</label>
+      <!-- Etiqueta para el campo de correo electrónico -->
+      <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+      <!-- Campo de entrada para el correo electrónico -->
+      <span id="errorCorreo"></span> <br>
+      <!-- Mensaje de error para el correo electrónico -->
+      <label for="telefono">Teléfono:</label>
+      <!-- Etiqueta para el campo de teléfono -->
+      <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+      <!-- Campo de entrada para el teléfono -->
+      <span id="errorTelefono"></span> <br>
+      <!-- Mensaje de error para el teléfono -->
+      <label for="preguntaSecreta">Pregunta secreta:</label>
+      <!-- Etiqueta para el campo de pregunta secreta -->
+      <input type="text" id="preguntaSecreta" name="preguntaSecreta" placeholder="Ingresa tu pregunta secreta" required>
+      <!-- Campo de entrada para la pregunta secreta -->
+      <span id="errorPreguntaSecreta"></span> <br>
+      <!-- Mensaje de error para la pregunta secreta -->
+      <button type="submit">Recuperar Contraseña</button>
+      <!-- Botón para enviar el formulario -->
+    </form>
+    <!-- Fin del formulario -->
+    <p>¿Ya recuerdas tu contraseña? <a href="login.html">Inicia sesión</a></p>
+    <!-- Enlace para volver al inicio de sesión -->
+  </main>
+  <!-- Fin del contenedor principal -->
+  <script src="recupera.js"></script>
+  <!-- Incluye el archivo JavaScript -->
+</body>
+</html>

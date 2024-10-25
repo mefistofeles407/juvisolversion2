@@ -1,0 +1,153 @@
+/* Estilos generales para el cuerpo */
+body {
+    background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+    background-color: #121212; /* Negro oscuro */
+    color: #0f0f0f; /* Blanco */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    }
+    header {
+    text-align: center; /* Centra el texto */
+    padding: 50px 0; /* Agrega espacio arriba y abajo */
+    }
+    h1 {
+    font-size: 5em; /* Ajusta el tamaño del título */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 20px; /* Agrega espacio abajo */
+    color: #0d0d0e; /* Blanco */
+    }
+    h2 {
+    font-size: 2em; /* Ajusta el tamaño del título */
+    margin-bottom: 40px;
+    color: #0d0d0e; /* Blanco */
+    }
+    main {
+    text-align: center; /* Centra el texto */
+    padding: 30px; /* Agrega espacio alrededor */
+    }
+    footer {
+    display: flex; /* Flexbox para un diseño flexible */
+    justify-content: space-around; /* Distribuye los botones */
+    padding: 30px; /* Agrega espacio alrededor */
+    }
+    /* Estilos para la barra de navegación */
+    nav {
+    background-color: #007bff; /* Azul claro Litecoin */
+    padding: 15px 0; /* Espacio arriba y abajo */
+    text-align: center; /* Centra el contenido de la barra */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: fixed; /* Fijar la barra de menú */
+    top: 0; /* Posicionar en la parte superior */
+    left: 0; /* Posicionar a la izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+    }
+    nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    }
+    nav li {
+    display: inline-block; /* Ordena los elementos en línea */
+    margin: 0 15px; /* Espacio entre elementos */
+    }
+    nav a {
+    color: #fff; /* Color blanco para el texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espacio de relleno */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    font-weight: bold; /* Negrita para el texto del enlace */
+    font-style: italic; /* Cursiva para el texto del enlace */
+    }
+    nav a:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+    }
+    /* Estilos para el contenedor de preguntas */
+    .preguntas-container {
+    display: flex; /* Flexbox para un diseño flexible */
+    flex-direction: column; /* Orienta los elementos verticalmente */
+    align-items: center; /* Alinea los elementos al centro */
+    gap: 20px; /* Espacio entre los elementos */
+    }
+    /* Estilos para cada pregunta */
+    .pregunta {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Redondea las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    width: 80%; /* Ancho del contenedor */
+    }
+    /* Estilos para el título de la pregunta */
+    .pregunta h3 {
+    font-size: 1.8em; /* Ajusta el tamaño del título */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 10px; /* Agrega espacio abajo */
+    color: #007bff; /* Azul claro Litecoin */
+    }
+    /* Estilos para el contenido de la pregunta */
+    .pregunta p {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
+    color: #0c0c0c; /* Gris oscuro */
+    }
+    
+    /* Estilos para el contenedor "mas informacion" */
+    .mas-informacion {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Redondea las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    width: 80%; /* Ancho del contenedor */
+    text-align: center; /* Centra el texto */
+    }
+    
+    .mas-informacion p {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
+    color: #0c0c0c; /* Gris oscuro */
+    }
+
+    /* Estilos para el contenedor "mas informacion" */
+    .mas-informacion {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Redondea las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    width: 50%; /* Ancho del contenedor */
+    text-align: center; /* Centra el texto */
+    }
+    
+    .mas-informacion p {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
+    color: #0c0c0c; /* Gris oscuro */
+    }
+
+    /* Estilos para el contenedor "contacto" */
+    .contacto {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Redondea las esquinas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    width: 80%; /* Ancho del contenedor */
+    text-align: center; /* Centra el texto */
+    }
+    
+    .contacto p {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
+    color: #0c0c0c; /* Gris oscuro */
+    }

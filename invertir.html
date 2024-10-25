@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inversión - JUVISOL</title>
+    <link rel="stylesheet" href="invertir.css">
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+          <li><a href="mi_cuenta.html">Mi pergil</a></li>
+          <li><a href="red.html">Mi red</a></li>
+          <li><a href="activacion.html">activacion</a></li>
+          <li><a href="actualizar.html">actualizar</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="conocenos.html">Conócenos</a></li>
+          <li><a href="logout.php">Cerrar sesión</a></li> </ul>
+    </nav>
+    <header>
+        <h1>Sistema de Inversión</h1>
+    </header>
+    <main>
+        <!-- Sección para mostrar las inversiones realizadas -->
+        <section class="seccion-inversiones-realizadas">
+            <h2>Tus Inversiones Realizadas</h2>
+            <table class="reporte-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Monto Inicial</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Fecha de Finalización</th>
+                        <th>Retorno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se mostrarán las inversiones del usuario -->
+                    <tr>
+                        <td>Plan Semanal</td>
+                        <td>S/ 100</td>
+                        <td>18/10/2024</td>
+                        <td>25/10/2024</td>
+                        <td>S/ 101.20</td>
+                    </tr>
+                    <tr>
+                        <td>Plan 3 Meses</td>
+                        <td>S/ 500</td>
+                        <td>18/10/2024</td>
+                        <td>18/01/2025</td>
+                        <td>S/ 650</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección para realizar una nueva inversión -->
+        <section class="seccion-nueva-inversion">
+            <h2>Realiza tu Inversión</h2>
+            <div class="planes">
+                <!-- Plan Semanal -->
+                <div class="plan" data-plan="semanal">
+                    <h3>Plan Semanal</h3>
+                    <p>Gana un 1.2% semanal de tu capital.</p>
+                    <p>Nivel de referido: 5%</p>
+                </div>
+                <!-- Plan 3 Meses -->
+                <div class="plan" data-plan="3meses">
+                    <h3>Plan 3 Meses</h3>
+                    <p>Gana un 10% mensual de tu capital.</p>
+                    <p>Nivel de referido: 2%</p>
+                </div>
+                <!-- Plan 6 Meses -->
+                <div class="plan" data-plan="6meses">
+                    <h3>Plan 6 Meses</h3>
+                    <p>Gana un 30% de tu capital en 6 meses.</p>
+                    <p>Nivel de referido: 5%</p>
+                </div>
+                <!-- Plan 1 Año -->
+                <div class="plan" data-plan="1año">
+                    <h3>Plan 1 Año</h3>
+                    <p>Gana un 70% de tu capital en 1 año.</p>
+                    <p>Nivel de referido: 5%</p>
+                </div>
+            </div>
+            <p><strong>Número de Cuenta BCP:</strong> 1234567890</p>
+            <p><strong>Titular:</strong> JUVISOL S.A.</p>
+            <p>Ingresa el monto a invertir:</p>
+            <input type="number" id="monto-inversion" placeholder="Monto">
+            <p>Sube la captura de tu depósito:</p>
+            <input type="file" id="captura-deposito">
+            <button id="btn-confirmar-inversion">Confirmar Inversión</button>
+        </section>
+    </main>
+    <footer>
+        <p>JUVISOL - Sistema de Inversión</p>
+    </footer>
+    <script src="invertir.js"></script>
+</body>
+</html>

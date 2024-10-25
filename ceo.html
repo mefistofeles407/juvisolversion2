@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos de la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUVISOL - Panel de Administración</title>
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="ceo.css">
+    <!-- Hoja de estilos CSS para el botón de cierre de sesión -->
+    <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav id="nav">
+        <ul>
+            <!-- Enlaces de navegación -->
+            <li><a href="#usuarios">Usuarios</a></li>
+            <li><a href="#depositos">Capturas de Depósito</a></li>
+            <!-- Enlace para cerrar sesión -->
+            <li><a href="logout.php" class="logout">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Título de la sección del CEO -->
+        <h2>Panel de Administración</h2>
+        <!-- Sección para mostrar la información de los usuarios -->
+        <section id="usuarios">
+            <h3>Usuarios</h3>
+            <!-- Tabla para mostrar la información de los usuarios -->
+            <table class="reporte-table" id="tablaUsuarios">
+                <thead>
+                    <!-- Encabezado de la tabla -->
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Cuenta Soles</th>
+                        <th>Teléfono</th>
+                        <th>Nickname</th>
+                        <th>Nivel</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Código PHP para mostrar la información de los usuarios -->
+                </tbody>
+            </table>
+        </section>
+        <!-- Sección para mostrar la información de las capturas de depósito -->
+        <section id="depositos">
+            <h3>Capturas de Depósito</h3>
+            <!-- Tabla para mostrar la información de las capturas de depósito -->
+            <table class="reporte-table">
+                <thead>
+                    <!-- Encabezado de la tabla -->
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuario</th>
+                        <th>Nombre del archivo</th>
+                        <th>Ruta del archivo</th>
+                        <th>Fecha de carga</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Código PHP para mostrar la información de las capturas de depósito -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer></footer>
+    <!-- Archivo JavaScript -->
+    <script src="ceo.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+  /* Estilos para el cuerpo de la página */
+  background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-size: cover; /* Cubre todo el fondo */
+  background-position: center; /* Centra la imagen */
+  font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+  background-color: #121212; /* Negro oscuro */
+  color: #0f0f0f; /* Blanco */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+}
+
+header {
+  /* Estilos para el encabezado */
+  text-align: center; /* Centra el texto */
+  padding: 50px 0; /* Agrega espacio arriba y abajo */
+}
+
+h1 {
+  /* Estilos para el título principal */
+  font-size: 5em; /* Ajusta el tamaño del título */
+  font-weight: bold; /* Agrega negrita */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 20px; /* Agrega espacio abajo */
+  color: #0d0d0e; /* Blanco */
+}
+
+h2 {
+  /* Estilos para el subtítulo */
+  font-size: 2em; /* Ajusta el tamaño del subtítulo */
+  margin-bottom: 40px; /* Agrega espacio abajo */
+  color: #0d0d0e; /* Blanco */
+  text-align: center; /* Centra el texto */
+}
+
+h3 {
+  text-align: center; /* Centra el texto del h3 */
+}
+
+p {
+  text-align: center; /* Centra el texto del párrafo */
+}
+
+main {
+  /* Estilos para el contenido principal */
+  text-align: center; /* Centra el texto */
+  padding: 30px; /* Agrega espacio alrededor */
+}
+
+footer {
+  /* Estilos para el pie de página */
+  display: flex; /* Flexbox para un diseño flexible */
+  justify-content: space-around; /* Distribuye los botones */
+  padding: 30px; /* Agrega espacio alrededor */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #007bff; /* Azul claro Litecoin */
+  padding: 15px 0; /* Espacio arriba y abajo */
+  text-align: center; /* Centra el contenido de la barra */
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: fixed; /* Fijar la barra de menú */
+  top: 0; /* Posicionar en la parte superior */
+  left: 0; /* Posicionar a la izquierda */
+  width: 100%; /* Ancho completo */
+  z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+}
+
+nav ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0; /* Elimina el margen */
+  padding: 0; /* Elimina el relleno */
+}
+
+nav li {
+  display: inline-block; /* Ordena los elementos en línea */
+  margin: 0 15px; /* Espacio entre elementos */
+}
+
+nav a {
+  color: #fff; /* Color blanco para el texto */
+  text-decoration: none; /* Elimina el subrayado */
+  font-size: 1.2em; /* Tamaño de la fuente */
+  padding: 10px 20px; /* Espacio de relleno */
+  border-radius: 25px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color */
+  font-weight: bold; /* Negrita para el texto del enlace */
+  font-style: italic; /* Cursiva para el texto del enlace */
+}
+
+nav a:hover {
+  background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+}
+
+/* Estilos para el contenedor principal de la pirámide */
+#red-usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+  height: 350px; /* Ajusta la altura del contenedor */
+}
+
+/* Estilos para los nodos (círculos) de la pirámide */
+.node {
+  width: 140px; /* Define el ancho de los nodos */
+  height: 140px; /* Define la altura de los nodos */
+  border-radius: 50%; /* Redondea los nodos para que sean círculos */
+  display: flex; /* Activa el flexbox para los nodos */
+  align-items: center; /* Alinea los elementos del nodo al centro verticalmente */
+  justify-content: center; /* Alinea los elementos del nodo al centro horizontalmente */
+  color: white; /* Define el color del texto dentro de los nodos como blanco */
+  font-weight: bold; /* Define el peso del texto dentro de los nodos como negrita */
+  margin: 10px; /* Agrega un margen de 10 píxeles alrededor de los nodos */
+  position: relative; /* Permite el posicionamiento absoluto de los elementos dentro de los nodos */
+  border: 4px solid white; /* Define un borde blanco de 4 píxeles alrededor de los nodos */
+  box-shadow: 0 0 10px rgba(18, 19, 19, 0.89); /* Agrega una sombra ligera a los nodos */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse */
+  transition: transform 0.3s; /* Transición suave para la transformación */
+  font-size: 1.4em; /* Ajusta el tamaño de la fuente del texto dentro del nodo */
+  text-align: center; /* Centra el texto dentro del nodo */
+  line-height: 1.2; /* Ajusta el interlineado del texto dentro del nodo */
+}
+
+/* Estilos especiales para el nodo principal */
+.node.pink {
+  width: 160px; /* Define el ancho del nodo principal */
+  height: 160px; /* Define la altura del nodo principal */
+}
+
+/* Ajusta la posición vertical de la esfera azul (nodo 2) */
+.node.blue {
+  top: 40px; /* Ajusta la posición vertical de la esfera azul (nodo 2) para bajarla un poco */
+}
+
+/* Ajusta la posición vertical de la esfera naranja (nodo 3) */
+.node.orange {
+  top: 70px; /* Ajusta la posición vertical de la esfera naranja (nodo 3) para bajarla un poco */
+}
+
+/* Estilos para el nodo de color rosa */
+.pink {
+  background-color: #d5006d; /* Define el color de fondo del nodo como rosa */
+}
+
+/* Estilos para el nodo de color azul */
+.blue {
+  background-color: #3b5998; /* Define el color de fondo del nodo como azul */
+}
+
+/* Estilos para el nodo de color naranja */
+.orange {
+  background-color: #ff5722; /* Define el color de fondo del nodo como naranja */
+}
+
+/* Estilos para la línea vertical 2 */
+.vertical2 {
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 60px; /* Define la altura de la línea */
+  left: 48%; /* Centra la línea horizontalmente */
+  transform: translateX(-50%) rotate(30deg); /* Centra la línea horizontalmente y le da un ángulo de 30 grados */
+  top: 80px; /* Define la posición vertical de la línea */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para la línea vertical 3 */
+.vertical3 {
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 60px; /* Define la altura de la línea */
+  right: 48%; /* Centra la línea horizontalmente desde el borde derecho */
+  transform: translateX(48%) rotate(-30deg); /* Centra la línea horizontalmente desde el borde derecho y le da un ángulo de -30 grados */
+  top: 80px; /* Define la posición vertical de la línea */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para las líneas de conexión entre los nodos */
+.connector {
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 80px; /* Define el ancho de la línea */
+  height: 4px; /* Define la altura de la línea */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para el contenedor de los niveles de la pirámide */
+.level {
+  display: flex; /* Activa el flexbox para el contenedor de niveles */
+  justify-content: center; /* Centra los nodos dentro del contenedor de niveles horizontalmente */
+  position: relative; /* Permite el posicionamiento absoluto de los elementos dentro del contenedor de niveles */
+}
+
+/* Estilos para la línea de conexión izquierda */
+.connector.left1 {
+  top: 170px; /* Define la posición vertical de la línea (arriba y abajo) */
+  left: -04px; /* Define la posición horizontal de la línea (isquierda derecha)*/
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 100px; /* Define la altura de la línea (mas largo o mas corto) */
+  transform: translateX(-50%) rotate(38deg); /* Centra la línea horizontalmente y le da un ángulo de 30 grados */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para la línea de conexión izquierda */
+.connector.left2 {
+  top: 200px; /* Define la posición vertical de la línea (arriba y abajo)*/
+  left: 90px; /* Define la posición horizontal de la línea (isquierda derecha)*/
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 45px; /* Define la altura de la línea (mas largo o mas corto)*/
+  transform: translateX(-150%) rotate(0deg); /* Centra la línea horizontalmente y le da un ángulo de 30 grados */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para la línea de conexión derecha */
+.connector.right1 {
+  top: 200px; /* Define la posición vertical de la línea (arriba y abajo) */
+  right: 75px; /* Define la posición horizontal de la línea (isquierda derecha) */
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 45px; /* Define la altura de la línea (mas largo o mas corto)*/
+  transform: translateX(-150%) rotate(0deg); /* Centra la línea horizontalmente y le da un ángulo de 30 grados */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para la línea de conexión derecha */
+.connector.right2 {
+  top: 165px; /* Define la posición vertical de la línea (arriba y abajo) */
+  right: -20px; /* Define la posición horizontal de la línea (isquierda derecha)*/
+  position: absolute; /* Permite el posicionamiento absoluto de la línea */
+  width: 4px; /* Define el ancho de la línea */
+  height: 95px; /* Define la altura de la línea (mas largo o mas corto) */
+  transform: translateX(-100%) rotate(145deg); /* Centra la línea horizontalmente y le da un ángulo de 30 grados */
+  background-color: #333; /* Define el color de fondo de la línea */
+}
+
+/* Estilos para el nodo al pasar el mouse */
+.node:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del nodo */
+}
+
+/* Estilos para la información del nodo */
+.node-info {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none; /* Oculta la información por defecto */
+  z-index: 10; /* Asegurar que la información esté por encima de otros elementos */
+}
+
+/* Estilos para el enlace de referido */
+.enlace-referido {
+  display: block;
+  margin-top: 10px;
+  color: #007bff; /* Azul claro Litecoin */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold; /* Agrega negrita */
+}
+
+/* Estilos para el enlace de referido al pasar el mouse */
+.enlace-referido:hover {
+  text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+}

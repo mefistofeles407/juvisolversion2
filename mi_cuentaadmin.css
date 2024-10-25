@@ -1,0 +1,157 @@
+/* Estilos generales para el cuerpo */
+body {
+    font-family: 'Bradley Hand ITC', cursive; /* Cambia la fuente */
+    background-image: url("img/fondonubes.jpg"); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    color: #141414; /* Blanco */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+  }
+  
+  header {
+    /* Estilos para el encabezado */
+    text-align: center; /* Centra el texto */
+    padding: 50px 0; /* Agrega espacio arriba y abajo */
+  }
+  
+  h1 {
+    /* Estilos para el título principal */
+    font-size: 5em; /* Ajusta el tamaño del título */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 20px; /* Agrega espacio abajo */
+    color: #0e0d0d; /* Blanco */
+    text-align: center; /* Centra el texto */
+  }
+  
+  h2 {
+    text-align: center; /* Centra el texto */
+    font-weight: bold; /* Agrega negrita */
+    margin-bottom: 50px;
+    font-size: 2em; /* Aumenta el tamaño de la fuente */
+  }
+  
+  main {
+    text-align: center; /* Centra el texto */
+    padding: 30px; /* Agrega espacio alrededor */
+  }
+  
+  footer {
+    display: flex; /* Flexbox para un diseño flexible */
+    justify-content: space-around; /* Distribuye los botones */
+    padding: 30px; /* Agrega espacio alrededor */
+  }
+  
+  /* Estilos para la tabla */
+  .reporte-table {
+    width: 80%;
+    margin: 20px auto; /* Espacio entre la tabla y el borde superior */
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 15px; /* Agrega espacio interno */
+    text-align: left; /* Alinea el texto a la izquierda */
+    border-bottom: 1px solid #1b1b1b; /* Agrega un borde blanco */
+    color: #0c0c0c; /* Texto blanco */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+  }
+  
+  th {
+    background-color: #333; /* Color de fondo gris oscuro */
+  }
+  
+  .reporte-table td:first-child {
+    border-right: 3px solid #131212; /* Línea más gruesa */
+    padding-right: 20px; /* Más espacio a la derecha */
+    width: 30%; /* Ajusta el ancho de la columna */
+  }
+  
+  /* Estilos para las líneas verticales en la tabla */
+  .reporte-table td {
+    border-right: 1px solid #0f0f0f; /* Línea vertical en cada celda */
+  }
+  
+  /* Estilo para la última celda de la tabla */
+  .reporte-table td:last-child {
+    border-right: none; /* Elimina la línea vertical de la última celda */
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
+    background-color: #007bff; /* Azul claro Litecoin */
+    padding: 15px 0; /* Espacio arriba y abajo */
+    text-align: center; /* Centra el contenido de la barra */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: fixed; /* Fijar la barra de menú */
+    top: 0; /* Posicionar en la parte superior */
+    left: 0; /* Posicionar a la izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+  }
+  
+  nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+  }
+  
+  nav li {
+    display: inline-block; /* Ordena los elementos en línea */
+    margin: 0 15px; /* Espacio entre elementos */
+  }
+  
+  nav a {
+    color: #fff; /* Color blanco para el texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espacio de relleno */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    font-weight: bold; /* Negrita para el texto del enlace */
+    font-style: italic; /* Cursiva para el texto del enlace */
+  }
+  
+  nav a:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+  }
+  
+  /* Estilos para el formulario */
+  #formUsuario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #formUsuario div {
+    margin-bottom: 10px;
+  }
+  
+  #formUsuario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #formUsuario input,
+  #formUsuario select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #formUsuario button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul claro Litecoin */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }

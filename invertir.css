@@ -1,0 +1,217 @@
+/* Estilos generales para el cuerpo */
+body {
+    /* Ruta de la imagen */
+    background-image: url("img/fondonubes.jpg"); 
+    /* No repite la imagen */
+    background-repeat: no-repeat; 
+    /* Cubre todo el fondo */
+    background-size: cover; 
+    /* Centra la imagen */
+    background-position: center; 
+    /* Cambia la fuente */
+    font-family: 'Bradley Hand ITC', cursive; 
+    /* Negro oscuro */
+    background-color: #121212; 
+    /* Blanco */
+    color: #0f0f0f; 
+    /* Elimina el margen predeterminado */
+    margin: 0; 
+    /* Elimina el relleno predeterminado */
+    padding: 0; 
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #007bff; /* Azul claro Litecoin */
+    padding: 15px 0; /* Espacio arriba y abajo */
+    text-align: center; /* Centra el contenido de la barra */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: fixed; /* Fijar la barra de menú */
+    top: 0; /* Posicionar en la parte superior */
+    left: 0; /* Posicionar a la izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 10; /* Asegurar que la barra de menú esté por encima de otros elementos */
+    }
+    nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    }
+    nav li {
+    display: inline-block; /* Ordena los elementos en línea */
+    margin: 0 15px; /* Espacio entre elementos */
+    }
+    nav a {
+    color: #fff; /* Color blanco para el texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espacio de relleno */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    font-weight: bold; /* Negrita para el texto del enlace */
+    font-style: italic; /* Cursiva para el texto del enlace */
+    }
+    nav a:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+    }
+
+/* Estilos para el encabezado */
+header {
+    /* Centra el texto */
+    text-align: center; 
+    /* Agrega espacio arriba y abajo */
+    padding: 50px 0; 
+}
+
+/* Estilos para el título principal */
+h1 {
+    /* Ajusta el tamaño del título */
+    font-size: 5em; 
+    /* Agrega negrita */
+    font-weight: bold; 
+    /* Agrega margen inferior al título */
+    margin-bottom: 20px; 
+    /* Blanco */
+    color: #0d0d0e; 
+}
+
+/* Estilos para el subtítulo */
+h2 {
+    /* Ajusta el tamaño del título */
+    font-size: 2em; 
+    /* Agrega margen inferior al subtítulo */
+    margin-bottom: 40px; 
+    /* Blanco */
+    color: #0d0d0e; 
+}
+
+/* Estilos para el contenedor de los botones */
+.botones-container {
+    /* Define el contenedor como un elemento flexible */
+    display: flex; 
+    /* Centra los botones horizontalmente */
+    justify-content: center; 
+    /* Agrega espacio arriba del contenedor de botones */
+    margin-top: 50px; 
+}
+
+/* Estilos para los botones */
+button {
+    /* Define el color de fondo del botón */
+    background-color: #007bff; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff; 
+    /* Agrega espacio interno al botón */
+    padding: 15px 30px; 
+    /* Elimina el borde del botón */
+    border: none; 
+    /* Redondea las esquinas del botón */
+    border-radius: 25px; 
+    /* Define el tamaño del texto del botón */
+    font-size: 1.2em; 
+    /* Cambia el cursor a un puntero al pasar el mouse */
+    cursor: pointer; 
+    /* Agrega espacio entre los botones */
+    margin: 0 10px; 
+}
+
+/* Estilos para el botón "Registrar" */
+.boton-registrar {
+    /* Define el color de fondo del botón */
+    background-color: #0059ff; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff; 
+}
+
+/* Estilos para el botón "Acceder" */
+.boton-acceder {
+    /* Define el color de fondo del botón */
+    background-color: #0059ff; /* Azul claro Litecoin */
+    /* Define el color del texto del botón */
+    color: #fff; 
+}
+
+.reporte-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #1b1b1b;
+    color: #0c0c0c;
+    font-size: 1.2em;
+}
+
+th {
+    background-color: #333;
+}
+
+.reporte-table td:first-child {
+    border-right: 3px solid #131212;
+    padding-right: 20px;
+    width: 30%;
+}
+
+.reporte-table td {
+    border-right: 1px solid #0f0f0f;
+}
+
+.reporte-table td:last-child {
+    border-right: none;
+}
+
+.seccion-nueva-inversion {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    text-align: center;
+    margin: 1em;
+}
+
+.planes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan {
+    width: 200px;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.plan:hover {
+    background-color: #eee;
+}
+
+input[type="number"], input[type="file"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
