@@ -27,6 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $errores[] = "Por favor, selecciona la captura de tu depósito.";
   }
 
+  
   // Si no hay errores, procesar la captura del depósito
   if (empty($errores)) {
     // Crear la carpeta "uploads" si no existe
